@@ -1,0 +1,52 @@
+- type: job
+  id: TownDoctor
+  setPreference: true
+  overrideConsoleVisibility: false
+  canBeAntag: false
+  name: job-name-towndoctor
+  description: job-description-towndoctor
+  playTimeTracker: TownDoctor
+  requirements:
+  # Forge-Change-Start
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+    - Ghoul
+  - !type:CharacterDepartmentTimeRequirement
+    department: Townsfolk
+    min: 7200
+  # Forge-Change-End
+  startingGear: TownDoctorGear
+  icon: "JobIconTownMedic" # Forge-Change
+  supervisors: job-supervisors-townsfolk
+  alwaysUseSpawner: true # Forge-Change
+  access:
+  - TownieDoctor
+  - TownsPerson # Forge-Change
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - Townsfolk
+      - type: CPRTraining
+
+- type: startingGear
+  id: TownDoctorGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitWastelandDoc
+    back: N14ClothingBackpackExplorer # Forge-Change
+    shoes: N14ClothingShoesBlack
+    gloves: N14ClothingHandsGlovesNitrile
+    id: N14IDDoctorTown
+    outerClothing: N14ClothingOuterCoatLab
+  innerClothingSkirt: N14ClothingUniformJumpskirtFalloutBlack
+  satchel: N14ClothingBackpackSatchelWastelanderFilled
+  duffelbag: N14ClothingBackpackDuffelFilled  # N14TODO: Doctors Bag
+  storage: # Forge-Change
+    back:
+    - N14BoxPlasticFilledWastelander
+
+- type: playTimeTracker
+  id: TownDoctor

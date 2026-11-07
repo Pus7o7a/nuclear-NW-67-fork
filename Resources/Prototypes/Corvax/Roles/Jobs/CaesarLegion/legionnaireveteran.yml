@@ -1,0 +1,58 @@
+- type: job
+  id: CaesarLegionLegionnaireVeteran
+  setPreference: true
+  name: job-name-caesar-legion-legionnaire-veteran
+  description: job-description-caesar-legionnaire-veteran
+  playTimeTracker: CaesarLegionLegionnaireVeteran
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+  - !type:CharacterSexRequirement
+    sex: Male
+  - !type:CharacterGenderRequirement
+    gender: Male
+  # Forge-Change-Start
+  - !type:CharacterDepartmentTimeRequirement
+    department: CaesarLegion
+    min: 36000 # 10 hours
+  # Forge-Change-End
+  startingGear: CaesarLegionLegionnaireVeteranGear
+  alwaysUseSpawner: true
+  icon: "JobIconlegionerVeteran"
+  supervisors: job-name-caesar-legion-other
+  canBeAntag: false
+  access:
+  - CaesarLegion
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - CaesarLegion
+      - type: ReplacementAccent
+        accent: latin
+  - !type:AddTraitSpecial
+    traits: [ LanguageLatin ]
+
+- type: startingGear
+  id: CaesarLegionLegionnaireVeteranGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
+    outerClothing: N14ClothingOuterLegionnaireVeteranArmor
+    neck: ClothingNeckRedScarf
+    eyes: N14ClothingEyesGlassesWelding
+    back: N14ClothingBackpackMilitary
+    shoes: N14ClothingBootsBlack
+    head: N14ClothingHeadHatBaseballHelmet
+    gloves: N14ClothingHandsGlovesTribal
+    pocket1: LegionVeteranloadoutkits
+    id: N14IDLegionaryMedalSilver2
+    belt: ClothingBeltRope
+  innerClothingSkirt: N14ClothingUniformJumpsuitLegionnaireOther
+  storage:
+    back:
+    - N14BoxPlasticFilledMilitaryLegion
+
+- type: playTimeTracker
+  id: CaesarLegionLegionnaireVeteran

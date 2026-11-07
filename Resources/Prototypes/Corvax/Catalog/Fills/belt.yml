@@ -1,0 +1,13 @@
+- type: entity
+  id: ClothingBeltFarmerFilled
+  parent: ClothingBeltFarmer
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+    - id: HydroponicsToolMiniHoe
+    - id: HydroponicsToolSpade
+    - id: N14FertilizerChemistryBottle
+      amount: 2
+    - id: N14ExtractFungusRadChemistryBottle
+      amount: 2

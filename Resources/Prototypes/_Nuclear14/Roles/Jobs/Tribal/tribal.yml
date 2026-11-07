@@ -1,0 +1,56 @@
+- type: job
+  id: Tribal
+  setPreference: true
+  overrideConsoleVisibility: false
+  canBeAntag: false
+  name: job-name-tribal
+  description: job-description-tribal
+  playTimeTracker: Tribal
+  requirements:
+  # Forge-Change-Start
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+    - Ghoul
+  - !type:OverallTimeRequirement
+    min: 3600 # 1 hour
+  # Forge-Change-End
+  startingGear: TribalGear
+  alwaysUseSpawner: true
+  icon: "JobIconTribal" # Forge-Change
+  supervisors: job-supervisors-tribal
+  access:
+  - TribeMember
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - Tribal
+  - !type:AddTraitSpecial
+    traits: [ LanguageTribal ]
+
+- type: startingGear
+  id: TribalGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitTribal
+    outerClothing: N14ClothingOuterTribalArmor
+    shoes: N14ClothingShoesTribal
+    gloves: N14ClothingHandsGlovesTribal
+    back: N14ClothingBackpackTrekker # Forge-Change
+    pocket1: N14TribalKnife
+    pocket2: Triballoadoutkits
+    id: N14IDTribeBulletsPendant
+  innerClothingSkirt: N14ClothingUniformJumpskirtTribal
+  satchel: N14ClothingBackpackSatchelTribalFilled
+  storage: # Forge-Change
+    back:
+    - Torch
+    - Torch
+    - Torch
+    - N14CleanGauze10
+    - N14AloeSalve
+
+- type: playTimeTracker
+  id: Tribal

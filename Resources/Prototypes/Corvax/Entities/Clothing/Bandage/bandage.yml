@@ -1,0 +1,152 @@
+#MARK: NCR
+- type: entity
+  parent: Clothing
+  id: NCClothingBandageNCRBase
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Bandage/bandageNCR.rsi
+    state: icon
+  - type: Clothing
+    sprite: Corvax/Clothing/Bandage/bandageNCR.rsi
+    slots: [ bandage ]
+
+- type: entity
+  parent: NCClothingBandageNCRBase
+  id: NCClothingBandageNCRRecruit
+  name: recruit bandage NCR
+  description: A bandage used by the NCR recruits.
+  components:
+  - type: ClothingFactionAndRoleAdd
+    faction: NCR
+    role: NCRCadet
+
+- type: entity
+  parent: Clothing
+  id: NCClothingBrasletNCRBase
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Bandage/bandageNCRPrisonner.rsi
+    state: icon
+  - type: Clothing
+    sprite: Corvax/Clothing/Bandage/bandageNCRPrisonner.rsi
+    slots: [ bandage ]
+  - type: Unremoveable
+
+- type: entity
+  parent: NCClothingBrasletNCRBase
+  id: NCClothingBrasletNCRPrisoner
+  name: Prisoner braslet NCR
+  description: A braslet use to track prisoners
+  components:
+  - type: ClothingFactionAndRoleAdd
+    faction: NCR
+    role: NCRPisoner
+
+#MARK: BoS
+- type: entity
+  parent: Clothing
+  id: NCClothingBandageBoSBase
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Bandage/bandageBOS.rsi
+    state: icon
+  - type: Clothing
+    sprite: Corvax/Clothing/Bandage/bandageBOS.rsi
+    slots: [ bandage ]
+
+- type: entity
+  parent: NCClothingBandageBoSBase
+  id: NCClothingBandageBoSRecruit
+  name: recruit bandage BoS
+  description: A bandage used by the BoS recruits.
+  components:
+  - type: ClothingFactionAndRoleAdd
+    faction: BrotherhoodMidwest
+    role: BoSMidSquire
+
+- type: entity
+  parent: Clothing
+  id: NCClothingCollarBoSBase
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Bandage/bandageSerfMBOS.rsi
+    state: icon
+  - type: Clothing
+    sprite: Corvax/Clothing/Bandage/bandageSerfMBOS.rsi
+    slots: [ bandage ]
+  - type: Unremoveable
+
+- type: entity
+  parent: NCClothingCollarBoSBase
+  id: NCClothingCollarBoSSerf
+  name: Serf collar BoS
+  description: A Collar used by the BoS serfs.
+  components:
+  - type: ClothingFactionAndRoleAdd
+    faction: BrotherhoodMidwest
+    role: BoSMidSerf
+
+#MARK: Legion
+- type: entity
+  parent: Clothing
+  id: NCClothingBandageLegionBase
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Bandage/bandageLegion.rsi
+    state: icon
+  - type: Clothing
+    sprite: Corvax/Clothing/Bandage/bandageLegion.rsi
+    slots: [ bandage ]
+
+- type: entity
+  parent: NCClothingBandageLegionBase
+  id: NCClothingBandageLegionRecruit
+  name: recruit bandage Legion
+  description: A bandage used by the Legion recruits.
+  components:
+  - type: ClothingFactionAndRoleAdd
+    faction: CaesarLegion
+    role: CaesarLegionLegionnaireRecruit
+
+- type: entity
+  parent: Clothing
+  id: NCClothingCollarLegionBase
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Bandage/bandageSerfMBOS.rsi
+    state: icon
+  - type: Clothing
+    sprite: Corvax/Clothing/Bandage/bandageSerfMBOS.rsi
+    slots: [ bandage ]
+  - type: Unremoveable
+
+- type: entity
+  parent: NCClothingCollarLegionBase
+  id: NCClothingCollarLegionSlave
+  name: recruit bandage Legion
+  description: A collar used by the Legion slave.
+  components:
+  - type: ClothingFactionAndRoleAdd
+    faction: CaesarLegion
+    role: CaesarLegionSlave
+
+#MARK: Raiders
+- type: entity
+  parent: Clothing
+  id: NCClothingBandageRaiders
+  name: bandage Raiders
+  description: A bandage used by the Raiders.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Bandage/bandageRaiders.rsi
+    state: icon
+  - type: Clothing
+    sprite: Corvax/Clothing/Bandage/bandageRaiders.rsi
+    slots: [ bandage ]
+  - type: Unremoveable

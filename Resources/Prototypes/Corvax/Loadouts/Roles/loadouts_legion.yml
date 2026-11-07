@@ -1,0 +1,388 @@
+# Выдаётся теперь сразу
+# - type: loadout
+#   id: LoadoutLegionVenatorLightReconnaissanceArmor
+#   category: Roles
+#   cost: 8
+#   exclusive: true
+#   requirements:
+#     - !type:CharacterJobRequirement
+#       jobs:
+#         - CaesarLegionVenator
+#   items:
+#     - N14ClothingOuterLegionnaireLightReconnaissanceArmor
+
+- type: loadout
+  id: LoadoutLegionVenatorReconnaissanceArmor
+  category: OuterArmor
+  cost: 4
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionVenator
+    - !type:CharacterPlaytimeRequirement
+      tracker: CaesarLegionVenator
+      min: 36000 # 10 hours veterancy unlock
+  items:
+    - N14ClothingOuterLegionnaireReconnaissanceArmor
+
+- type: loadout
+  id: LoadoutLegionDeadVeteranHelmet
+  category: Head
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionDean
+    - !type:CharacterPlaytimeRequirement
+      tracker: CaesarLegionDean
+      min: 216000 # 60 hours veterancy unlock
+  items:
+    - N14ClothingHeadHatDeanVeteranHelmet
+
+- type: loadout
+  id: LoadoutLegionDeadPrimeHelmet
+  category: Head
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionDean
+    - !type:CharacterPlaytimeRequirement
+      tracker: CaesarLegionDean
+      min: 72000 # 20 hours veterancy unlock
+  items:
+    - N14ClothingHeadHatDeanPrimeHelmet
+
+# Выдаётся теперь сразу
+# - type: loadout
+#   id: LoadoutLegionDeadRecruitHelmet
+#   category: Roles
+#   cost: 2
+#   exclusive: true
+#   requirements:
+#     - !type:CharacterJobRequirement
+#       jobs:
+#         - CaesarLegionDean
+#   items:
+#     - N14ClothingHeadHatDeanRecruitHelmet
+
+- type: loadout
+  id: LoadoutLegionDeadVeteranArmor
+  category: OuterArmor
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionDean
+    - !type:CharacterPlaytimeRequirement
+      tracker: CaesarLegionDean
+      min: 216000 # 60 hours veterancy unlock
+  items:
+    - N14ClothingOuterDeanLegionnaireVeteranArmor
+
+- type: loadout
+  id: LoadoutLegionDeadPrimeArmor
+  category: OuterArmor
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionDean
+    - !type:CharacterPlaytimeRequirement
+      tracker: CaesarLegionDean
+      min: 72000 # 20 hours veterancy unlock
+  items:
+    - N14ClothingOuterDeanLegionnairePrimeArmor
+
+# Выдаётся теперь сразу
+# - type: loadout
+#   id: LoadoutLegionDeadRecruitArmor
+#   category: Roles
+#   cost: 6
+#   exclusive: true
+#   requirements:
+#     - !type:CharacterJobRequirement
+#       jobs:
+#         - CaesarLegionDean
+#   items:
+#     - N14ClothingOuterDeanLegionnaireRecruitArmor
+
+- type: loadout
+  id: LoadoutLegionCloakBlack
+  category: Neck
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionCenturion
+        - CaesarLegionVenator
+        - CaesarLegionDean
+    - !type:CharacterPlaytimeRequirement
+      tracker: CaesarLegionDean
+      min: 72000
+  items:
+    - N14ClothingNeckCloakLegionBlack
+
+- type: loadout
+  id: LoadoutNeckCloakLegionWhite
+  category: Neck
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionCenturion
+        - CaesarLegionVenator
+    - !type:CharacterPlaytimeRequirement
+      tracker: CaesarLegionVenator
+      min: 72000
+  items:
+    - N14ClothingNeckCloakLegionWhite
+
+- type: loadout
+  id: LoadoutNeckCloakLegionRed
+  category: Neck
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionCenturion
+    - !type:CharacterPlaytimeRequirement
+      tracker: CaesarLegionCenturion
+      min: 72000
+  items:
+    - N14ClothingNeckCloakLegionRed
+
+- type: loadout
+  id: LoadoutConquerorCenturioArmor
+  category: OuterArmor
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionCenturion
+    - !type:CharacterPlaytimeRequirement
+      tracker: CaesarLegionCenturion
+      min: 144000
+  items:
+    - N14ClothingOuterConquerorCenturionArmor
+
+- type: loadout
+  id: LoadoutConquerorCenturioHelmet
+  category: Head
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionCenturion
+    - !type:CharacterPlaytimeRequirement
+      tracker: CaesarLegionCenturion
+      min: 144000
+  items:
+    - N14ClothingHeadHatCenturionConquerorHelmet
+
+# Шлема спрайтов Ханса
+# ассасины
+- type: loadout
+  id: LoadoutHeadGaleaPrinceps
+  category: Head
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionDean
+    - !type:CharacterDepartmentTimeRequirement
+      department: CaesarLegion
+      min: 72000
+    - !type:CharacterPlaytimeRequirement
+      tracker: CaesarLegionDean
+      min: 108000
+  items:
+    - N14ClothingHeadHatPrincepsGalea
+
+- type: loadout
+  id: LoadoutHeadGaleaPrincepsPrime
+  category: Head
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionDean
+    - !type:CharacterDepartmentTimeRequirement
+      department: CaesarLegion
+      min: 72000
+    - !type:CharacterPlaytimeRequirement
+      tracker: CaesarLegionDean
+      min: 144000
+  items:
+    - N14ClothingHeadHatPrincepsPrimeGalea
+
+- type: loadout
+  id: LoadoutN14Sagum
+  category: Neck
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionDean
+        - CaesarLegionLegionnaireVeteran
+        - CaesarLegionVenator
+        - CaesarLegionLegionnaireWarrior
+        - CaesarLegionCenturion
+    - !type:CharacterDepartmentTimeRequirement
+      department: CaesarLegion
+      min: 108000
+  items:
+    - N14ClothingNeckCapeLegionSagum
+
+- type: loadout
+  id: N14ClothingNeckCapeLegion
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionDean
+        - CaesarLegionLegionnaireVeteran
+        - CaesarLegionVenator
+        - CaesarLegionLegionnaireWarrior
+        - CaesarLegionCenturion
+    - !type:CharacterDepartmentTimeRequirement
+      department: CaesarLegion
+      min: 36000
+  items:
+    - N14ClothingNeckCapeLegion
+
+- type: loadout
+  id: ClothingOuterToga
+  category: OuterClothing
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionDean
+        - CaesarLegionCenturion
+    - !type:CharacterDepartmentTimeRequirement
+      department: CaesarLegion
+      min: 36000
+  items:
+    - ClothingOuterToga
+
+- type: loadout
+  id: LoadoutCinderCenturioArmor
+  category: OuterArmor
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionCenturion
+    - !type:CharacterPlaytimeRequirement
+      tracker: CaesarLegionCenturion
+      min: 144000
+  items:
+    - N14ClothingOuterCinderCenturionArmor
+
+- type: loadout
+  id: LoadoutCinderCenturioHelmet
+  category: Head
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionCenturion
+    - !type:CharacterPlaytimeRequirement
+      tracker: CaesarLegionCenturion
+      min: 144000
+  items:
+    - N14ClothingHeadHatCenturionCinderHelmet
+
+- type: loadout
+  id: LoadoutM14LegionBackpackCapeRed
+  category: Backpacks
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionLegionnaireRecruit
+        - CaesarLegionDean
+        - CaesarLegionLegionnaireVeteran
+        - CaesarLegionVenator
+        - CaesarLegionLegionnaireWarrior
+        - CaesarLegionCenturion
+    - !type:CharacterDepartmentTimeRequirement
+      department: CaesarLegion
+      min: 72000
+  items:
+    - M14LegionBackpackCapeRed
+
+- type: loadout
+  id: LoadoutM14LegionBackpackCapeBlack
+  category: Backpacks
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionLegionnaireRecruit
+        - CaesarLegionDean
+        - CaesarLegionLegionnaireVeteran
+        - CaesarLegionVenator
+        - CaesarLegionLegionnaireWarrior
+        - CaesarLegionCenturion
+    - !type:CharacterDepartmentTimeRequirement
+      department: CaesarLegion
+      min: 72000
+  items:
+    - M14LegionBackpackCapeBlack
+
+- type: loadout
+  id: LoadoutM14ClothingNeckLegionMantle
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionVenator
+        - CaesarLegionCenturion
+    - !type:CharacterDepartmentTimeRequirement
+      department: CaesarLegion
+      min: 36000
+  items:
+    - M14ClothingNeckLegionMantle
+
+- type: loadout
+  id: LoadoutN14BerserkerPowder
+  category: ItemsMedical
+  cost: 2
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - CaesarLegionDean
+        - CaesarLegionLegionnaireVeteran
+        - CaesarLegionVenator
+        - CaesarLegionLegionnaireWarrior
+        - CaesarLegionCenturion
+    - !type:CharacterDepartmentTimeRequirement
+      department: CaesarLegion
+      min: 36000
+  items:
+    - N14BerserkerPowder

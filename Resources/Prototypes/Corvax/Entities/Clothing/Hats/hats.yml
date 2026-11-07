@@ -1,0 +1,8 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: N14ClothingHeadHatNCRMPCap
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Clothing/Head/FalloutHats/enclaveofficer.rsi
+  - type: Clothing
+    sprite: _Nuclear14/Clothing/Head/FalloutHats/enclaveofficer.rsi

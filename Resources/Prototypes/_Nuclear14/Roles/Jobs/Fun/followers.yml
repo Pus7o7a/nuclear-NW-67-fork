@@ -1,0 +1,44 @@
+- type: job
+  id: Followers
+  setPreference: true # Forge-Change
+  name: job-name-followers
+  description: job-description-followers
+  playTimeTracker: Followers
+  requirements: # Forge-Change
+  - !type:CharacterOverallTimeRequirement
+    min: 18000 # 5 hour
+  startingGear: FollowersGear # Forge-Change
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-followers
+  alwaysUseSpawner: true # Forge-Change
+  accessGroups:
+  - FollowersApocalypse
+  # Forge-Change-Start
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+      - type: CPRTraining
+  # Forge-Change-End
+
+- type: startingGear
+  id: FollowersGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitFollowers
+    back: N14ClothingBackpackWastelanderFilled # N14TODO: Doctors Bag
+    shoes: N14ClothingBootsLeatherFilled # Forge-Change
+    neck: ClothingNeckStethoscope # Forge-Change
+    id: N14IDDoctorFollower
+    outerClothing: N14ClothingOuterCoatFollowerLab # Forge-Change
+    belt: N14ClothingBeltMedicalFilled
+  # innerClothingSkirt: N14ClothingUniformJumpskirtFalloutBlack
+  # satchel: N14ClothingBackpackSatchelWastelanderFilled
+  # duffelbag: N14ClothingBackpackDuffelFilled  # N14TODO: Doctors Bag
+  storage: # Forge-Change
+    back:
+    - N14BoxPlasticFilledMilitary
+
+- type: playTimeTracker
+  id: Followers

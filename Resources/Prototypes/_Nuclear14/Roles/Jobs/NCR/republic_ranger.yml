@@ -1,0 +1,60 @@
+- type: job
+  id: NCRRanger
+  setPreference: true
+  overrideConsoleVisibility: false
+  canBeAntag: false
+  name: job-name-ncr-ranger
+  description: job-description-ncr-ranger
+  playTimeTracker: NCRRanger
+  requirements:
+  # Forge-Change-Start
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+    - Ghoul
+  - !type:CharacterDepartmentTimeRequirement
+    department: NCR
+    min: 7200 # 20 hours as NCR
+  - !type:CharacterWhitelistRequirement
+  # Forge-Change-End
+  startingGear: NCRRangerGear
+  icon: "JobIconNcrRanger" # Forge-Change
+  supervisors: job-supervisors-ncr-ranger
+  requireAdminNotify: true
+  access:
+  - NCR
+  - NCRSGT
+  - NCRMedic
+  - NCRRanger
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCRRangerGear
+  equipment:
+    jumpsuit: N14ClothingUniformRangerPatrol
+    shoes: N14ClothingBootsCombatFilled
+    ears: N14ClothingHeadsetNCR
+    belt: ClothingBeltRevolverdesertfilled
+    eyes: ClothingEyesGlassesSunglasses
+    neck: N14ClothingNeckCloakRangerPoncho
+    pocket1: MagazineBox45-70
+    pocket2: NCRrangerloadoutkits
+    outerClothing: N14ClothingOuterRangerArmor
+    head: N14ClothingHeadHatRanger
+    id: N14IDBadgeNCRRanger
+    back: N14ClothingBackpackMilitary # Forge-Change
+  innerClothingSkirt: N14ClothingUniformRangerV3 #placeholder
+  satchel: N14ClothingBackpackSatchelMilitaryFilled
+  duffelbag: N14ClothingBackpackDuffelMilitaryFilled
+  storage: # Forge-Change
+    back:
+    - N14BoxPlasticFilledMilitary
+
+- type: playTimeTracker
+  id: NCRRanger

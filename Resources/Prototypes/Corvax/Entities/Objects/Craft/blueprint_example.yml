@@ -1,0 +1,39 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: N14BaseBlueprint
+  suffix: N14, craft
+  components:
+    - type: Sprite
+      sprite: _Nuclear14/Objects/Misc/tapes_cards.rsi
+      state: holotape_blue
+    - type: Craftable
+
+- type: entity
+  abstract: true
+  parent: N14BaseBlueprint
+  id: N14BaseBlueprintPaper
+  suffix: N14, craft
+  components:
+    - type: Sprite
+      sprite: Objects/Magic/magicactions.rsi
+      state: spell_default
+
+- type: entity
+  parent: N14BaseBlueprint
+  id: N14ClothingOuterPowerArmorT45Blueprint
+  name: blueprint restoration t-45 power armor
+  suffix: Craft, BoS
+  components:
+    - type: STBlueprint
+      blueprint: N14ClothingOuterPowerArmorT45Recipe
+
+- type: entity
+  parent: N14BaseBlueprint
+  id: N14AssemblyHolodiskClothingOuterPowerArmorT45
+  name: Голодиск с чертежами Т-45
+  description: Довоенный модуль самодиагностики и чертежей силовой брони Т-45. Выполняет роль «черного ящика» и калибровочного узла для бортовой электроники доспеха.
+  suffix: Craft
+  components:
+    - type: STBlueprint
+      blueprint: N14AssemblyClothingOuterPowerArmorT45

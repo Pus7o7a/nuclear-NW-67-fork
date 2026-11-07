@@ -1,0 +1,43 @@
+- type: job
+  id: NCRPisoner
+  setPreference: true
+  overrideConsoleVisibility: true
+  canBeAntag: false
+  name: job-name-ncr-prisoner
+  description: job-description-ncr-prisoner
+  playTimeTracker: NCRPisoner
+  requirements:
+  # Forge-Change-Start
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+    - Ghoul
+  - !type:CharacterOverallTimeRequirement
+    min: 3600
+  - !type:MinPlayersRequirement
+    min: 55
+  # Forge-Change-End
+  startingGear: NCRPisonerGear
+  icon: "JobIconNCRPrisoner"
+  supervisors: job-supervisors-ncr-prisoners
+  alwaysUseSpawner: true
+  access:
+  - NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCRPisonerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitPrisoner
+    shoes: N14ClothingShoesBlack
+    bandage: NCClothingBrasletNCRPrisoner
+
+- type: playTimeTracker
+  id: NCRPisoner
+

@@ -1,0 +1,82 @@
+
+- type: entity
+  parent: BaseItem
+  id: N14FoodFireantNectar
+  name: fire ant nectar
+  description: A small crystal of fire ant nectar.
+  components:
+  - type: Sprite # Corvax-change
+    sprite: _Corvax/Objects/Consumble/Food/Ingredients/fireantnectar.rsi
+    state: nectar_muravya
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: FireToxin
+          Quantity: 10
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: FireToxin
+        Quantity: 10
+  - type: Spillable
+    solution: food
+  - type: MeleeWeapon
+    soundNoDamage:
+      path: "/Audio/Effects/Fluids/splat.ogg"
+    damage:
+      types:
+        Blunt: 0
+  - type: StaticPrice # Forge-Change
+    price: 15
+
+- type: entity
+  parent: N14FoodFireantNectar
+  id: N14FoodBloatflyAcidSac
+  name: bloatfly acid sac
+  description: A small acid sac from a bloatfly.
+  components:
+  - type: Sprite # Corvax-change
+    sprite: _Corvax/Objects/Consumble/Food/Ingredients/bloatflyacidsac.rsi
+    state: zhizhka_dutnya
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: N14BloatflyAcid
+          Quantity: 10
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: N14BloatflyAcid
+        Quantity: 10
+  - type: StaticPrice # Forge-Change
+    price: 1 # PH
+
+- type: entity
+  parent: N14FoodFireantNectar
+  id: N14FoodCazadorAcidSac
+  name: cazador acid sac
+  description: A small acid sac from a cazador.
+  components:
+  - type: Sprite #Forge-change
+    sprite: _Corvax/Objects/Consumble/Food/Ingredients/cazadoracidsac.rsi 
+    state: icon
+  - type: Item
+    sprite: _Corvax/Objects/Consumble/Food/Ingredients/cazadoracidsac.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: CazadorVenom
+          Quantity: 5
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: CazadorVenom
+        Quantity: 5
+  - type: StaticPrice # Forge-Change
+    price: 59

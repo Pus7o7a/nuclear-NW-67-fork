@@ -1,0 +1,89 @@
+- type: Tag
+  id: SolarAssemblyFlatpack
+
+- type: Tag
+  id: Brahdo
+
+- type: Tag
+  id: N14Bandage
+
+- type: Tag
+  id: N14Board
+
+- type: Tag
+  id: N14Capacitor
+
+- type: Tag
+  id: N14Diode
+
+- type: Tag
+  id: N14Fuse
+
+- type: Tag
+  id: N14Resistor
+
+- type: Tag
+  id: N14Transistor
+
+- type: Tag
+  id: N14Magazine68Rifle
+
+- type: Tag
+  id: N14Cartridge68Rifle
+
+- type: Tag
+  id: Magazine545Rifle
+
+- type: Tag
+  id: MagazineDrum545Rifle
+
+- type: Tag
+  id: N14Cartridge545Rifle
+
+- type: Tag
+  id: DrumMagazine45SubMachineGun
+
+- type: Tag
+  id: N14PowerCellMagnetoSmall
+
+- type: Tag
+  id: N14AmmoCellMagneto
+
+- type: Tag
+  id: N14PowerCellFocusedYk42b
+
+- type: Tag
+  id: N14Cartridge12-7x55mm
+
+- type: Tag
+  id: SpeedLoader12-7x55mm
+
+- type: Tag
+  id: Candles
+
+- type: Tag
+  id: Lighter
+
+- type: Tag
+  id: N14BoxCardboardMREBoxLegionFilled
+
+- type: Tag
+  id: N14StimpakEmpty
+
+- type: Tag
+  id: N14Gladius
+
+- type: Tag
+  id: DrumMagazineNailGun
+
+- type: Tag
+  id: N14CartridgeNail
+
+- type: Tag
+  id: N14BoxPlasticFilledMilitaryLegion
+
+- type: Tag 
+  id: Binoculars
+
+- type: Tag
+  id: N14PowerCellFusionCellAdvansed

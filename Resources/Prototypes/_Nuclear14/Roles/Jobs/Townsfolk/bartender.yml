@@ -1,0 +1,55 @@
+- type: job
+  id: WastelandBartender
+  setPreference: true
+  overrideConsoleVisibility: false
+  canBeAntag: false
+  name: job-name-townbartender
+  description: job-description-townbartender
+  playTimeTracker: WastelandBartender
+  requirements:
+  # Forge-Change-Start
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+    - Ghoul
+  - !type:CharacterDepartmentTimeRequirement
+    department: Townsfolk
+    min: 7200 # 2 hours
+  # Forge-Change-End
+  startingGear: WastelandBartenderGear
+  icon: "JobIconBartender"
+  supervisors: job-supervisors-townsfolk
+  alwaysUseSpawner: true # Forge-Change
+  access:
+  - WastelandBartender
+  - TownsPerson # Forge-Change
+  - InnRoomOne
+  - InnRoomTwo
+  - InnRoomThree
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - Townsfolk
+      - type: ProfessionalChef
+
+- type: startingGear
+  id: WastelandBartenderGear
+  equipment:
+    head: ClothingHeadHatTophat
+    jumpsuit: N14ClothingUniformJumpsuitBartenderAlt
+    outerClothing: N14ClothingOuterLeatherArmor
+    back: N14ClothingBackpackExplorer # Forge-Change
+    shoes: N14ClothingBootsLeather
+    id: N14IDBartenderTown
+  innerClothingSkirt: N14ClothingUniformJumpsuitBartenderAlt #placeholder
+  satchel: N14ClothingBackpackSatchelWastelanderFilled
+  duffelbag: N14ClothingBackpackDuffelFilled
+  storage: # Forge-Change
+    back:
+    - N14BoxPlasticFilledWastelander
+
+- type: playTimeTracker
+  id: WastelandBartender

@@ -1,0 +1,31 @@
+- type: latheRecipe
+  id: N14ClothingOuterCombatArmorBlueprint
+  result: N14ClothingOuterCombatArmorBlueprint
+  category: N14Blueprints
+  completetime: 1
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: N14ClothingOuterCombatArmorMK2Blueprint
+  result: N14ClothingOuterCombatArmorMK2Blueprint
+  category: N14Blueprints
+  completetime: 1
+  materials:
+    Paper: 100
+
+- type: latheRecipe
+  id: N14JunkComponentGearSmall
+  result: N14JunkComponentGearSmall
+  category: N14Parts
+  completetime: 2
+  materials:
+    Steel: 100 # Forge-Change
+
+- type: latheRecipe
+  id: N14JunkComponentGearLarge
+  result: N14JunkComponentGearLarge
+  category: N14Parts
+  completetime: 2
+  materials:
+    Steel: 100 # Forge-Change

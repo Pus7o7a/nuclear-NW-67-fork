@@ -1,0 +1,565 @@
+# MARK: Pins
+
+- type: loadout
+  id: LoadoutNCRPinRecruit
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRCadet
+  items:
+    - ClothingNeckPinNCRRecruit
+
+- type: loadout
+  id: LoadoutNCRPinPrivateSoldier # Forge-Change
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRSoldier
+  items:
+    - ClothingNeckPinNCRPrivate
+
+- type: loadout
+  id: LoadoutNCRPinPrivateNCRWS # Forge-Change
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRWS
+  items:
+    - ClothingNeckPinNCRPrivate
+
+- type: loadout
+  id: LoadoutNCRPinPrivate1stSoldier # Forge-Change
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRSoldier
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCRSoldier
+      min: 72000 # 20 hours veterancy unlock
+  items:
+    - ClothingNeckPinNCRPrivate1st
+
+- type: loadout
+  id: LoadoutNCRPinPrivate1stNCRWS # Forge-Change
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRWS
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCRWS
+      min: 72000 # 20 hours veterancy unlock
+  items:
+    - ClothingNeckPinNCRPrivate1st
+
+- type: loadout
+  id: LoadoutNCRPinCorporalSoldier # Forge-Change
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRSoldier
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCRSoldier
+      min: 144000 # 40 hours veterancy unlock
+  items:
+    - ClothingNeckPinNCRCorporal
+
+# - type: loadout
+#   id: LoadoutNCRPinCorporalNCRWS # Forge-Change
+#   category: Roles
+#   cost: 1
+#   exclusive: true
+#   requirements:
+#     - !type:CharacterJobRequirement
+#       jobs:
+#         - NCRWS
+#     - !type:CharacterPlaytimeRequirement
+#       tracker: NCRWS
+#       min: 144000 # 40 hours veterancy unlock
+#   items:
+#     - ClothingNeckPinNCRCorporal
+
+- type: loadout
+  id: LoadoutNCRPinSpecialistSoldier # Forge-Change
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRSoldier
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCRSoldier
+      min: 216000 # 60 hours veterancy unlock
+  items:
+    - ClothingNeckPinNCRSpecialist
+
+- type: loadout
+  id: LoadoutNCRPinSpecialistSNCRWS # Forge-Change
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRWS
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCRWS
+      min: 216000 # 60 hours veterancy unlock
+  items:
+    - ClothingNeckPinNCRSpecialist
+
+- type: loadout
+  id: LoadoutNCRPinSergeant
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRSGT
+  items:
+    - ClothingNeckPinNCRSergeant
+
+- type: loadout
+  id: LoadoutNCRPinSergeant1st
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRSGT
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCRNCO
+      min: 72000 # 20 hours veterancy unlock
+  items:
+    - ClothingNeckPinNCRSergeant1st
+
+- type: loadout
+  id: LoadoutNCRPinMasterSergeant
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRSGT
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCRNCO
+      min: 144000 # 40 hours veterancy unlock
+  items:
+    - ClothingNeckPinNCRMasterSergeant
+
+- type: loadout
+  id: LoadoutNCRPinSergeantMajor
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRSGT
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCRNCO
+      min: 216000 # 60 hours veterancy unlock
+  items:
+    - ClothingNeckPinNCRSergeantMajor
+
+- type: loadout
+  id: LoadoutNCRPinSecondLieutenant
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRLT
+  items:
+    - ClothingNeckPinNCRSecondLieutenant
+
+- type: loadout
+  id: LoadoutNCRPinFirstlLieutenant
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRLT
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCROfficer
+      min: 72000 # 20 hours veterancy unlock
+  items:
+    - ClothingNeckPinNCRFirstlLieutenant
+
+- type: loadout
+  id: LoadoutNCRPinCaptain
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRLT
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCROfficer
+      min: 144000 # 40 hours veterancy unlock
+  items:
+    - ClothingNeckPinNCRCaptain
+
+- type: loadout
+  id: LoadoutNCRPinMajor
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRLT
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCROfficer
+      min: 216000 # 60 hours veterancy unlock
+  items:
+    - ClothingNeckPinNCRMajor
+
+- type: loadout # Corvax Fallout
+  id: LoadoutNCRPowerArmorT45Sierra
+  category: OuterArmor
+  cost: 4
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRLT
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCROfficer
+      min: 144000 # 40 hours veterancy unlock 60
+  items:
+    - N14ClothingOuterPowerArmorT45Sierra # Corvax Fallout
+
+- type: loadout
+  id: LoadoutNCRPinDoctor
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRMedic
+  items:
+    - ClothingNeckPinNCRDoctor
+
+- type: loadout
+  id: LoadoutNCRPinChiefPhysician
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRMedic # Forge-Change
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCRDoctor # Forge-Change
+      min: 72000 # 20 hours veterancy unlock
+  items:
+    - ClothingNeckPinNCRChiefPhysician
+
+- type: loadout
+  id: LoadoutClothingNeckStethoscope
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRMedic # Forge-Change
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCRDoctor # Forge-Change
+      min: 72000 # 20 hours veterancy unlock
+  items:
+    - ClothingNeckStethoscope
+
+# MARK: Cosmetic NCR
+
+# Forge-Delete-Start
+# - type: loadout
+#   id: LoadoutNCRSnowHelmet
+#   category: Head # Forge-Change
+#   cost: 1
+#   exclusive: true
+#   requirements:
+#     - !type:CharacterJobRequirement
+#       jobs:
+#         - NCRSoldier
+#         - NCRSGT
+#         - NCRWS # Forge-Change
+#   items:
+#     - N14ClothingHeadHatNCRHelmetMetalSnow
+# Forge-Delete-End
+
+- type: loadout
+  id: LoadoutNCRWoodsHelmet
+  category: Head # Forge-Change
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRSoldier
+        - NCRSGT
+        - NCRWS # Forge-Change
+  items:
+    - N14ClothingHeadHatNCRHelmetMetalWoods
+
+- type: loadout
+  id: LoadoutClothingEyesGlassesGoggles
+  category: Eyes
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      jobs:
+        - NCREngineer # Forge-Change
+        - NCRMedic # Forge-Change
+        - NCRSoldier
+        - NCRCadet
+        - NCRSGT
+        - NCRWS # Forge-Change
+  items:
+    - N14ClothingEyesGlassesGoggles
+
+- type: loadout
+  id: LoadoutClothingHandsGlovesNCR
+  category: Hands # Forge-Change
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      jobs:
+        - NCREngineer # Forge-Change
+        - NCRMedic # Forge-Change
+        - NCRRanger # Forge-Change
+        - NCRRangerVeteran # Forge-Change
+        - NCRSoldier
+        - NCRCadet
+        - NCRSGT
+        - NCRWS # Forge-Change
+  items:
+    - N14ClothingHandsGlovesNCR
+
+- type: loadout
+  id: LoadoutNCRWoodsHelmetGhillie
+  category: Head # Forge-Change
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRSoldier
+        - NCRSGT
+        - NCRWS # Forge-Change
+  items:
+    - N14ClothingHeadHatNCRHelmetMetalGhillie
+
+- type: loadout
+  id: LoadoutNCRWhiteBoonie
+  category: Head # Forge-Change
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      jobs:
+        - NCREngineer # Forge-Change
+        - NCRMedic # Forge-Change
+        - NCRCadet # Forge-Change
+        - NCRSoldier
+        - NCRSGT
+        - NCRWS # Forge-Change
+  items:
+    - N14ClothingHeadHatWinterBoonie
+
+- type: loadout
+  id: LoadoutNCRGreenBoonie
+  category: Head # Forge-Change
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      jobs:
+        - NCREngineer # Forge-Change
+        - NCRMedic # Forge-Change
+        - NCRCadet # Forge-Change
+        - NCRSoldier
+        - NCRSGT
+        - NCRWS # Forge-Change
+  items:
+    - N14ClothingHeadHatWoodBoonie
+
+- type: loadout
+  id: LoadoutNCRBrownBoonie # Forge-Change
+  category: Head # Forge-Change
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      jobs:
+        - NCREngineer # Forge-Change
+        - NCRMedic # Forge-Change
+        - NCRCadet # Forge-Change
+        - NCRSoldier
+        - NCRSGT
+        - NCRWS
+  items:
+    - N14ClothingHeadHatDesertBoonie
+
+- type: loadout
+  id: LoadoutNCRCloakNCR
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      jobs:
+        - NCREngineer # Forge-Change
+        - NCRMedic # Forge-Change
+        - NCRSoldier
+        - NCRSGT
+        - NCRWS # Forge-Change
+  items:
+    - N14ClothingNeckCloakNCR
+
+- type: loadout
+  id: LoadoutNCRCloakNCRGhillie
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRSoldier
+        - NCRSGT
+        - NCRWS # Forge-Change
+  items:
+    - N14ClothingNeckCloakGhillie
+
+- type: loadout
+  id: LoadoutNCRCloakNCRSnow
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      jobs:
+        - NCREngineer # Forge-Change
+        - NCRMedic # Forge-Change
+        - NCRSoldier
+        - NCRSGT
+        - NCRWS # Forge-Change
+  items:
+    - N14ClothingNeckCloakNCRSnow
+
+- type: loadout
+  id: LoadoutNCRCloakNCRWoods
+  category: Neck
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      jobs:
+        - NCREngineer # Forge-Change
+        - NCRMedic # Forge-Change
+        - NCRSoldier
+        - NCRSGT
+        - NCRWS # Forge-Change
+  items:
+    - N14ClothingNeckCloakNCRWoods
+
+- type: loadout
+  id: LoadoutNCRMaskBalaclava
+  category: Mask
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      jobs:
+        - NCREngineer # Forge-Change
+        - NCRMedic # Forge-Change
+        - NCRSoldier
+        - NCRSGT
+        - NCRWS # Forge-Change
+  items:
+    - N14ClothingMaskBrownBalaclava
+
+# MARK: Medic cosmetics # Forge-Add
+
+- type: loadout
+  id: LoadoutNCRMedicHeadMirror
+  category: Head
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRMedic
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCRDoctor
+      min: 72000 # 20 hours veterancy unlock
+  items:
+    - ClothingHeadMirror
+
+- type: loadout
+  id: LoadoutNCRMedicBeret
+  category: Head
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRMedic
+    - !type:CharacterPlaytimeRequirement
+      tracker: NCRDoctor
+      min: 36000 # 10 hours veterancy unlock
+  items:
+    - N14ClothingHeadHatNCRBeretMedic
+
+- type: loadout
+  id: LoadoutNCRMedicHelmet2
+  category: Head
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRMedic
+  items:
+    - N14ClothingHeadHatNCRHelmetMetalMedicDesert
+
+- type: loadout
+  id: LoadoutNCRMedicHelmet3
+  category: Head
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - NCRMedic
+  items:
+    - N14ClothingHeadHatNCRHelmetMetalMedicSnow

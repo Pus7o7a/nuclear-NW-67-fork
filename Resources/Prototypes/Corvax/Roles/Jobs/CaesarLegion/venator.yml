@@ -1,0 +1,59 @@
+- type: job
+  id: CaesarLegionVenator
+  setPreference: true
+  name: job-name-caesar-legion-venator
+  description: job-description-caesar-legion-venator
+  playTimeTracker: CaesarLegionVenator
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+  - !type:CharacterSexRequirement
+    sex: Male
+  - !type:CharacterGenderRequirement
+    gender: Male
+  # Forge-Change-Start
+  - !type:CharacterDepartmentTimeRequirement
+    department: CaesarLegion
+    min: 43200 #12 hours тест
+  - !type:CharacterWhitelistRequirement
+  # Forge-Change-End
+  startingGear: CaesarLegionVenatorGear
+  alwaysUseSpawner: true
+  icon: "JobIconlegionerVenator"
+  supervisors: job-name-caesar-legion-supervisors
+  canBeAntag: false
+  access:
+  - CaesarLegion
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - CaesarLegion
+      - type: ReplacementAccent
+        accent: latin
+  - !type:AddTraitSpecial
+    traits: [ LanguageLatin ]
+
+- type: startingGear
+  id: CaesarLegionVenatorGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
+    outerClothing: N14ClothingOuterLegionnaireLightReconnaissanceArmor
+    mask: N14ClothingMaskBrownMask
+    back: N14ClothingBackpackMilitary
+    shoes: N14ClothingShoesKaligi
+    head: N14ClothingHeadHatVenator
+    gloves: N14ClothingHandsGlovesTribal
+    belt: ClothingBeltRope
+    suitstorage: N14PilumSpear
+    pocket1: LegionVenatorloadoutkits
+    id: N14IDLegionaryMedalSilver3
+  innerClothingSkirt: N14ClothingUniformJumpsuitLegionnaireOther
+  storage:
+    back:
+    - N14BoxPlasticFilledMilitaryLegion
+
+- type: playTimeTracker
+  id: CaesarLegionVenator

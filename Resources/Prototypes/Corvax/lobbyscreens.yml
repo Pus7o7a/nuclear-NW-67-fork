@@ -1,0 +1,23 @@
+- type: lobbyBackground
+  id: LEGION
+  background: /Textures/Corvax/LobbyScreens/Legion.png
+  name: Legion
+  artist: Fallout TV Amazon
+
+- type: lobbyBackground
+  id: ncrr
+  background: /Textures/Corvax/LobbyScreens/NCR.png
+  name: NCR
+  artist: Fallout TV Amazon
+
+- type: lobbyBackground
+  id: warr
+  background: /Textures/Corvax/LobbyScreens/War.png
+  name: WAR
+  artist: Fallout TV Amazon
+
+- type: lobbyBackground
+  id: bos
+  background: /Textures/Corvax/LobbyScreens/BoS.png
+  name: BoS
+  artist: Fallout TV Amazon

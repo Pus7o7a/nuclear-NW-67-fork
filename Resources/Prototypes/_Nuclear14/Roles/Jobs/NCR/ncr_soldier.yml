@@ -1,0 +1,65 @@
+- type: job
+  id: NCRSoldier
+  setPreference: true
+  overrideConsoleVisibility: false
+  canBeAntag: false
+  name: job-name-ncr-soldier
+  description: job-description-ncr-soldier
+  playTimeTracker: NCRSoldier
+  #Forge-Change-Start
+  ranks:
+    - rank: NCRCorporal
+      requirements:
+        - !type:CharacterPlaytimeRequirement
+          tracker: NCRSoldier
+          min: 144000 # 2400 minutes
+    - rank: NCRPrivateFirstClass
+      requirements:
+        - !type:CharacterPlaytimeRequirement
+          tracker: NCRSoldier
+          min: 72000 # 1200 minutes
+    - rank: NCRPrivate
+  #Forge-Change-End
+  requirements:
+  # Forge-Change-Start
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+    - Ghoul
+  - !type:CharacterDepartmentTimeRequirement
+    department: NCR
+    min: 10800 # 3 hours Corvax-Change
+  # Forge-Change-End
+  startingGear: NCRSoldierGear
+  icon: "JobIconNcrSoldier" # Forge-Change
+  supervisors: job-supervisors-ncr
+  alwaysUseSpawner: true
+  access:
+  - NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCRSoldierGear
+  equipment:
+    head: N14ClothingHeadHatNCRHelmet # Forge-Change
+    back: N14ClothingBackpackNCR # Forge-Change
+    jumpsuit: N14ClothingUniformNCR # Forge-Change
+    outerClothing: N14ClothingOuterNCRVest # Forge-Change
+    belt: ClothingBeltNCR # Forge-Change
+    shoes: N14ClothingBootsLeatherFilled
+    id: N14IDNCRDogtag
+    pocket1: NCRtrooperloadoutkits
+  innerClothingSkirt: N14ClothingUniformNCR # Forge-Change
+  satchel: N14ClothingBackpackSatchelNCRFilled
+  storage: # Forge-Change
+    back:
+    - N14BoxPlasticFilledMilitaryNCR
+
+- type: playTimeTracker
+  id: NCRSoldier

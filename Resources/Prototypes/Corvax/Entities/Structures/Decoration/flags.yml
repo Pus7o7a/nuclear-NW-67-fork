@@ -1,0 +1,54 @@
+- type: entity
+  parent: N14DecorationFlagFlammable
+  id: N14DecorationFlagLegion
+  name: Legion flag
+  description: Placeholder.
+  components:
+  - type: Sprite
+    state: legionflag
+  - type: Construction
+    graph: DecorationFlagLegion
+    node: FlagLegion
+
+- type: entity
+  parent: N14DecorationFlagFlammable
+  id: N14DecorationFlagBazar
+  name: Bazar flag
+  description: Placeholder.
+  components:
+  - type: Sprite
+    state: bazarflag
+  - type: Construction
+    graph: DecorationFlagBazar
+    node: FlagBazar
+
+- type: entity
+  parent: N14DecorationFlagFlammable
+  id: N14FlagWoodland
+  name: Флаг Вудленда
+  description: Две головы и четыре рога. Радиация в снегах Аляски.
+  suffix: Woodland
+  components:
+  - type: Sprite
+    sprite: Corvax/Structures/Decoration/flags_64x64.rsi
+    state: woodlandflag
+
+- type: entity
+  parent: N14DecorationFlagFlammable
+  id: N14FlagRubina
+  name: Флаг Рубина
+  description: Флаг в цветах Рубина.
+  components:
+  - type: Sprite
+    sprite: Corvax/Structures/Decoration/flag4.rsi
+    state: rubby
+
+- type: entity
+  parent: N14DecorationFlagFlammable
+  id: N14FlagNevada
+  name: Флаг Невады
+  description: Флаг в цветах Невады.
+  components:
+  - type: Sprite
+    sprite: Corvax/Structures/Decoration/flag4.rsi
+    state: nevada

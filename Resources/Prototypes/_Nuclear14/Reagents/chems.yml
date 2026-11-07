@@ -1,0 +1,518 @@
+#MARK: Chems
+- type: reagent
+  id: MovespeedMixture #used in jet
+  name: reagent-name-movespeedmod-mixture
+  group: Chems
+  desc: reagent-desc-healing-mixture
+  physicalDesc: reagent-physical-desc-refreshing
+  color: "#7fb851"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 20
+        damage:
+          types:
+            Poison: 1 
+            Asphyxiation: 1
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Fixer
+          max: 0.01
+        key: Drowsiness
+        time: 10
+        type: Remove
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.1
+        sprintSpeedModifier: 1.1
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 5
+        refresh: false
+      - !type:Jitter
+      - !type:GenericStatusEffect
+        key: Stun
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 3
+        type: Remove
+    Narcotic:
+      effects:
+      - !type:ChemAddMoodlet
+        moodPrototype: JetBenefit
+      - !type:PopupMessage
+        type: Local
+        messages:
+        - ephedrine-effect-tight-pain
+        - histamine-effect-light-itchiness
+        - leporazine-effect-temperature-adjusting
+        - mannitol-effect-enlightened
+        - psicodine-effect-fearless
+        - psicodine-effect-anxieties-wash-away
+        - psicodine-effect-at-peace
+        probability: 0.08
+
+- type: reagent
+  id: RobustMovespeedMixture #used in turbo
+  name: reagent-name-robust-movespeedmod-mixture
+  group: Chems
+  desc: reagent-name-robust-movespeedmod-mixture
+  physicalDesc: reagent-physical-desc-powdery
+  color: "#D2FFFA"
+  boilingPoint: 255.0
+  meltingPoint: 36.0
+  metabolisms:
+    Narcotic:
+      effects:
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.30
+        sprintSpeedModifier: 1.30
+      - !type:Drunk
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.5
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 20
+        damage:
+          types:
+            Poison: 2 # this is added to the base damage of the meth.
+            Asphyxiation: 2
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Fixer
+          max: 0.01
+        key: Drowsiness
+        time: 10
+        type: Remove
+      - !type:GenericStatusEffect
+        key: Stun
+        time: 5
+        type: Remove
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 5
+        type: Remove
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages: [ "ephedrine-effect-heart-pounds" ]
+        probability: 0.2
+
+- type: reagent
+  id: DamageModifyingMixture #used in psycho. TODO: figure out how to make a reagent give you a dmg buff
+  name: reagent-name-damage-mod-mixture
+  group: Chems
+  desc: reagent-desc-damage-mod-mixture
+  physicalDesc: reagent-physical-desc-volatile
+  color: "#9A040E"
+  metabolisms:
+    Narcotic:
+      metabolismRate: 0.25
+      effects:
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Fixer
+          max: 0.01
+        key: Drowsiness
+        time: 10
+        type: Remove
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 0.25
+      - !type:HealthChange
+        conditions:
+          - !type:ReagentThreshold
+            min: 25
+        damage:
+          types:
+            Poison: 2 # this is added to the base damage of the meth.
+            Asphyxiation: 2
+      - !type:Jitter
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages: [ "psicodine-effect-fearless", "barozine-effect-muscle-contract" ]
+        probability: 0.1     
+      - !type:Emote
+        emote: Scream
+        probability: 0.05
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.2
+        sprintSpeedModifier: 1.2
+      - !type:GenericStatusEffect
+        key: ForcedSleep
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        key: Stun
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        key: StaminaModifier
+        component: StaminaModifier
+        time: 3
+        type: Add
+    Medicine:
+      metabolismRate: 0.25
+      effects:
+        - !type:ResetNarcolepsy
+        - !type:HealthChange
+          conditions:
+          - !type:TotalDamage
+            min: 50
+            max: 150 #you've got a chance to get out of crit
+          damage:
+            groups:
+              Burn: -7.5
+              Brute: -7.5
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentThreshold
+              min: 30
+          damage:
+            types:
+              Poison: 1
+
+- type: reagent
+  id: Daytripper
+  name: reagent-name-daytripper
+  group: Medicine
+  desc: reagent-desc-daytripper
+  physicalDesc: reagent-physical-desc-sticky
+  color: "#00e5ff"
+  metabolisms:
+    Poison:
+      metabolismRate: 0.2 # Effectively once every 5 seconds.
+      effects:
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 10
+        refresh: false
+    Food:
+      effects:
+      - !type:SatiateThirst
+        factor: -0.2
+
+- type: reagent
+  id: Cateye
+  name: reagent-name-cateye
+  group: Chems
+  desc: reagent-desc-cateye
+  physicalDesc: reagent-physical-desc-sticky
+  color: "#80e1ff"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.1 # Forge-Change
+      effects:
+      - !type:NocturineNightVision # Forge-Change
+        durationSeconds: 5.0
+        color: "#F0FFFF" # Forge-Change
+      - !type:PopupMessage
+        visualType: Small
+        messages: [ "generic-reagent-effect-burning-eyes-a-bit" ]
+        probability: 0.02
+
+- type: reagent
+  id: Buffout
+  name: reagent-name-buffout
+  group: Chems
+  desc: reagent-desc-buffout
+  physicalDesc: reagent-physical-desc-robust
+  color: "#00e5ff"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.2 # Effectively once every 5 seconds.
+      effects:
+      - !type:Jitter
+      # - !type:HealthIncreaseReagent
+        # increaseAmount: 50
+
+- type: reagent
+  id: Buffjet
+  name: reagent-name-buffjet
+  group: Chems
+  desc: reagent-desc-buffjet
+  physicalDesc: reagent-physical-desc-robust
+  color: "#e6c823"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.2 # Effectively once every 5 seconds.
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 20
+        damage:
+          types:
+            Poison: 1 # this is added to the base damage of the meth.
+            Asphyxiation: 1
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.1
+        sprintSpeedModifier: 1.1
+      - !type:GenericStatusEffect
+        key: Stun
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        key: KnockedDown
+        time: 3
+        type: Remove
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Fixer
+          max: 0.01
+        key: Drowsiness
+        time: 10
+        type: Remove
+    Narcotic:
+      effects:
+      - !type:ChemAddMoodlet
+        moodPrototype: JetBenefit
+      - !type:PopupMessage
+        type: Local
+        messages:
+        - ephedrine-effect-tight-pain
+        - histamine-effect-light-itchiness
+        - leporazine-effect-temperature-adjusting
+        - mannitol-effect-enlightened
+        - psicodine-effect-fearless
+        - psicodine-effect-anxieties-wash-away
+        - psicodine-effect-at-peace
+        probability: 0.08
+
+- type: reagent
+  id: Bufftats
+  name: reagent-name-bufftats
+  group: Chems
+  desc: reagent-desc-bufftats
+  physicalDesc: reagent-physical-desc-robust
+  color: "#00e5ff"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.2 # Effectively once every 5 seconds.
+      effects:
+      - !type:Jitter
+      # - !type:HealthIncreaseReagent
+        # increaseAmount: 50
+
+- type: reagent
+  id: Mentats
+  name: reagent-name-mentats
+  group: Chems
+  desc: reagent-desc-mentats
+  physicalDesc: reagent-physical-desc-tangy
+  color: "#00e5ff"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.2 # Effectively once every 5 seconds.
+      effects:
+      - !type:Jitter #Placeholder for when we get Special working again.
+
+- type: reagent
+  id: MentatsBerry
+  name: reagent-name-mentats-berry
+  group: Chems
+  desc: reagent-desc-mentats-berry
+  physicalDesc: reagent-physical-desc-tangy
+  color: "#2E0071"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.2 # Effectively once every 5 seconds.
+      effects:
+      - !type:Jitter #Placeholder for when we get Special working again.
+
+- type: reagent
+  id: MentatsGrape
+  name: reagent-name-mentats-grape
+  group: Chems
+  desc: reagent-desc-mentats-grape
+  physicalDesc: reagent-physical-desc-tangy
+  color: "#9932a4"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.2 # Effectively once every 5 seconds.
+      effects:
+      - !type:Jitter #Placeholder for when we get Special working again.
+
+- type: reagent
+  id: MentatsOrange
+  name: reagent-name-mentats-orange
+  group: Chems
+  desc: reagent-desc-mentats-orange
+  physicalDesc: reagent-physical-desc-tangy
+  color: "#ffb82e"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.2 # Effectively once every 5 seconds.
+      effects:
+      - !type:Jitter #Placeholder for when we get Special working again.
+
+- type: reagent
+  id: DamageResistMixture
+  name: reagent-name-damage-resist-mixture
+  group: Chems
+  desc: reagent-desc-damage-resist-mixture
+  physicalDesc: reagent-physical-desc-pungent
+  flavor: violets
+  color: "#9423FF"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.1
+      effects:
+        - !type:HealthChange
+          conditions:
+          - !type:TotalDamage
+            min: 30
+            max: 180 # you've got a chance to get out of crit
+          damage:
+            groups:
+              Burn: -3
+              Brute: -3
+        - !type:PopupMessage
+           type: Local
+           visualType: Small
+           messages: [ "frezon-euphoric" ]
+           probability: 0.02
+        - !type:HealthChange
+          conditions:
+          - !type:ReagentThreshold
+            min: 25
+          damage:
+            types:
+              Cold: 1.1
+
+- type: reagent
+  id: Hydra
+  name: reagent-name-hydra
+  group: Chems
+  desc: reagent-desc-hydra
+  physicalDesc: reagent-physical-desc-volatile
+  color: "#990099"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.2
+      effects:
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 5
+        refresh: false
+      - !type:GenericStatusEffect
+        key: Muted
+        component: Muted
+      - !type:HealthChange
+        damage:
+          groups:
+            Brute: -6
+            Burn: -6
+      - !type:ModifyBleedAmount
+        amount: -0.5
+      - !type:PopupMessage
+          type: Local
+          visualType: Small
+          messages: [ "generic-reagent-effect-parched" ]
+          probability: 0.2
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 30
+
+#MARK: Tribal Chems
+- type: reagent
+  id: MourningPoultice
+  name: reagent-name-mourning-poultice
+  group: Medicine
+  desc: reagent-desc-mourning-poultice
+  physicalDesc: reagent-physical-desc-oily
+  color: "#1d3d22"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.2 # Effectively once every 5 seconds.
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Toxin: 0.5
+          types:
+            Radiation: 0.5
+        conditions:
+        - !type:Species
+          species:
+          - GhoulGlowing
+          shouldHave: false
+      - !type:ModifyBleedAmount
+        amount: 0.1
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 5
+        refresh: false
+      - !type:GenericStatusEffect
+        key: Stutter
+        component: ScrambledAccent
+      - !type:GenericStatusEffect
+        key: SlurredSpeech
+        component: TelepathicRepeater
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages: [ "generic-reagent-effect-sick" ]
+        probability: 0.2    
+
+- type: reagent # Forge-add
+  id: BerserkerMixture
+  name: reagent-name-berserker-mixture
+  group: Chems
+  desc: reagent-desc-berserker-mixture
+  physicalDesc: reagent-physical-desc-powdery
+  color: "#fff5d2"
+  boilingPoint: 255.0
+  meltingPoint: 36.0
+  metabolisms:
+    Narcotic:
+      metabolismRate: 0.25
+      effects:
+      - !type:HealthChange
+        damage:
+          groups:
+            Burn: -0.8
+            Brute: -1.5 
+      - !type:ModifyBleedAmount
+        amount: -0.5
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages: [ "psicodine-effect-fearless" ]
+        probability: 0.1    
+      - !type:MovespeedModifier
+        walkSpeedModifier: 1.20
+        sprintSpeedModifier: 1.20
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 12.5
+        damage:
+          types:
+            Asphyxiation: 6

@@ -1,0 +1,28 @@
+- type: entity
+  parent: ClothingHandsBase
+  id: N14ClothingHandsGlovesLegate
+  name: legate bracers
+  description: "Protective bracers."
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Hands/Gloves/legategloves.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Hands/Gloves/legategloves.rsi
+
+- type: entity
+  parent: ClothingHandsBase
+  id: N14ClothingHandsGlovesCenturion
+  name: centurion bracers
+  description: "Protective bracers."
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Hands/Gloves/centuriongloves.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Hands/Gloves/centuriongloves.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.925
+        Slash: 0.925
+        Piercing: 0.95
+        Heat: 0.95

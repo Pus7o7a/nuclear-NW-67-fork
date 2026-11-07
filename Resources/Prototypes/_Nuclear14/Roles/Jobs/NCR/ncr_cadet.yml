@@ -1,0 +1,50 @@
+- type: job
+  id: NCRCadet
+  setPreference: true
+  overrideConsoleVisibility: true
+  canBeAntag: false
+  name: job-name-ncr-cadet
+  description: job-description-ncr-cadet
+  playTimeTracker: NCRCadet
+  requirements:
+  # Forge-Change-Start
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+    - Ghoul
+  - !type:CharacterOverallTimeRequirement
+    min: 3600
+  # Forge-Change-End
+  startingGear: NCRCadetGear
+  icon: "JobIconNcrCadet" # Forge-Change
+  supervisors: job-supervisors-ncr
+  alwaysUseSpawner: true
+  access:
+  - NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCRCadetGear
+  equipment:
+    head: N14ClothingHeadHatNCRSidecap
+    back: N14ClothingBackpackNCR # Forge-Change
+    jumpsuit: N14ClothingUniformNCR # Forge-Change
+    outerClothing: N14ClothingOuterNCRVest # Forge-Change
+    belt: ClothingBeltNCR # Forge-Change
+    shoes: N14ClothingBootsLeatherFilled
+    pocket1: NCRcadetloadoutkits
+    id: N14IDNCRDogtag
+  innerClothingSkirt: N14ClothingUniformNCR # Forge-Change
+  satchel: N14ClothingBackpackSatchelNCRFilled
+  storage: # Forge-Change
+    back:
+    - N14BoxPlasticFilledMilitaryNCR
+
+- type: playTimeTracker
+  id: NCRCadet

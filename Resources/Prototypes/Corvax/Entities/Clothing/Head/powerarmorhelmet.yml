@@ -1,0 +1,134 @@
+- type: entity
+  parent: N14ClothingHeadHelmetPowerArmorT51
+  id: N14ClothingHeadHelmetPowerArmorT51China
+  name: шлем китайской силовой брони
+  description: Шлем силовой брони модели Т-51, раскрашена в цвета ком. партии.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Corvax/Clothing/Head/PowerArmorHelmets/t51сhina.rsi
+
+- type: entity
+  parent: N14ClothingHeadHelmetPowerArmorT51
+  id: N14ClothingHeadHelmetPowerArmorT51NCR
+  name: t-51 NCR power armor helmet
+  description: A rugged helmet used by the NCR with their modified T-51 power armor. Designed for durability and reliability in the field.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Corvax/Clothing/Head/PowerArmorHelmets/t51NCR.rsi
+
+- type: entity
+  parent: N14ClothingHeadHelmetPowerArmorT60
+  id: N14ClothingHeadHelmetPowerArmorT60NCR
+  name: t-60 NCR power armor helmet
+  description: A standard-issue helmet used by the NCR with their T-60 power armor. Provides solid protection and comfort for long deployments.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Corvax/Clothing/Head/PowerArmorHelmets/t60NCR.rsi
+
+- type: entity
+  parent: N14ClothingHeadHelmetPowerArmorX01
+  id: N14ClothingHeadHelmetPowerArmorX01NCR
+  name: x-01 NCR power armor helmet
+  description: A high-tech helmet used by the NCR with their advanced X-01 power armor. Offers superior protection and advanced features for elite troops.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Corvax/Clothing/Head/PowerArmorHelmets/x01NCR.rsi
+
+- type: entity
+  parent: N14ClothingHeadHelmetPowerArmorX02
+  id: N14ClothingHeadHelmetPowerArmorX02Tesla
+  name: X-02 tesla power armor helmet
+  description: The Enclave Mark II Powered Combat Armor helmet.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Corvax/Clothing/Head/PowerArmorHelmets/x02Tesla.rsi
+
+- type: entity
+  parent: N14ClothingHeadHelmetPowerArmorT45
+  id: N14ClothingHeadHelmetPowerArmorT45Sierra
+  name: T45 Sierra power armor helmet
+  description: The legendary T-45 Sierra power armor helmet. A symbol of the pre-war era, this rare piece combines classic protection with upgraded electronics for frontline combat superiority.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Corvax/Clothing/Head/PowerArmorHelmets/T45Siera.rsi
+
+- type: entity
+  parent: N14ClothingHeadHelmetPowerArmorT45
+  id: N14ClothingHeadHelmetPowerArmorT45WestBOS
+  name: T45 West BoS power armor helmet
+  description: The legendary T-45 Sierra power armor helmet. A symbol of the pre-war era, this rare piece combines classic protection with upgraded electronics for frontline combat superiority.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Corvax/Clothing/Head/PowerArmorHelmets/t45westbos.rsi
+
+- type: entity
+  parent: N14ClothingHeadHelmetPowerArmorT51
+  id: N14ClothingHeadHelmetPowerArmorT51WestBOSElder
+  name: T51 Elder power armor helmet
+  description: The legendary T-45 Sierra power armor helmet. A symbol of the pre-war era, this rare piece combines classic protection with upgraded electronics for frontline combat superiority.
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Corvax/Clothing/Head/PowerArmorHelmets/t51westboselder.rsi
+
+- type: entity
+  parent: N14ClothingHeadHelmetPowerArmorT51
+  id: N14ClothingHeadHelmetPowerArmorWBoSHelmet
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Corvax/Clothing/Head/PowerArmorHelmets/wboshelmet.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: N14ClothingHeadHelmetPowerArmorRaider
+  name: рейдерский шлем силовой брони
+  description: Самодельный шлем силовой брони, интересно, а он вообще защищает?
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: Corvax/Clothing/Head/PowerArmorHelmets/t45raider.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    equipSound: # Forge-Change
+      path: /Audio/_Nuclear14/Effects/PowerArmor/PowerArmor_Equip_Helmet_01.ogg
+      params:
+        volume: -12
+    unequipSound: # Forge-Change
+      path: /Audio/_Nuclear14/Effects/PowerArmor/PowerArmor_Equip_Helmet_01.ogg
+      params:
+        volume: -12
+    quickEquip: true
+    clothingVisuals:
+      head:
+      - state: off-equipped-HELMET
+  - type: EyeProtection
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.85
+        Heat: 0.85
+        Radiation: 0.6
+      # Forge-Add-Start
+      flatReductions:
+        Blunt: 1
+        Slash: 1
+        Piercing: 1
+        Heat: 1
+      # Forge-Add-End
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
+  - type: Tag
+    tags:
+    - HidesHair
+    - HidesBeard

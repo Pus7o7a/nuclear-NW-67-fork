@@ -1,0 +1,47 @@
+- type: job
+  id: Townsperson
+  setPreference: true
+  overrideConsoleVisibility: false
+  canBeAntag: false
+  name: job-name-townsperson
+  description: job-description-townsperson
+  playTimeTracker: Townsperson
+  requirements:
+  # Forge-Change-Start
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+    - Ghoul
+  - !type:CharacterOverallTimeRequirement
+    min: 3600 # 1 hour
+  # Forge-Change-End
+  startingGear: TownspersonGear
+  icon: "JobIconTownPerson" # Forge-Change
+  supervisors: job-supervisors-townsfolk
+  alwaysUseSpawner: true # Forge-Change
+  access:
+  - TownsPerson # Forge-Change
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - Townsfolk
+
+- type: startingGear
+  id: TownspersonGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitSettlerRags
+    back: N14ClothingBackpackExplorer # Forge-Change
+    shoes: N14ClothingShoesBlack
+    id: N14IDPassportTownsfolk
+  innerClothingSkirt: N14ClothingUniformJumpskirtFalloutBlack
+  satchel: N14ClothingBackpackSatchelWastelanderFilled
+  duffelbag: N14ClothingBackpackDuffelFilled
+  storage: # Forge-Change
+    back:
+    - N14BoxPlasticFilledWastelander
+
+- type: playTimeTracker
+  id: Townsperson

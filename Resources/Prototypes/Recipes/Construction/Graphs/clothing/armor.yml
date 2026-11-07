@@ -1,0 +1,18 @@
+- type: constructionGraph
+  id: BoneHelmet
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: helmet
+      steps:
+      # Forge-Change-Start
+      - material: ForgeAnimalBone
+        amount: 4
+        doAfter: 1
+      - material: ForgeAnimalSinew
+        amount: 1
+        doAfter: 3
+      # Forge-Change-End
+  - node: helmet
+    entity: ClothingHeadHelmetBone

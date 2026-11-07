@@ -1,0 +1,85 @@
+- type: loadout
+  id: LoadoutBoSMidwestSquire
+  category: OuterArmor
+  cost: 8 # Forge-Change
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - BoSMidPaladin # Forge-Change
+    - !type:CharacterPlaytimeRequirement
+      tracker: BoSMidPaladin
+      min: 54000 # 15 hours veterancy unlock
+  items:
+    - N14ClothingOuterMidwestReconArmor
+    - N14ClothingHeadHatBrotherhoodMidwestHelmetRecon #Forge-add
+
+- type: loadout
+  id: LoadoutClothingOuterMBoSSquireArmor
+  category: OuterArmor
+  cost: 4 
+  exclusive: True
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - BoSMidSquire
+    - !type:CharacterPlaytimeRequirement
+      tracker: BoSMidSquire
+      min: 72000 # 20 hours veterancy unlock
+  items:
+    - N14ClothingOuterMBoSSquireArmor
+
+- type: loadout
+  id: LoadoutBoSMidwestSeniorKnight
+  category: OuterArmor
+  cost: 6 # Forge-Change
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - BoSMidKnight
+    - !type:CharacterPlaytimeRequirement
+      tracker: BoSMidKnight
+      min: 144000 # 40 hours veterancy unlock
+  items:
+    - N14ClothingOuterMBoSSeniorKArmor
+
+- type: loadout
+  id: LoadoutBoSMidwestFieldScribe
+  category: Uniform
+  cost: 1
+  exclusive: true
+  requirements:
+    - !type:CharacterJobRequirement
+      jobs:
+        - BoSMidScribe
+    - !type:CharacterPlaytimeRequirement
+      tracker: BoSMidScribe
+      min: 72000 # 20 hours veterancy unlock
+  items:
+    - N14ClothingUniformJumpsuitBOSFieldScribe
+
+# - type: loadout #! Forge-Change
+#   id: LoadoutBoSMidwestPA
+#   category: Outer
+#   cost: 9
+#   exclusive: true
+#   requirements:
+#     - !type:CharacterJobRequirement
+#       jobs:
+#         - BoSMidPaladin
+#         - BoSMidPaladinCommander
+#   items:
+#     - N14ClothingOuterPowerArmorMidwest
+
+# - type: loadout #! Forge-Change
+#   id: LoadoutBoSMidwestPACommander
+#   category: Outer
+#   cost: 10
+#   exclusive: true
+#   requirements:
+#     - !type:CharacterJobRequirement
+#       jobs:
+#         - BoSMidPaladinCommander
+#   items:
+#     - N14ClothingOuterPowerArmorMidwestCommander

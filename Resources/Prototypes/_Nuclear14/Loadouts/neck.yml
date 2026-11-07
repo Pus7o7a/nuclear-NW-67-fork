@@ -1,0 +1,149 @@
+ - type: loadout
+   id: N14LoadoutNeckCloakLeather
+   category: Neck
+   cost: 2
+   exclusive: true
+   customColorTint: true
+   requirements:
+     - !type:CharacterItemGroupRequirement
+       group: N14LoadoutNeck
+     - !type:CharacterDepartmentRequirement # Forge-Change
+        inverted: true
+        departments:
+        - Vault 
+     - !type:CharacterJobRequirement # Forge-Change
+      inverted: true
+      jobs:
+      - BoSMidSerf
+      - CaesarLegionSlave
+      - NCRPisoner
+   items:
+     - N14ClothingNeckCloakLeather
+
+ - type: loadout
+   id: N14LoadoutNeckMantleLeather
+   category: Neck
+   cost: 2
+   exclusive: true
+   customColorTint: true
+   requirements:
+     - !type:CharacterItemGroupRequirement
+       group: N14LoadoutNeck
+     - !type:CharacterDepartmentRequirement # Forge-Change
+        inverted: true
+        departments:
+        - Vault 
+     - !type:CharacterJobRequirement # Forge-Change
+      inverted: true
+      jobs:
+      - BoSMidSerf
+      - CaesarLegionSlave
+      - NCRPisoner
+   items:
+     - N14ClothingNeckMantleLeather
+
+#  - type: loadout # Forge-Start
+#    id: N14LoadoutNeckCloakDarkCloak
+#    category: Accessories
+#    cost: 2
+#    exclusive: true
+#    customColorTint: true
+#    requirements:
+#      - !type:CharacterItemGroupRequirement
+#        group: N14LoadoutNeck
+#      - !type:CharacterDepartmentRequirement
+#         inverted: true
+#         departments:
+#         - Vault     
+#      - !type:CharacterJobRequirement # Forge-Change
+#       inverted: true
+#       jobs:
+#       - BoSMidSerf
+#       - CaesarLegionSlave
+#       - NCRPisoner
+#    items:
+#      - N14ClothingNeckCloakDarkCloak # Forge-end
+
+ - type: loadout
+   id: ClothingNeckScarfStripedBlack
+   category: Neck
+   cost: 2
+   exclusive: true
+   customColorTint: true
+   requirements:
+     - !type:CharacterItemGroupRequirement
+       group: N14LoadoutNeck
+     - !type:CharacterJobRequirement # Forge-Change
+      inverted: true
+      jobs:
+      - BoSMidSerf
+      - CaesarLegionSlave
+      - NCRPisoner
+   items:
+     - ClothingNeckScarfStripedBlack
+
+ - type: loadout
+   id: ClothingNeckTribalCloak
+   category: Neck
+   cost: 2
+   exclusive: true
+   customColorTint: true
+   requirements:
+     - !type:CharacterItemGroupRequirement
+       group: N14LoadoutNeck
+     - !type:CharacterDepartmentRequirement # Forge-Change
+        departments:
+          - Wastelander
+          - Tribe
+     - !type:CharacterJobRequirement # Forge-Change
+      inverted: true
+      jobs:
+      - BoSMidSerf
+      - CaesarLegionSlave
+      - NCRPisoner
+   items:
+     - N14ClothingNeckTribalCloak
+
+ - type: loadout
+   id: ClothingNeckTribalCloakBr
+   category: Neck
+   cost: 2
+   exclusive: true
+   customColorTint: true
+   requirements:
+     - !type:CharacterItemGroupRequirement
+       group: N14LoadoutNeck
+     - !type:CharacterDepartmentRequirement # Forge-Change
+        departments:
+          - Wastelander
+          - Tribe  
+     - !type:CharacterJobRequirement # Forge-Change
+      inverted: true
+      jobs:
+      - BoSMidSerf
+      - CaesarLegionSlave
+      - NCRPisoner
+   items:
+     - N14ClothingNeckTribalCloakBr
+
+ - type: loadout
+   id: ClothingNeckShawl
+   category: Neck
+   cost: 2
+   exclusive: true
+   customColorTint: true
+   requirements:
+     - !type:CharacterItemGroupRequirement
+       group: N14LoadoutNeck
+     - !type:CharacterDepartmentRequirement # Forge-Change
+        inverted: true
+        departments:
+        - Vault        
+     - !type:CharacterJobRequirement # Forge-Change
+      inverted: true
+      jobs:
+      - BoSMidSerf
+      - CaesarLegionSlave
+      - NCRPisoner
+   items:
+     - N14ClothingNeckShawl

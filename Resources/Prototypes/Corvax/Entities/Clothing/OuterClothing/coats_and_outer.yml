@@ -1,0 +1,58 @@
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: NCClothingOuterRobeScribeWesternBoS
+  name: robe scribe Western bos
+  description: An elegant robe symbolizing the status and knowledge of the scribe of the Western Brotherhood of Steel. It provides comfort and protection in the harsh post-apocalyptic world.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Coats_and_outer/robeWesternBoS.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Coats_and_outer/robeWesternBoS.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.85
+        Piercing: 0.9
+        Heat: 0.85
+
+- type: entity
+  parent: ClothingOuterHardsuitBase
+  id: N14ClothingOuterRadSuitEnclave
+  name: radiation suit Enclave
+  description: Designed to protect its wearer from radiation.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Coats_and_outer/enclaverad.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Coats_and_outer/enclaverad.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Heat: 0.90
+        Radiation: 0.001
+  - type: ToggleableClothing
+    clothingPrototype: N14ClothingHeadHatHelmetRadHelmetEnclave
+    slot: head
+
+- type: entity
+  parent: [N14ClothingOuterTownMediumCoat, ClothingOuterWinterCoat]
+  id: ClothingOuterArmoredWinterCoat
+  name: armored winter coat
+  description: Roughly stitched together fragments of armor and a sturdy bomber jacket
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Coats_and_outer/Armoredcoat.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Coats_and_outer/Armoredcoat.rsi
+
+- type: entity
+  parent: N14ClothingOuterBase
+  id: ClothingOuterToga
+  name: toga
+  description: Outerwear in the form of a huge piece of woolen fabric of an elliptical shape
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Coats_and_outer/toga.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Coats_and_outer/toga.rsi

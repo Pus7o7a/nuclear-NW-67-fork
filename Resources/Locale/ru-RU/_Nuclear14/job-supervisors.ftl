@@ -1,0 +1,25 @@
+job-supervisors-bos-mid = командиру Среднезападного Братства Стали
+job-supervisors-bos-mid-Serf = своему надзирателю и членам Среднезападного Братства Стали
+job-supervisors-bos-washington-elder = никому
+job-supervisors-bos-washington = старейшине Вашингтонского Братства Стали
+job-supervisors-bos-washington-recruit = старшим по званию в Вашингтонском Братстве Стали
+job-supervisors-caravan = главе каравана
+job-supervisors-caravan-leader = никому
+job-supervisors-ncr = офицеру Новой Калифорнийской Республики
+job-supervisors-ncr-mp = командованию аванпоста НКР
+job-supervisors-ncr-nco = офицеру НКР, затем сержанту
+job-supervisors-ncr-captain = капитану НКР
+job-supervisors-ncr-prisoners = надзирателю НКР
+job-supervisors-ranger = рейнджеру
+job-supervisors-veteran-ranger = ветерану-рейнджеру
+job-supervisors-chief-ranger = главному рейнджеру
+job-supervisors-tribal = старейшине племени
+job-supervisors-tribal-elder = никому
+job-supervisors-overseer = смотрителю убежища
+job-supervisors-vault-overseer = никому
+job-supervisors-wastelander = никому
+job-supervisors-townsfolk = мэру города
+job-supervisors-raider = никому
+job-supervisors-followers = никому
+
+job-supervisors-bos-wash = командиру вашего бункера

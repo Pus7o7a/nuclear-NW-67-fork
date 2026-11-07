@@ -1,0 +1,223 @@
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointCenturion
+  name: centurion
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionCenturion
+  - type: Sprite
+    sprite: Corvax/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: centurion
+
+- type: entity
+  id: N14SpawnPointVenator
+  parent: N14SpawnPointCenturion
+  name: venator
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionVenator
+  - type: Sprite
+    layers:
+      - state: green
+      - state: venator
+
+- type: entity
+  id: N14SpawnPointDean
+  parent: N14SpawnPointCenturion
+  name: dean
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionDean
+  - type: Sprite
+    layers:
+      - state: green
+      - state: dean
+
+- type: entity
+  id: N14SpawnPointLegionnaireVeteran
+  parent: N14SpawnPointCenturion
+  name: legionnaire-veteran
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionLegionnaireVeteran
+  - type: Sprite
+    layers:
+      - state: green
+      - state: veteran
+
+- type: entity
+  id: N14SpawnPointLegionnaireWarrior
+  parent: N14SpawnPointCenturion
+  name: legionnaire-warrior
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionLegionnaireWarrior
+  - type: Sprite
+    layers:
+      - state: green
+      - state: warrior
+
+- type: entity
+  id: N14SpawnPointLegionnaireRecruit
+  parent: N14SpawnPointCenturion
+  name: legionnaire-recruit
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionLegionnaireRecruit
+  - type: Sprite
+    layers:
+      - state: green
+      - state: recruit
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointRaider
+  name: raider
+  components:
+  - type: SpawnPoint
+    job_id: Raider
+  - type: Sprite
+    sprite: Corvax/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: raider
+
+- type: entity
+  parent: SpawnPointJobBase
+  id: N14SpawnPointElderCommander
+  name: elder
+  components:
+  - type: SpawnPoint
+    job_id: BoSWestElderCommander
+  - type: Sprite
+    sprite: Corvax/Markers/boswest.rsi
+    layers:
+    - state: green
+    - state: elder
+
+- type: entity
+  id: N14SpawnPointWestPaladin
+  parent: N14SpawnPointElderCommander
+  name: westpaladin
+  components:
+  - type: SpawnPoint
+    job_id: BoSWestPaladin
+  - type: Sprite
+    layers:
+    - state: green
+    - state: paladin
+
+- type: entity
+  id: N14SpawnPointWestKnight
+  parent: N14SpawnPointElderCommander
+  name: westknight
+  components:
+  - type: SpawnPoint
+    job_id: BoSWestKnight
+  - type: Sprite
+    layers:
+    - state: green
+    - state: knight
+
+- type: entity
+  id: N14SpawnPointWestScribe
+  parent: N14SpawnPointElderCommander
+  name: westscribe
+  components:
+  - type: SpawnPoint
+    job_id: BoSWestScribe
+  - type: Sprite
+    layers:
+    - state: green
+    - state: scribe
+
+- type: entity
+  id: N14SpawnPointWestGunsmith
+  parent: N14SpawnPointElderCommander
+  name: westgunsmith
+  components:
+  - type: SpawnPoint
+    job_id: BoSWestGunsmith
+  - type: Sprite
+    layers:
+    - state: green
+    - state: gunsmith
+
+- type: entity
+  id: N14SpawnPointTownsfolkTownShopkeeperHelper
+  parent: N14SpawnPointTownsfolkTownsperson
+  name: town shopkeeper helper
+  components:
+  - type: SpawnPoint
+    job_id: TownShopkeeperHelper
+  - type: Sprite
+    layers:
+      - state: green
+      - state: shopkeeper
+
+- type: entity
+  id: N14SpawnPointBoSMidInquisitor
+  parent: N14SpawnPointBoSMidPaladin
+  name: BoS mid inquisitor
+  components:
+  - type: SpawnPoint
+    job_id: BoSMidInquisitor
+  - type: Sprite
+    sprite: Corvax/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: inquisitor
+
+- type: entity
+  id: SpawnPointNCRPisoner
+  parent: SpawnPointJobBase
+  name: NCR Pisoner spawner
+  components:
+  - type: SpawnPoint
+    job_id: NCRPisoner
+  - type: Sprite
+    sprite: Corvax/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: prisoner
+
+- type: entity
+  id: SpawnPointCaesarLegionSlave
+  parent: SpawnPointJobBase
+  name: Legion slave spawnpoint
+  components:
+  - type: SpawnPoint
+    job_id: CaesarLegionSlave
+  - type: Sprite
+    sprite: Corvax/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: slave
+
+- type: entity
+  id: SpawnPointBoSMidSerf
+  parent: SpawnPointJobBase
+  name: Serf spawner
+  components:
+  - type: SpawnPoint
+    job_id: BoSMidSerf
+  - type: Sprite
+    sprite: Corvax/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: serf
+
+- type: entity
+  id: N14SpawnPointNCRMPinvestigator
+  parent: SpawnPointJobBase
+  name: NRCMP investigator spawner
+  components:
+  - type: SpawnPoint
+    job_id: NCRMPinvestigator
+  - type: Sprite
+    sprite: Corvax/Markers/jobs.rsi
+    layers:
+      - state: green
+      - state: investigator

@@ -1,0 +1,415 @@
+- type: entity
+  parent: N14Machete
+  id: N14Gladius
+  name: gladius
+  description: The old sword of the Roman Empire. It is now in use by the Legion...
+  components:
+  - type: Tag
+    tags:
+    - N14Gladius
+  - type: Item
+    sprite: Corvax/Objects/Weapons/Melee/gladius.rsi
+  - type: Clothing
+    sprite: Corvax/Objects/Weapons/Melee/gladius.rsi
+    quickEquip: false
+    slots:
+    - Belt
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Corvax/Objects/Weapons/Melee/gladius.rsi
+    state: icon
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+
+- type: entity
+  parent: BaseItem
+  id: N14WeaponThermospear
+  name: thermospear
+  description: "A long two-handed thermal spear, fuel is needed for use."
+  components:
+  - type: Item
+    sprite: Corvax/Objects/Weapons/Melee/thermospear.rsi
+    size: Huge
+  - type: Sprite
+    sprite: Corvax/Objects/Weapons/Melee/thermospear.rsi
+    layers:
+    - state: icon
+    - state: welder_flame
+      visible: false
+      shader: unshaded
+      map: ["enum.ToggleVisuals.Layer"]
+  - type: Clothing
+    sprite: Corvax/Objects/Weapons/Melee/thermospear.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
+  - type: ItemToggleSize
+    activatedSize: Huge
+  - type: ItemToggleHot
+  - type: UseDelay
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      collection: WelderOn
+      params:
+        variation: 0.125
+        volume: -5
+    soundDeactivate:
+      collection: WelderOff
+      params:
+        variation: 0.125
+        volume: -5
+  - type: ComponentToggler
+    components:
+    - type: MeleeWeapon
+      resistanceBypass: true
+      wideAnimationRotation: -135
+      heavyRateModifier: 1.2
+      heavyRangeModifier: 2.2
+      heavyDamageBaseModifier: 1
+      heavyStaminaCost: 15
+      maxTargets: 1
+      range: 1.5
+      angle: 0
+      animation: WeaponArcThrust
+      soundHit:
+        path: /Audio/Weapons/Guns/Hits/energy_meat1.ogg
+        params:
+          variation: 0.250
+          volume: -10
+      soundNoDamage:
+        path: /Audio/Weapons/Guns/Hits/energy_meat1.ogg
+        params:
+          variation: 0.250
+          volume: -12
+      damage:
+        types:
+          Heat: 65
+  - type: MultiHandedItem
+  - type: SolutionContainerManager
+    solutions:
+      Welder:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 250
+        maxVol: 250
+  - type: Tool
+    useSound:
+      collection: Welder
+    qualities: Welding
+    speedModifier: 3
+  - type: RefillableSolution
+    solution: Welder
+  - type: Welder
+  - type: PointLight
+    enabled: false
+    radius: 2
+    color: orange
+    netsync: false
+  - type: IgniteOnMeleeHit
+    fireStacks: 1
+  - type: Appearance
+  - type: RequiresEyeProtection
+  - type: IgnitionSource
+    temperature: 700
+
+- type: entity
+  parent: BaseItem
+  id: N14WeaponKebab
+  name: shish kebab
+  description: "A one-handed homemade weapon powered by fuel."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Weapons/Melee/kebab.rsi
+    layers:
+    - state: icon
+    - state: welder_flame
+      visible: false
+      shader: unshaded
+      map: ["enum.ToggleVisuals.Layer"]
+  - type: Item
+    sprite: Corvax/Objects/Weapons/Melee/kebab.rsi
+    size: Large
+  - type: Clothing
+    sprite: Corvax/Objects/Weapons/Melee/kebab.rsi
+    quickEquip: false
+    slots:
+    - belt
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
+  - type: ItemToggleSize
+    activatedSize: Huge
+  - type: ItemToggleHot
+  - type: ToggleableLightVisuals
+    spriteLayer: flame
+    inhandVisuals:
+      left:
+      - state: inhand-left-flame
+        shader: unshaded
+      right:
+      - state: inhand-right-flame
+        shader: unshaded
+  - type: UseDelay
+  - type: ItemToggle
+    predictable: false
+    soundActivate:
+      collection: WelderOn
+      params:
+        variation: 0.125
+        volume: -5
+    soundDeactivate:
+      collection: WelderOff
+      params:
+        variation: 0.125
+        volume: -5
+  - type: ComponentToggler
+    components:
+    - type: MeleeWeapon
+      attackRate: 0.9
+      heavyRateModifier: 0.9
+      heavyRangeModifier: 1.4
+      heavyDamageBaseModifier: 1
+      heavyStaminaCost: 10
+      range: 1.4
+      angle: 90
+      soundHit:
+        path: /Audio/Weapons/Guns/Hits/energy_meat1.ogg
+        params:
+          variation: 0.250
+          volume: -10
+      soundNoDamage:
+        path: /Audio/Weapons/Guns/Hits/energy_meat1.ogg
+        params:
+          variation: 0.250
+          volume: -12
+      damage:
+        types:
+          Heat: 40
+  - type: SolutionContainerManager
+    solutions:
+      Welder:
+        reagents:
+        - ReagentId: WeldingFuel
+          Quantity: 250
+        maxVol: 250
+  - type: Tool
+    useSound:
+      collection: Welder
+    qualities: Welding
+  - type: RefillableSolution
+    solution: Welder
+  - type: Welder
+  - type: PointLight
+    enabled: false
+    radius: 1.5
+    color: orange
+    netsync: false
+  - type: IgniteOnMeleeHit
+    fireStacks: 1
+  - type: Appearance
+  - type: RequiresEyeProtection
+  - type: IgnitionSource
+    temperature: 700
+
+- type: entity
+  parent: BaseItem
+  id: N14BLadeOfTheEast
+  name: blade of the east
+  description: "A heavy sword forged in the eastern cohort of the legion."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Weapons/Melee/bladeeast.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: Corvax/Objects/Weapons/Melee/bladeeast.rsi
+    size: Huge
+  - type: Clothing
+    sprite: Corvax/Objects/Weapons/Melee/bladeeast.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 50
+        Blunt: 18
+        Structural: 25
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: MultiHandedItem
+
+#Перенёс из категории _Nuclear14\Entities\Objects\Tools\tools.yml
+- type: entity
+  parent: BaseItem
+  id: N14Chainsaw
+  name: chainsaw
+  description: A very large chainsaw. Usually you use this for cutting down trees... usually.
+  components:
+  - type: Item
+    size: Huge
+    sprite: Objects/Weapons/Melee/chainsaw.rsi
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/chainsaw.rsi
+    state: icon
+  - type: Wieldable
+    wieldSound: !type:SoundPathSpecifier
+      path: /Audio/Weapons/chainsawwield.ogg
+      params:
+        volume: -3
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 5
+    attackRate: 1.5
+    heavyRateModifier: 1.5
+    heavyRangeModifier: 1.4
+    heavyDamageBaseModifier: 1
+    heavyStaminaCost: 20
+    maxTargets: 1
+    angle: 80
+    soundHit:
+      path: /Audio/Weapons/chainsaw.ogg
+      params:
+        volume: -3
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Piercing: 25
+        Slash: 35
+  - type: SolutionContainerManager
+    solutions:
+      melee:
+        maxVol: 9
+        reagents:
+        - ReagentId: Razorium
+          Quantity: 9
+  - type: SolutionRegeneration
+    solution: melee
+    generated:
+      reagents:
+      - ReagentId: Razorium
+        Quantity: 9
+  - type: Sharp
+  - type: DisarmMalus
+  - type: UseDelay
+    delay: 1
+  - type: Tool
+    qualities:
+      - Sawing
+    speedModifier: 3.0
+  - type: SurgeryTool
+    startSound:
+      path: /Audio/Medical/Surgery/saw.ogg
+  - type: BoneSaw
+    speed: 0.6
+
+- type: entity
+  parent: N14Gladius
+  id: N14MacheteGladius
+  name: machete gladius
+  description: A fast and deadly machete. Highly effective and practical.
+  components:
+  - type: Tag
+    tags:
+    - N14Gladius
+  - type: Item
+    sprite: Corvax/Objects/Weapons/Melee/machetegladius.rsi
+  - type: Clothing
+    sprite: Corvax/Objects/Weapons/Melee/machetegladius.rsi
+    quickEquip: false
+    slots:
+    - Belt
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Corvax/Objects/Weapons/Melee/machetegladius.rsi
+    state: icon
+    scale: 0.8, 0.8
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 0.8
+    heavyRateModifier: 0.8
+    heavyRangeModifier: 1.2
+    heavyDamageBaseModifier: 1
+    heavyStaminaCost: 5
+    range: 1.2
+    angle: 60
+    damage:
+      types:
+        Slash: 45
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 50
+
+- type: entity
+  parent: BaseItem
+  id: N14BumperSword
+  name: bumpersword
+  description: "A heavy sword for brave and strog legionnaire"
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Weapons/Melee/bumpersword.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: Corvax/Objects/Weapons/Melee/bumpersword.rsi
+    size: Huge
+  - type: Clothing
+    sprite: Corvax/Objects/Weapons/Melee/bumpersword.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 50
+        Blunt: 15
+        Structural: 25
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: MultiHandedItem
+
+- type: entity
+  parent: N14Machete
+  id: N14LegionMachere
+  name: machete
+  description: Made from various scraps, used only by legionnaires.
+  components:
+  - type: Tag
+    tags:
+    - N14Gladius
+  - type: Item
+    sprite: Corvax/Objects/Weapons/Melee/machetelegion.rsi
+  - type: Clothing
+    sprite: Corvax/Objects/Weapons/Melee/machetelegion.rsi
+    quickEquip: false
+    slots:
+    - Belt
+    - Back
+    - suitStorage
+  - type: Sprite
+    sprite: Corvax/Objects/Weapons/Melee/machetelegion.rsi
+    state: icon
+    scale: 0.92, 0.92
+  - type: MeleeWeapon
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg

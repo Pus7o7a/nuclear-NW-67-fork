@@ -1,0 +1,54 @@
+- type: job
+  id: NCRWS
+  setPreference: true
+  overrideConsoleVisibility: false
+  canBeAntag: false
+  name: job-name-ncr-ws
+  description: job-description-ncr-ws
+  playTimeTracker: NCRWS
+  requirements:
+  # Forge-Change-Start
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+    - Ghoul
+  - !type:CharacterDepartmentTimeRequirement
+    department: NCR
+    min: 36000 # 10 hours Corvax-Change
+  - !type:CharacterPlaytimeRequirement # Corvax-Add
+    tracker: NCRSoldier
+    min: 18000 # 5 hours
+  # Forge-Change-End
+  startingGear: NCRWSGear
+  icon: "JobIconNcrSpec" # Forge-Change
+  supervisors: job-supervisors-ncr
+  alwaysUseSpawner: true
+  access:
+  - NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCRWSGear
+  equipment:
+    back: N14ClothingBackpackNCR # Forge-Change
+    jumpsuit: N14ClothingUniformNCR # Forge-Change
+    outerClothing: N14ClothingOuterNCRVest # Forge-Change
+    head: N14ClothingHeadHatNCRHelmet # Forge-Change
+    belt: ClothingBeltNCR # Forge-Change
+    shoes: N14ClothingBootsLeatherFilled
+    pocket1: NCRwsloadoutkits
+    id: N14IDNCRDogtagWS
+  innerClothingSkirt: N14ClothingUniformNCR # Forge-Change
+  satchel: N14ClothingBackpackSatchelNCRFilled
+  storage: # Forge-Change
+    back:
+    - N14BoxPlasticFilledMilitaryNCR
+
+- type: playTimeTracker
+  id: NCRWS

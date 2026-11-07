@@ -1,0 +1,64 @@
+- type: job
+  id: CaesarLegionCenturion
+  setPreference: true
+  name: job-name-caesar-legion-centurion
+  description: job-description-caesar-legion-centurion
+  playTimeTracker: CaesarLegionCenturion
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+  - !type:CharacterSexRequirement
+    sex: Male
+  - !type:CharacterGenderRequirement
+    gender: Male
+  # Forge-Change-Start
+  - !type:CharacterDepartmentTimeRequirement
+    department: CaesarLegion
+    min: 216000 # 60 hours
+  - !type:CharacterPlaytimeRequirement
+    tracker: CaesarLegionDean
+    min: 43200 # 12 hours
+  # Forge-Change-End
+  startingGear: CaesarLegionCenturionGear
+  alwaysUseSpawner: true
+  icon: "JobIconlegionerCenturion"
+  supervisors: job-name-caesar-legion
+  canBeAntag: false
+  access:
+  - RadioBroadcast
+  - CaesarLegionCenturion
+  - CaesarLegion
+  - CaesarLegionDean
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - CaesarLegion
+      - type: ReplacementAccent
+        accent: latin
+  - !type:AddTraitSpecial
+    traits: [ LanguageLatin ]
+
+- type: startingGear
+  id: CaesarLegionCenturionGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitLegionnaire
+    neck: ClothingNeckBlackScarf
+    eyes: N14ClothingEyesGlassesWelding
+    back: N14ClothingBackpackMilitary
+    shoes: N14ClothingBootsCenturion
+    head: N14ClothingHeadHatCenturionHelmet
+    gloves: N14ClothingHandsGlovesCenturion
+    outerClothing: N14ClothingOuterHeavyCenturionArmor
+    belt: ClothingBeltRope
+    pocket1: LegionCenturionloadoutkits
+    id: N14IDLegionaryMedalGold
+  innerClothingSkirt: N14ClothingUniformJumpsuitLegionnaireOther
+  storage:
+    back:
+    - N14BoxPlasticFilledMilitaryLegion
+
+- type: playTimeTracker
+  id: CaesarLegionCenturion

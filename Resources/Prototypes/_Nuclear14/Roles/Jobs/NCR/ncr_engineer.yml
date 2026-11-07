@@ -1,0 +1,67 @@
+- type: job
+  id: NCREngineer
+  setPreference: true
+  overrideConsoleVisibility: false
+  canBeAntag: false
+  name: job-name-ncr-engineer
+  description: job-description-ncr-engineer
+  playTimeTracker: NCREngineer
+  #Forge-Change-Start
+  ranks:
+    - rank: NCRCorporal
+      requirements:
+        - !type:CharacterPlaytimeRequirement
+          tracker: NCREngineer
+          min: 144000 # 2400 minutes
+    - rank: NCRPrivateFirstClass
+      requirements:
+        - !type:CharacterPlaytimeRequirement
+          tracker: NCREngineer
+          min: 72000 # 1200 minutes
+    - rank: NCRPrivate
+  #Forge-Change-End
+  requirements:
+  # Forge-Change-Start
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+    - Ghoul
+  - !type:CharacterDepartmentTimeRequirement
+    department: NCR
+    min: 18000 # 5 hours
+  # Forge-Change-End
+  startingGear: NCREngineerGear
+  icon: "JobIconWarden"
+  supervisors: job-supervisors-ncr
+  alwaysUseSpawner: true
+  access:
+  - NCR
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+
+- type: startingGear
+  id: NCREngineerGear
+  equipment:
+    head: N14ClothingHeadHatNCRHelmet # Forge-Change
+    back: N14ClothingBackpackNCR # Forge-Change
+    jumpsuit: N14ClothingUniformNCR # Forge-Change
+    outerClothing: N14ClothingOuterNCRVest # Forge-Change
+    belt: N14ClothingBeltUtilityFilled # Forge-Change
+    shoes: N14ClothingBootsLeatherFilled
+    gloves: N14ClothingHandsGlovesCombat
+    eyes: N14ClothingEyesGlassesWelding # Forge-Change
+    id: N14IDNCRDogtagEngineer
+    pocket1: NCRengineerloadoutkits
+  innerClothingSkirt: N14ClothingUniformNCR # Forge-Change
+  satchel: N14ClothingBackpackSatchelNCRFilled
+  storage: # Forge-Change
+    back:
+    - N14BoxPlasticFilledMilitaryNCR
+
+- type: playTimeTracker
+  id: NCREngineer

@@ -1,0 +1,721 @@
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterLegateArmor
+  name: legate armor
+  description: "Armor with truly good protection, for important people."
+  components:
+  - type: ToolRefinable
+    qualityNeeded: Prying
+    refineTime: 10
+    refineFuel: 0
+    refineResult:
+    - id: N14ComponentArmorPlateMK3
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/legatearmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/legatearmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.2
+        Slash: 0.2
+        Piercing: 0.2
+        Heat: 0.2
+  - type: ExplosionResistance
+    damageCoefficient: 0.3
+#  - type: ClothingSpecialModifier
+#    strengthModifier: 10
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterHeavyCenturionArmor
+  name: сenturion heavy armor
+  description: "Heavy armor assembled from captured pieces of power armor of defeated enemies."
+  components:
+  - type: ToolRefinable
+    qualityNeeded: Prying
+    refineTime: 10
+    refineFuel: 0
+    refineResult:
+    - id: N14ComponentArmorPlateMK3
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/centurionheavyarmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/centurionheavyarmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.5
+        Heat: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: StaminaDamageResistance
+    coefficient: 0.85 # 15%
+#  - type: ClothingSpecialModifier
+#    strengthModifier: 2
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterConquerorCenturionArmor
+  name: сenturion conqueror armor
+  description: "Smelted armor is issued only to particularly distinguished centurions"
+  components:
+  - type: ToolRefinable
+    qualityNeeded: Prying
+    refineTime: 10
+    refineFuel: 0
+    refineResult:
+    - id: N14ComponentArmorPlateMK3
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/centurionconquerorarmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/centurionconquerorarmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.5
+        Heat: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: StaminaDamageResistance
+    coefficient: 0.85
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterCinderCenturionArmor
+  name: сenturion cinder armor
+  description: "The broad armor offers excellent protection for the wearer, despite being assembled from various types of armor; the pauldrons appear to be taken from a rather rare set of power armor."
+  components:
+  - type: ToolRefinable
+    qualityNeeded: Prying
+    refineTime: 10
+    refineFuel: 0
+    refineResult:
+    - id: N14ComponentArmorPlateMK3
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/centurioncinderarmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/centurioncinderarmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.5
+        Heat: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: StaminaDamageResistance
+    coefficient: 0.85
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterDeanLegionnaireVeteranArmor
+  name: heavy legionary armor
+  description: "The heavy version of legionary armor slows down the wearer, but gives good protection from external threats."
+  components:
+  - type: ToolRefinable
+    qualityNeeded: Prying
+    refineTime: 5
+    refineFuel: 0
+    refineResult:
+    - id: N14ComponentArmorPlateMK2
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/deanveteranarmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/deanveteranarmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.65
+        Heat: 0.65
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
+#  - type: ClothingSpecialModifier
+#    strengthModifier: 2
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterDeanLegionnairePrimeArmor
+  name: heavy legionary armor
+  description: "The heavy version of legionary armor slows down the wearer, but gives good protection from external threats."
+  components:
+  - type: ToolRefinable
+    qualityNeeded: Prying
+    refineTime: 5
+    refineFuel: 0
+    refineResult:
+    - id: N14ComponentArmorPlateMK2
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/deanprimearmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/deanprimearmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.65
+        Heat: 0.65
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
+#  - type: ClothingSpecialModifier
+#    strengthModifier: 2
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterDeanLegionnaireRecruitArmor
+  name: heavy legionary armor
+  description: "The heavy version of legionary armor slows down the wearer, but gives good protection from external threats."
+  components:
+  - type: ToolRefinable
+    qualityNeeded: Prying
+    refineTime: 5
+    refineFuel: 0
+    refineResult:
+    - id: N14ComponentArmorPlateMK2
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/deanrecruitarmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/deanrecruitarmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.65
+        Heat: 0.65
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
+#  - type: ClothingSpecialModifier
+#    strengthModifier: 2
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterLegionnaireVeteranArmor
+  name: armor of a legionnaire-veteran
+  description: "Good armor for combat, does not slow down the wearer and makes it easy to maneuver."
+  components:
+  - type: ToolRefinable
+    qualityNeeded: Prying
+    refineTime: 2
+    refineFuel: 0
+    refineResult:
+    - id: N14ComponentArmorPlateMK1
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/veteranarmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/veteranarmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.7
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterLegionnaireReconnaissanceArmor
+  name: reconnaissance armor
+  description: "Good durable armor that does not burden movement."
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/reconnaissancearmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/reconnaissancearmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.05
+    sprintModifier: 1.05
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.75
+        Heat: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterLegionnaireLightReconnaissanceArmor
+  name: light reconnaissance armor
+  description: "Incredibly light armor with not the best protection, but you feel faster."
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/lightreconnaissancearmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/lightreconnaissancearmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.1
+    sprintModifier: 1.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.8
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterLegionnaireBaseArmor
+  name: legionnaire armor
+  description: "The most standard and common armor."
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/basearmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/basearmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.8
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.85
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterLegionnaireRecruitArmor
+  name: light legionnaire armor
+  description: "Not very reliable, but very light legionnaire armor."
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/lightarmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/lightarmor.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.1
+    sprintModifier: 1.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.95
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: NCClothingOuterBosReconArmor
+  name: bos armor
+  description: The armor of the brotherhood of steel is sturdy and reliable. "The steel is inside! The steel is outside!"
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/bosReaconArmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/bosReaconArmor.rsi
+  - type: TemperatureProtection
+    coefficient: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.65
+        Piercing: 0.65
+        Heat: 0.6
+  - type: ToggleableClothing
+    clothingPrototype: NCClothingHeadHatBoSReaconHood
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterKnightWesternArmor
+  name: armor of the knight of the western brotherhood
+  description: Excellent armor produced by the Western Brotherhood. It looks like the designer was based on a power
+  components:
+  - type: ToolRefinable
+    qualityNeeded: Prying
+    refineTime: 5
+    refineFuel: 0
+    refineResult:
+    - id: N14ComponentArmorPlateMK2
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/boskiharmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/boskiharmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.65
+        Heat: 0.65
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterRecruitWesternArmor
+  name: armor of the squire of the western brotherhood
+  description: Lightweight, comfortable armor designed for protection and high mobility
+  components:
+  - type: ToolRefinable
+    qualityNeeded: Prying
+    refineTime: 2
+    refineFuel: 0
+    refineResult:
+    - id: N14ComponentArmorPlateMK1
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/bossqiarmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/bossqiarmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.7
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+
+- type: entity
+  parent: N14ClothingOuterNCRVest # _Nuclear14/Entities/Clothing/OuterClothing/falloutarmor.yml
+  id: N14ClothingOuterNCRVestpaddedWeb
+  name: reinforced NCR ballistic vest
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  components:
+  - type: Sprite
+    sprite: _NukeWake/Clothing/OuterClothing/Armor/falloutNCRpaddedwebvest.rsi
+  - type: Clothing
+    sprite: _NukeWake/Clothing/OuterClothing/Armor/falloutNCRpaddedwebvest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.825
+        Slash: 0.825
+        Piercing: 0.775
+        Heat: 0.775
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+- type: entity
+  parent: N14ClothingOuterNCRVest
+  id: N14ClothingOuterNCRCoatLabArmored
+  name: укреплённый халат врача НКР
+  description: Халат, который используют врачи НКР. Под ним находится пуленепробиваемый жилет.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/falloutNCRarmorcoatlab.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/falloutNCRarmorcoatlab.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.75
+        Heat: 0.75
+        Caustic: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterNCRMPArmorWest
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/NCRMPArmorWest.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/NCRMPArmorWest.rsi
+  - type: TemperatureProtection
+    coefficient: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+
+- type: entity
+  parent: N14ClothingOuterNCRCombatArmor
+  id: N14ClothingOuterRangerRedwood
+  name: комплект патрульной брони рейнджера "Редвуд"
+  description: Модифицированная версия патрульной боевой брони, поверх которой надета тёмно-коричневая кожаная куртка. Используется рейндерами НКР, патрулирующими густые районы и горные перевалы Калифорнии. Комплект обеспечивает хорошую защиту, при этом не ограничивая движения.
+  components:
+  - type: ToolRefinable
+    qualityNeeded: Prying
+    refineTime: 2
+    refineFuel: 0
+    refineResult:
+    - id: N14ComponentArmorPlateMK1
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/RangerJacketArmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/RangerJacketArmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.7
+    priceMultiplier: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+
+- type: entity
+  parent: N14ClothingOuterBase
+  id: N14ClothingOuterRangerCoyote
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/RangerAltArmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/RangerAltArmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.75
+        Heat: 0.75
+    priceMultiplier: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 1.05
+    sprintModifier: 1.05
+
+- type: entity
+  parent: N14ClothingOuterBase
+  id: N14ClothingOuterRangerScorpion
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/RangerScorpionArmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/RangerScorpionArmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.75
+        Heat: 0.75
+        Caustic: 0.85
+        Radiation: 0.9
+    priceMultiplier: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+
+- type: entity
+  parent: N14ClothingOuterNCRCombatArmor
+  id: N14ClothingOuterRangerArmorOld
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/RangerStandartArmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/RangerStandartArmor.rsi
+
+- type: entity
+  parent: N14ClothingOuterNCRCombatArmorMK2
+  id: N14ClothingOuterNCRCombatArmorMK2Snow
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/falloutcombatNCRmk2Snow.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/falloutcombatNCRmk2Snow.rsi
+
+- type: entity
+  parent: N14ClothingOuterNCRCombatArmor
+  id: N14ClothingOuterNCRCombatArmorSnow
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/falloutcombatNCRsnow.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/falloutcombatNCRsnow.rsi
+
+- type: entity
+  parent: N14ClothingOuterRangerCombat
+  id: N14ClothingOuterDeserted
+  categories: [ HideSpawnMenu ]
+  name: элитная броня пустынного рейнджера
+  description: Модифицированный штурмовой комплект брони спецназа Морской Пехоты, который использовался довоенными "Морскими Котиками". Теперь служит роду Аквиллий, как реликвия прошлого, сохраняющая дух старой Америки. На всей броне виднеются следы боя, вмятины на пластинах, сажа от взрывов, отверстия на тренче от пуль, всё это следствие десятков лет сражений за свободу тех, кто не может защитить себя сам в пустынях Невады. Когда угнетённые видят силуэт в этой броне, они знают что их не оставят погибать.
+  components:
+  - type: ToolRefinable
+    qualityNeeded: Prying
+    refineTime: 10
+    refineFuel: 0
+    refineResult:
+    - id: N14ComponentArmorPlateMK3
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/ranger_dust_armor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/ranger_dust_armor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.6
+        Heat: 0.6
+    priceMultiplier: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterTireArmor
+  name: tire armor
+  description: "Armor made from burnt car tires."
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/tirearmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/tirearmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.80
+        Slash: 0.85
+        Piercing: 0.85
+        Heat: 0.85
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterHeavySteelArmor
+  name: heavy steel armor
+  description: "Made from scrap metal and steel, it has a leather lining."
+  components:
+  - type: ToolRefinable
+    qualityNeeded: Prying
+    refineTime: 2
+    refineFuel: 0
+    refineResult:
+    - id: N14ComponentArmorPlateMK1
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/heavysteelarmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/heavysteelarmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.75
+        Piercing: 0.7
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.8
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterVaultTecCombatArmor
+  name: vault-tec combat armor
+  description: "A combination of two versions of combat armor developed by the corporation"
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/vault-tekcombatarmor.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/vault-tekcombatarmor.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.685
+        Slash: 0.685
+        Piercing: 0.685
+        Heat: 0.685
+  - type: ExplosionResistance
+    damageCoefficient: 0.95
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterArmoredKit
+  name: armor kit
+  description: Light armor worn over clothing. Its better then nothing.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/Reinforcedarmormk1.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/Reinforcedarmormk1.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: N14FalloutArmorBase
+  id: N14ClothingOuterReinforcedArmorKit
+  name: reinforced armor kit
+  description: Less light armor worn over clothing.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/Reinforcedarmormk2.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/Reinforcedarmormk2.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.85
+        Piercing: 0.85
+        Heat: 0.85
+
+- type: entity
+  parent: N14ClothingOuterBase
+  id: M14ClothingOuterKhanLeather
+  name: great khan leather vest
+  description: A black leather jacket. There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns. The skull has a mongoloid moustache - it's obviously a Great Khans emblem.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/Lightarmorgreatkhan.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/Lightarmorgreatkhan.rsi
+  - type: Armor
+    modifiers:
+     coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+
+- type: entity
+  parent: N14ClothingOuterBase
+  id: M14ClothingOuterKhanLeatherArmored
+  name: great khan armored leather vest
+  description: A black leather jacket. There is an illustration on the back - an aggressive, red-eyed skull wearing a fur hat with horns. The skull has a mongoloid moustache - it's obviously a Great Khans emblem.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/OuterClothing/Armor/Midarmorgreatkhan.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/OuterClothing/Armor/Midarmorgreatkhan.rsi
+  - type: Armor
+    modifiers:
+     coefficients:
+        Blunt: 0.80
+        Slash: 0.80
+        Piercing: 0.85
+        Heat: 0.85
+

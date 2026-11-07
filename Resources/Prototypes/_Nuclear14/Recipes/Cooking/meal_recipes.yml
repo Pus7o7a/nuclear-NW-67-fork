@@ -1,0 +1,1508 @@
+- type: microwaveMealRecipe
+  id: N14RecipeMeatRad
+  group: Meat # Forge-Change
+  name: irradiated meat recipe
+  result: N14FoodMeatCooked
+  time: 15
+  solids:
+    N14FoodMeatRadRaw: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeSteakBrahmin
+  group: Meat # Forge-Change
+  name: brahmin steak recipe
+  result: N14FoodMeatBrahminCooked
+  time: 15
+  solids:
+    N14FoodMeatBrahmin: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeCutletBrahmin
+  group: Meat # Forge-Change
+  name: brahmin cutlet recipe
+  result: N14FoodMeatBrahminCutletCooked
+  time: 5
+  solids:
+    N14FoodMeatBrahminCutlet: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeSteakBighorner
+  group: Meat # Forge-Change
+  name: bighorner steak recipe
+  result: N14FoodMeatBighornerCooked
+  time: 15
+  solids:
+    N14FoodMeatBighorner: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeCutletBighorner
+  group: Meat # Forge-Change
+  name: bighorner cutlet recipe
+  result: N14FoodMeatBighornerCutletCooked
+  time: 5
+  solids:
+    N14FoodMeatBighornerCutlet: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeSteakRadstag
+  group: Meat # Forge-Change
+  name: radstag steak recipe
+  result: N14FoodMeatRadstagCooked
+  time: 15
+  solids:
+    N14FoodMeatRadstag: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeCutletRadstag
+  group: Meat # Forge-Change
+  name: radstag cutlet recipe
+  result: N14FoodMeatRadstagCutletCooked
+  time: 5
+  solids:
+    N14FoodMeatRadstagCutlet: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeSteakGecko
+  group: Meat # Forge-Change
+  name: gecko steak recipe
+  result: N14FoodMeatGeckoCooked
+  time: 15
+  solids:
+    N14FoodMeatGecko: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeSteakYaoguai
+  group: Meat # Forge-Change
+  name: yao-guai steak recipe
+  result: N14FoodMeatYaoguaiCooked
+  time: 15
+  solids:
+    N14FoodMeatYaoguai: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeCutletYaoguai
+  group: Meat # Forge-Change
+  name: yao-guai cutlet recipe
+  result: N14FoodMeatYaoguaiCutletCooked
+  time: 5
+  solids:
+    N14FoodMeatYaoguaiCutlet: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeSteakRadscorpion
+  group: Meat # Forge-Change
+  name: radscorpion steak recipe
+  result: N14FoodMeatRadscorpionCooked
+  time: 15
+  solids:
+    N14FoodMeatRadscorpion: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeCutletRadscorpion
+  group: Meat # Forge-Change
+  name: radscorpion cutlet recipe
+  result: N14FoodMeatRadscorpionCutletCooked
+  time: 5
+  solids:
+    N14FoodMeatRadscorpionCutlet: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeRadscorpionLeg
+  group: Meat # Forge-Change
+  name: boiled radscorpion leg recipe
+  result: N14FoodMeatRadscorpionLegBoiled
+  time: 20
+  reagents:
+    Water: 15
+  solids:
+    N14FoodMeatRadscorpionLeg: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeClawMirelurk
+  group: Meat # Forge-Change
+  name: mirelurk claw recipe
+  result: N14FoodMeatMirelurkClawCooked
+  time: 15
+  solids:
+    N14FoodMeatMirelurkClaw: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeClawRadlurk
+  group: Meat # Forge-Change
+  name: radlurk claw recipe
+  result: N14FoodMeatRadlurkClawCooked
+  time: 15
+  solids:
+    N14FoodMeatRadlurkClaw: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeRadroachFillet
+  group: Meat # Forge-Change
+  name: radroach fillet recipe
+  result: N14FoodMeatRadroachFilletCooked
+  time: 15
+  solids:
+    N14FoodMeatRadroachFillet: 1
+
+#THE GREAT DOWNSTREAM MIGRATION BEGINS HERE GANG
+
+- type: microwaveMealRecipe
+  id: N14RecipeBun
+  group: Bread # Forge-Change
+  name: bun recipe
+  result: N14CookedFoodBreadBun
+  time: 5
+  solids:
+    N14FoodDoughSlice: 1 # one third of a standard bread dough recipe
+
+#Burgers
+
+- type: microwaveMealRecipe
+  id: N14RecipeAppendixBurger
+  group: Burgers # Forge-Change
+  name: appendix burger recipe
+  result: N14CookedFoodBurgerAppendix
+  time: 10
+  solids:
+    N14CookedFoodBreadBun: 1
+    OrganHumanAppendix: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeBaconBurger
+  group: Burgers # Forge-Change
+  name: bacon burger recipe
+  result: N14CookedFoodBurgerBacon
+  time: 10
+  solids:
+    N14CookedFoodBreadBun: 1
+    FoodMeatBacon: 1 #N14TODO: switch to N14 bacon if we get that working later
+    N14FoodCheeseSlice: 2
+
+
+- type: microwaveMealRecipe
+  id: N14RecipeBearger
+  group: Burgers # Forge-Change
+  name: bearger recipe
+  result: N14CookedFoodBurgerBear
+  time: 10
+  solids:
+    N14CookedFoodBreadBun: 1
+    N14FoodMeatYaoguai: 1 #hazel's first test, making Yao Guai work for Beargers
+    #N14TODO: it'll need a custom sprite.
+
+- type: microwaveMealRecipe
+  id: N14RecipeBigBiteBurger
+  group: Burgers # Forge-Change
+  name: big bite burger recipe
+  result: N14CookedFoodBurgerBig
+  time: 15
+  solids:
+    N14CookedFoodBreadBun: 1
+    N14FoodMeatRadRaw: 2 #N14 change. This could be made a more specific meat later, this might be a good candidate for a deathclaw burger.
+    N14FoodCheeseSlice: 1
+    N14FloraProduceWildTato: 1 #N14 change
+    N14FoodOnionRedSlice: 2 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeBrainBurger
+  group: Burgers # Forge-Change
+  name: brain burger recipe
+  result: N14CookedFoodBurgerBrain
+  time: 10
+  solids:
+    N14CookedFoodBreadBun: 1
+    OrganHumanBrain: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeCheeseburger
+  group: Burgers # Forge-Change
+  name: cheeseburger recipe
+  result: N14CookedFoodBurgerCheese
+  time: 10
+  solids:
+    N14CookedFoodBreadBun: 1
+    N14FoodMeatRadRaw: 1 #N14 change
+    N14FoodCheeseSlice: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeChickenSandwich
+  group: Burgers # Forge-Change
+  name: chicken sandwich recipe
+  result: N14CookedFoodBurgerChicken
+  time: 10
+  reagents:
+    Mayo: 5
+  solids:
+    N14CookedFoodBreadBun: 1
+    N14FoodMeatRadchicken: 1 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeCrabBurger
+  group: Burgers # Forge-Change
+  name: crab burger recipe
+  result: N14CookedFoodBurgerCrab
+  time: 10
+  solids:
+    N14CookedFoodBreadBun: 1
+    N14FoodMeatMirelurkClaw: 2 #N14 change. Not like mirelurks are in but it's good to have it set up I guess.
+
+#- type: microwaveMealRecipe
+#  id: N14RecipeCarpBurger
+#  name: fillet-o-carp burger recipe
+#  result: N14CookedFoodBurgerCarp
+#  time: 10
+#  solids:
+#    N14CookedFoodBreadBun: 1
+#    FoodMeatFish: 1 # a mystery for later
+#    N14FoodCheeseSlice: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeFiveBurger
+  group: Burgers # Forge-Change
+  name: five alarm burger recipe
+  result: N14CookedFoodBurgerFive
+  time: 10
+  solids:
+    N14CookedFoodBreadBun: 1
+    N14FoodMeatRadRaw: 1 #N14 change
+    N14FloraProduceWildGlowpepper: 3 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeBurgerMcguffin
+  group: Burgers # Forge-Change
+  name: McGuffin recipe
+  result: N14CookedFoodBurgerMcguffin
+  time: 10
+  solids:
+    N14CookedFoodBreadBun: 1
+    N14FoodCheeseSlice: 1
+    N14FoodEggChicken: 2 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeBurgerMcrib
+  group: Burgers # Forge-Change
+  name: BBQ rib sandwich recipe
+  result: N14CookedFoodBurgerMcrib
+  time: 10
+  solids:
+    N14CookedFoodBreadBun: 1
+    N14CookedFoodMealRibs: 1
+    N14FoodOnionRedSlice: 1 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipePlainBurger
+  group: Burgers # Forge-Change
+  name: plain burger recipe
+  result: N14CookedFoodBurgerPlain
+  time: 10
+  solids:
+    N14CookedFoodBreadBun: 1
+    N14FoodMeatRadRaw: 1 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeRatBurger
+  group: Burgers # Forge-Change
+  name: rat burger recipe
+  result: N14CookedFoodBurgerRat
+  time: 10
+  solids:
+    N14CookedFoodBreadBun: 1
+    FoodMeatRat: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeSuperBiteBurger
+  group: Burgers # Forge-Change
+  name: super bite burger recipe
+  result: N14CookedFoodBurgerSuper
+  time: 25
+  reagents:
+    TableSalt: 5
+  solids:
+    N14CookedFoodBreadBun: 1
+    N14FoodMeatRadRaw: 2 #N14 change
+    N14FoodCheeseSlice: 2
+    N14FloraProduceWildTato: 2 #N14 change
+    N14FoodEggChicken: 2 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeTofuBurger
+  group: Burgers # Forge-Change
+  name: tofu burger recipe
+  result: N14CookedFoodBurgerTofu
+  time: 10
+  solids:
+    N14CookedFoodBreadBun: 1
+    N14FoodTofuSlice: 1
+
+#Breads & Sandwiches
+
+- type: microwaveMealRecipe
+  id: N14RecipeBananaBread
+  group: Bread # Forge-Change
+  name: banana bread recipe
+  result: N14CookedFoodBreadBanana
+  time: 15
+  solids:
+    N14FoodDough: 1
+    N14FoodBanana: 1 #placeholder since no banana
+
+- type: microwaveMealRecipe
+  id: N14RecipeCornbread
+  group: Bread # Forge-Change
+  name: cornbread recipe
+  result: N14CookedFoodBreadCorn
+  time: 10
+  solids:
+    N14FoodDoughCornmeal: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeCreamCheeseBread
+  group: Bread # Forge-Change
+  name: cream cheese bread recipe
+  result: N14CookedFoodBreadCreamcheese
+  time: 15
+  reagents:
+    N14MilkBrahmin: 5
+  solids:
+    N14FoodDough: 1
+    N14FoodCheeseSlice: 2
+
+- type: microwaveMealRecipe
+  id: N14RecipeMeatBread
+  group: Bread # Forge-Change
+  name: meat bread recipe
+  result: N14CookedFoodBreadMeat
+  time: 15
+  solids:
+    N14FoodDough: 1
+    N14FoodMeatRadCutlet: 2 #N14 change
+    N14FoodCheeseSlice: 2
+
+- type: microwaveMealRecipe
+  id: N14RecipeBread
+  group: Bread # Forge-Change
+  name: bread recipe
+  result: N14CookedFoodBreadPlain
+  time: 10
+  solids:
+    N14FoodDough: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeRadroll
+  group: Bread # Forge-Change
+  name: radroll recipe
+  result: N14CookedFoodBreadRadroll
+  time: 15
+  solids:
+    N14FoodDough: 1
+    N14FoodMeatRadroachFillet: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeSpiderMeatBread
+  group: Bread # Forge-Change
+  name: scorpion bread recipe
+  result: N14CookedFoodBreadMeatRadscorp
+  time: 15
+  solids:
+    N14FoodDough: 1
+    N14FoodMeatRadscorpionLeg: 2 #N14 change
+    N14FoodCheeseSlice: 2
+
+- type: microwaveMealRecipe
+  id: N14TofuBread
+  group: Bread # Forge-Change
+  name: tofu bread recipe
+  result: N14CookedFoodBreadTofu
+  time: 15
+  solids:
+    N14FoodDough: 1
+    N14FoodTofu: 1
+
+#Slices Only
+
+#- type: microwaveMealRecipe
+#  id: N14RecipeBaguette
+#  name: baguette recipe
+#  result: N14CookedFoodBreadBaguette
+#  time: 15
+#  reagents:
+#    TableSalt: 5
+#    Blackpepper: 5
+#  solids:
+#    N14FoodDough: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeButteredToast
+  group: Breakfast # Forge-Change
+  name: buttered toast recipe
+  result: N14CookedFoodBreadButteredToast
+  time: 5
+  solids:
+    N14CookedFoodBreadPlainSlice: 1
+    N14FoodButter: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeFrenchToast
+  group: Breakfast # Forge-Change
+  name: french toast recipe
+  result: N14CookedFoodBreadFrenchToast
+  time: 5
+  reagents:
+    N14MilkBrahmin: 5
+    Egg: 12 #radchicken eggs give standard egg reagent currently, this is fine
+  solids:
+    N14CookedFoodBreadPlainSlice: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeGarlicBread
+  group: Bread # Forge-Change
+  name: garlic bread slice recipe
+  result: N14CookedFoodBreadGarlicSlice
+  time: 5
+  solids:
+    N14CookedFoodBreadPlainSlice: 1
+    N14FoodGarlic: 1
+    N14FoodButter: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeTwoBreadSlice
+  group: Bread # Forge-Change
+  name: two slice recipe
+  result: N14CookedFoodBreadTwoSlice
+  time: 5
+  reagents:
+    Wine: 5
+  solids:
+    N14CookedFoodBreadPlainSlice: 2
+#Is this one a reference? I might get rid of it, it seems kinda useless.
+
+- type: microwaveMealRecipe
+  id: N14RecipeOnionRings
+  group: Snacks # Forge-Change
+  name: onion rings recipe
+  result: N14CookedFoodOnionRings
+  time: 15
+  solids:
+    N14FoodOnionRedSlice: 1 #N14 change
+
+#Pizzas TODO: contruction graph based pizza
+#Due to rolling pin issues, pizzas currently need to use upstream dough. See cooking.yml and pizza.yml for details
+
+- type: microwaveMealRecipe
+  id: N14RecipeMargheritaPizza
+  group: Pizza # Forge-Change
+  name: margherita pizza recipe
+  result: N14CookedFoodPizzaMargherita
+  time: 30
+  solids:
+    FoodDoughFlat: 1
+    N14FoodCheeseSlice: 1
+    N14FloraProduceWildTato: 4 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeMushroomPizza
+  group: Pizza # Forge-Change
+  name: mushroom pizza recipe
+  result: N14CookedFoodPizzaMushroom
+  time: 30
+  solids:
+    FoodDoughFlat: 1
+    N14FloraProduceWildCaveFungus: 5 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeMeatPizza
+  group: Pizza # Forge-Change
+  name: meat pizza recipe
+  result: N14CookedFoodPizzaMeat
+  time: 30
+  solids:
+    FoodDoughFlat: 1
+    N14FoodMeatRadRaw: 3
+    N14FoodCheeseSlice: 1
+    N14FloraProduceWildTato: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeVegetablePizza
+  group: Pizza # Forge-Change
+  name: vegetable pizza recipe
+  result: N14CookedFoodPizzaVegetable
+  time: 30
+  solids:
+    FoodDoughFlat: 1
+    N14FloraProduceWildOnion: 1 #N14 change
+    N14FloraProduceWildCarrot: 1 #N14 change
+    N14FloraProduceWildMaize: 1 #N14 change
+    N14FloraProduceWildTato: 1 #N14 change
+
+#Italian
+- type: microwaveMealRecipe
+  id: N14RecipeBoiledSpaghetti
+  group: Pasta # Forge-Change
+  name: boiled spaghetti recipe
+  result: N14CookedFoodNoodlesBoiled
+  time: 15
+  reagents:
+    ExtractRazorgrainFlour: 15
+    Egg: 6
+  solids:
+    N14FoodButter: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipePastaTomato
+  group: Pasta # Forge-Change
+  name: pasta tomato recipe
+  result: N14CookedFoodNoodles
+  time: 10
+  solids:
+    N14CookedFoodNoodlesBoiled: 1
+    N14FloraProduceWildTato: 2 #N14 change
+
+#- type: microwaveMealRecipe
+#  id: N14RecipeMeatballSpaghetti
+#  name: spaghetti & meatballs recipe
+#  result: N14CookedFoodNoodlesMeatball
+#  time: 10
+#  solids:
+#    N14CookedFoodNoodlesBoiled: 1
+#    N14FoodMeatMeatball: 2
+  #Meatball recipes are throwing up a lot of bugs, so it's commented out for now. Fix it and be forever known as Meatball Hero. -Hazel
+
+- type: microwaveMealRecipe
+  id: N14RecipeButterNoodles
+  group: Pasta # Forge-Change
+  name: butter noodles recipe
+  result: N14CookedFoodNoodlesButter
+  time: 10
+  solids:
+    N14CookedFoodNoodlesBoiled: 1
+    N14FoodButter: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeChowMein
+  group: Pasta # Forge-Change
+  name: chow mein recipe
+  result: N14CookedFoodNoodlesChowmein
+  time: 10
+  solids:
+    N14CookedFoodNoodlesBoiled: 1
+    N14FloraProduceWildOnion: 1 #N14 change
+    N14FloraProduceWildCarrot: 1 #N14 change
+    N14FloraProduceWildMaize: 1 #N14 change
+    N14FoodEggChicken: 1 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeOatmeal
+  group: Breakfast # Forge-Change
+  name: oatmeal recipe
+  result: N14CookedFoodOatmeal
+  time: 15
+  reagents:
+    Oats: 15
+    Water: 10
+  solids:
+    FoodBowlBig: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeBoiledRice
+  group: Rice # Forge-Change
+  name: boiled rice recipe
+  result: N14CookedFoodRiceBoiled
+  time: 15
+  reagents:
+    Rice: 15
+    Water: 10
+  solids:
+    FoodBowlBig: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeRicePudding
+  group: Desserts # Forge-Change
+  name: rice pudding recipe
+  result: N14CookedFoodRicePudding
+  time: 15
+  reagents:
+    Rice: 15
+    N14MilkBrahmin: 10
+    Sugar: 5
+  solids:
+    FoodBowlBig: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeRiceRoadkill
+  group: Rice # Forge-Change
+  name: roadkill rice recipe
+  result: N14CookedFoodRiceRoadkill
+  time: 15
+  solids:
+    N14CookedFoodRiceBoiled: 1
+    N14FoodMeatRadCutlet: 3 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeRiceGumbo
+  group: Rice # Forge-Change
+  name: black-eyed gumbo recipe
+  result: N14CookedFoodRiceGumbo
+  time: 15
+  solids:
+    N14CookedFoodRiceBoiled: 1
+    N14FoodMeatRadCutlet: 3 #N14 change
+    N14FloraProduceWildGlowpepper: 2 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeEggRice
+  group: Rice # Forge-Change
+  name: egg-fried rice recipe
+  result: N14CookedFoodRiceEgg
+  time: 15
+  solids:
+    N14CookedFoodRiceBoiled: 1
+    N14FoodEggChicken: 1 #N14 change
+    N14FloraProduceWildCarrot: 1 #N14 change
+
+#Soups & Stew
+# - type: microwaveMealRecipe
+  # id: N14RecipeBisque
+  # name: bisque recipe
+  # result: N14CookedFoodSoupBisque
+  # time: 10
+  # reagents:
+    # Water: 10
+  # solids:
+    # FoodBowlBig: 1
+    # N14FloraProduceWildTato: 1 #N14 change
+    # N14FloraProduceWildCaveFungus: 1 #N14 change
+    # N14FoodMeatFish: 1 #alas for thee no fishee -Hazel
+
+#- type: microwaveMealRecipe
+#  id: N14RecipeMeatballSoup
+#  name: meatball soup recipe
+#  result: N14CookedFoodSoupMeatball
+#  time: 10
+#  reagents:
+#    Water: 10
+#  solids:
+#    FoodBowlBig: 1
+#    N14FoodMeatMeatball: 1
+#    N14FloraProduceWildCarrot: 1
+#    N14FloraProduceWildTato: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeNettleSoup
+  group: Soups # Forge-Change
+  name: nettle soup recipe
+  result: N14CookedFoodSoupNettle
+  time: 10
+  reagents:
+    Water: 10
+    Egg: 6
+  solids:
+    FoodBowlBig: 1
+    N14Nettle: 1
+    N14FloraProduceWildTato: 1 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeEyeballSoup
+  group: Soups # Forge-Change
+  name: eyeball soup recipe
+  result: N14CookedFoodSoupEyeball
+  time: 10
+  reagents:
+    Water: 10
+  solids:
+    FoodBowlBig: 1
+    OrganHumanEyes: 1
+    N14FloraProduceWildCarrot: 1 #N14 change
+    N14FloraProduceWildTato: 1 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeOnionSoup
+  group: Soups # Forge-Change
+  name: onion soup recipe
+  result: N14CookedFoodSoupOnion
+  time: 10
+  reagents:
+    Water: 10
+  solids:
+    FoodBowlBig: 1
+    N14FoodOnionRedSlice: 5 #N14 change
+    N14FoodCheeseSlice: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeMushroomSoup
+  group: Soups # Forge-Change
+  name: mushroom soup recipe
+  result: N14CookedFoodSoupMushroom
+  time: 10
+  reagents:
+    Water: 5
+    N14MilkBrahmin: 5 #N14 change
+  solids:
+    FoodBowlBig: 1
+    N14FloraProduceWildCaveFungus: 2 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeStewSoup
+  group: Soups # Forge-Change
+  name: stew recipe
+  result: N14CookedFoodSoupStew
+  time: 10
+  reagents:
+    Water: 10
+  solids:
+    FoodBowlBig: 1
+    N14FoodMeatRadCutlet: 3
+    N14FloraProduceWildTato: 1
+    N14FloraProduceWildOnion: 1
+    N14FloraProduceWildCaveFungus: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeTatoSoup
+  group: Soups # Forge-Change
+  name: tato soup recipe
+  result: N14CookedFoodSoupTato
+  time: 10
+  reagents:
+    Water: 10
+  solids:
+    FoodBowlBig: 1
+    N14FloraProduceWildTato: 2
+
+- type: microwaveMealRecipe
+  id: N14CookedRecipeBloodtatoSoup
+  group: Soups # Forge-Change
+  name: bloodtato soup recipe
+  result: N14CookedFoodSoupBloodtato
+  time: 10
+  reagents:
+    Blood: 50 #N14 change. This improves the taste of tato soup.
+  solids:
+    FoodBowlBig: 1
+    N14FloraProduceWildTato: 2 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeMutieSoup
+  group: Soups # Forge-Change
+  name: mutie soup recipe
+  result: N14CookedFoodSoupMutie
+  time: 10
+  reagents:
+    Soysauce: 5
+  solids:
+    FoodBowlBig: 1
+    N14FoodMeatRadscorpionLeg: 2 #N14 TODO: make this soup out of some awful mutant freak instead of radscorp
+
+- type: microwaveMealRecipe
+  id: N14RecipeVegetableSoup
+  group: Soups # Forge-Change
+  name: vegetable soup recipe
+  result: N14CookedFoodSoupVegetable
+  time: 10
+  reagents:
+    Water: 5
+  solids:
+    FoodBowlBig: 1
+    N14FloraProduceWildMaize: 1 #N14 change
+    N14FloraProduceWildCarrot: 1 #N14 change
+    N14FloraProduceWildTato: 1 #N14 change
+    N14FloraProduceWildOnion: 1 #N14 change
+
+#Pies
+
+- type: microwaveMealRecipe
+  id: N14RecipeMutfruitPie
+  group: Pies # Forge-Change
+  name: mutfruit pie recipe
+  result: N14CookedFoodPieMutfruit
+  time: 15
+  solids:
+    N14FoodDoughPie: 1
+    N14FloraProduceWildMutfruit: 3
+    FoodPlateTin: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeBaklava
+  group: Pies # Forge-Change
+  name: baklava recipe
+  result: N14CookedFoodPieBaklava
+  time: 15
+  solids:
+    N14FoodDoughPie: 1
+    N14FloraProduceWildPinyonNuts: 1
+    FoodPlateTin: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeBlackberryPie
+  group: Pies # Forge-Change
+  name: blackberry pie recipe
+  result: N14CookedFoodPieBlackberry
+  time: 15
+  solids:
+    N14FoodDoughPie: 1
+    N14FloraProduceWildBlackberries: 3
+    FoodPlateTin: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeMeatPie
+  group: Pies # Forge-Change
+  name: meat pie recipe
+  result: N14CookedFoodPieMeat
+  time: 15
+  solids:
+    N14FoodDoughPie: 1
+    N14FoodMeatRadRaw: 3
+    FoodPlateTin: 1
+
+#Tarts
+
+- type: microwaveMealRecipe
+  id: N14RecipeCocoTart
+  group: Pies # Forge-Change
+  name: chocolate lava tart recipe
+  result: N14CookedFoodTartCoco
+  time: 15
+  reagents:
+    Sugar: 5
+    Milk: 5
+  solids:
+    N14FoodDoughPie: 1
+    FoodSnackChocolateBar: 3
+    FoodPlateTin: 1
+
+#Other
+
+- type: microwaveMealRecipe
+  id: N14RecipeCubanCarp
+  group: Seafood # Forge-Change
+  name: Cuban carp recipe
+  result: N14CookedFoodMealCubancarp #this will have to be changed someday
+  time: 15
+  solids:
+    N14FoodDough: 1
+    N14FoodCheeseSlice: 2
+    N14FloraProduceWildGlowpepper: 1
+    FoodMeatFish: 2
+
+- type: microwaveMealRecipe
+  id: N14RecipeSashimi
+  group: Seafood # Forge-Change
+  name: sashimi recipe
+  result: N14CookedFoodMealSashimi
+  time: 15
+  reagents:
+    TableSalt: 1
+  solids:
+    FoodMeatFish: 2
+
+- type: microwaveMealRecipe
+  id: N14RecipeLoadedBakedPotato
+  group: Vegetables # Forge-Change
+  name: loaded baked potato recipe
+  result: N14CookedFoodMealPotatoLoaded
+  time: 15
+  solids:
+    N14FloraProduceWildTato: 1
+    N14FoodCheeseSlice: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeFries
+  group: Snacks # Forge-Change
+  name: fries recipe
+  result: N14CookedFoodMealFries
+  time: 15
+  reagents:
+    TableSalt: 5
+  solids:
+    N14FloraProduceWildTato: 1 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeCheesyFries
+  group: Snacks # Forge-Change
+  name: cheesy fries recipe
+  result: N14CookedFoodMealFriesCheesy
+  time: 15
+  reagents:
+    TableSalt: 5
+  solids:
+    N14FloraProduceWildTato: 1 #N14 change
+    N14FoodCheeseSlice: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeCarrotFries
+  group: Snacks # Forge-Change
+  name: carrot fries recipe
+  result: N14CookedFoodMealFriesCarrot
+  time: 15
+  reagents:
+    TableSalt: 5
+  solids:
+    N14FloraProduceWildCarrot: 1 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipePopcorn
+  group: Snacks # Forge-Change
+  name: popcorn recipe
+  result: N14FoodSnackPopcorn
+  time: 20
+  solids:
+    N14FloraProduceWildMaize: 1 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipePancake
+  group: Breakfast # Forge-Change
+  name: pancake recipe
+  result: N14CookedFoodBakedPancake
+  time: 5
+  reagents:
+    ExtractRazorgrainFlour: 5
+    N14MilkBrahmin: 5 #N14 change
+    Egg: 6
+
+- type: microwaveMealRecipe
+  id: N14RecipeBlueberryPancake
+  group: Breakfast # Forge-Change
+  name: tarberry pancake recipe #N14 change
+  result: N14CookedFoodBakedPancakeBb
+  time: 5
+  reagents:
+    ExtractRazorgrainFlour: 5
+    N14MilkBrahmin: 5 #N14 change
+    Egg: 6
+  solids:
+    N14FloraProduceWildTarberries: 2 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeWaffles
+  group: Breakfast # Forge-Change
+  name: waffle recipe
+  result: N14CookedFoodBakedWaffle
+  time: 10
+  reagents:
+    ExtractRazorgrainFlour: 5
+    N14MilkBrahmin: 5 #N14 change
+    Egg: 6
+    SodaWater: 5
+
+- type: microwaveMealRecipe
+  id: N14RecipeWaffleSoy
+  group: Breakfast # Forge-Change
+  name: soy waffle recipe
+  result: N14CookedFoodBakedWaffleSoy
+  time: 10
+  reagents:
+    ExtractRazorgrainFlour: 5
+    MilkSoy: 5
+    Egg: 6
+    SodaWater: 5
+
+- type: microwaveMealRecipe
+  id: N14RecipeCookie
+  group: Cookies # Forge-Change
+  name: cookie recipe
+  result: N14CookedFoodBakedCookie
+  time: 5
+  reagents:
+    ExtractRazorgrainFlour: 5
+    Sugar: 5
+  solids:
+    N14FoodButter: 1
+    FoodSnackChocolateBar: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeSugarCookie
+  group: Cookies # Forge-Change
+  name: sugar cookie recipe
+  result: N14CookedFoodBakedCookieSugar
+  time: 5
+  reagents:
+    ExtractRazorgrainFlour: 5
+    Sugar: 10
+  solids:
+    N14FoodButter: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeRaisinCookie
+  group: Cookies # Forge-Change
+  name: raisin cookie recipe
+  result: N14CookedFoodBakedCookieRaisin
+  time: 5
+  reagents:
+    ExtractRazorgrainFlour: 5
+    Sugar: 5
+  solids:
+    FoodSnackRaisins: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeCookieOatmeal
+  group: Cookies # Forge-Change
+  name: oatmeal cookie recipe
+  result: N14CookedFoodBakedCookieOatmeal
+  time: 5
+  reagents:
+    Oats: 5
+    Sugar: 5
+  solids:
+    N14FoodButter: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeChocolateChipPancake
+  group: Breakfast # Forge-Change
+  name: chocolate chip pancake recipe
+  result: N14CookedFoodBakedPancakeCc
+  time: 5
+  reagents:
+    ExtractRazorgrainFlour: 5
+    N14MilkBrahmin: 5 #N14 change
+    Egg: 6
+  solids:
+    FoodSnackChocolateBar: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeMutfruitCake
+  group: Cakes # Forge-Change
+  name: mutfruit cake recipe
+  result: N14CookedFoodCakeMutfruit
+  time: 5
+  solids:
+    N14CookedFoodCakePlain: 1
+    N14FloraProduceWildMutfruit: 3 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeCarrotCake
+  group: Cakes # Forge-Change
+  name: carrot cake recipe
+  result: N14CookedFoodCakeCarrot
+  time: 5
+  solids:
+    N14CookedFoodCakePlain: 1
+    N14FloraProduceWildCarrot: 3 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeTarberryCake
+  group: Cakes # Forge-Change
+  name: tarberry cake recipe #N14 change
+  result: N14CookedFoodCakeTarberry
+  time: 5
+  solids:
+    N14CookedFoodCakePlain: 1
+    N14FloraProduceWildTarberries: 3 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeCheeseCake
+  group: Cakes # Forge-Change
+  name: cheese cake recipe
+  result: N14CookedFoodCakeCheese
+  time: 5
+  reagents:
+    Cream: 10
+  solids:
+    N14CookedFoodCakePlain: 1
+    N14FoodCheeseSlice: 3
+
+- type: microwaveMealRecipe
+  id: N14RecipePumpkinCake
+  group: Cakes # Forge-Change
+  name: pumpkin cake recipe
+  result: N14CookedFoodCakePumpkin
+  time: 5
+  solids:
+    N14CookedFoodCakePlain: 1
+    N14FoodPumpkin: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeCake
+  group: Cakes # Forge-Change
+  name: cake recipe
+  result: N14CookedFoodCakePlain
+  time: 15
+  solids:
+    N14FoodCakeBatter: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeBirthdayCake
+  group: Cakes # Forge-Change
+  name: birthday cake recipe
+  result: N14CookedFoodCakeBirthday
+  time: 5
+  reagents:
+    Cream: 5
+  solids:
+    N14CookedFoodCakePlain: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeChocolateCake
+  group: Cakes # Forge-Change
+  name: chocolate cake recipe
+  result: N14CookedFoodCakeChocolate
+  time: 5
+  solids:
+    N14CookedFoodCakePlain: 1
+    FoodSnackChocolateBar: 2
+
+- type: microwaveMealRecipe
+  id: N14RecipeBrainCake
+  group: Cakes # Forge-Change
+  name: brain cake recipe
+  result: N14CookedFoodCakeBrain
+  time: 15
+  solids:
+    N14CookedFoodCakePlain: 1
+    OrganHumanBrain: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeDumplings
+  group: Dumplings # Forge-Change
+  name: dumplings recipe
+  result: N14CookedFoodBakedDumplings
+  time: 15
+  reagents:
+    Water: 10
+    UncookedAnimalProteins: 6
+  solids:
+    N14FoodDoughSlice: 3
+
+- type: microwaveMealRecipe
+  id: N14RecipeBrownies
+  group: Desserts # Forge-Change
+  name: brownie recipe
+  result: N14CookedFoodBakedBrownieBatch
+  time: 25
+  reagents:
+    ExtractRazorgrainFlour: 15
+    Sugar: 30
+  solids:
+    N14FoodButter: 2
+    FoodSnackChocolateBar: 2
+    N14FoodEggChicken: 3
+
+- type: microwaveMealRecipe
+  id: N14RecipeHotChili
+  group: Soups # Forge-Change
+  name: hot chili recipe
+  result: N14CookedFoodSoupChiliHot
+  time: 20
+  solids:
+    FoodBowlBig: 1
+    N14FloraProduceWildGlowpepper: 1 #N14 change
+    N14FoodMeatRadCutlet: 1 #N14 change
+    N14FoodOnionRedSlice: 1 #N14 change - our onions currently cut to upstream red onion slices so I'm just gonna get all of them as that. -Hazel
+    N14FloraProduceWildTato: 1 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeQueso
+  group: Snacks # Forge-Change
+  name: queso recipe
+  result: N14CookedFoodMealQueso
+  time: 15
+  reagents:
+    Blackpepper: 5
+  solids:
+    N14FloraProduceWildGlowpepper: 1
+    N14FoodCheeseSlice: 2
+
+- type: microwaveMealRecipe
+  id: N14RecipeRibs
+  group: Meat # Forge-Change
+  name: BBQ ribs recipe
+  result: N14CookedFoodMealRibs
+  time: 15
+  reagents:
+    BbqSauce: 5
+  solids:
+    N14FoodMeatBighorner: 2 #N14 change
+    FoodKebabSkewer: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeEnchiladas
+  group: Mexican # Forge-Change
+  name: enchiladas recipe
+  result: N14CookedFoodMealEnchiladas
+  time: 20
+  solids:
+    N14FoodMeatGecko: 1
+    N14FloraProduceWildGlowpepper: 2
+    N14FloraProduceWildMaize: 1
+
+# SALADS: These should be moved out of the microwave as soon as possible
+- type: microwaveMealRecipe
+  id: N14RecipeHerbSalad
+  group: Salads # Forge-Change
+  name: herb salad recipe
+  result: N14CookedFoodSaladHerb
+  time: 5
+  solids:
+    FoodBowlBig: 1
+    N14FloraProduceWildBrocFlower: 3
+    N14FloraProduceWildMutfruit: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeColeslaw
+  group: Salads # Forge-Change
+  name: coleslaw recipe
+  result: N14CookedFoodSaladColeslaw
+  time: 5
+  reagents:
+    Vinaigrette: 5
+  solids:
+    FoodBowlBig: 1
+    N14FloraProduceWildOnion: 1 #N14 change
+    N14FloraProduceWildCabbage: 1 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeCaesarSalad
+  group: Salads # Forge-Change
+  name: caesar salad recipe
+  result: N14CookedFoodSaladCaesar
+  time: 5
+  reagents:
+    OilOlive: 5 #someone map this maybe?
+  solids:
+    FoodBowlBig: 1
+    N14FoodOnionRedSlice: 1
+    N14CookedFoodBreadPlainSlice: 1
+    N14FoodCheeseSlice: 1
+    N14FloraProduceWildCabbage: 1 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeKimchiSalad
+  group: Salads # Forge-Change
+  name: kimchi salad recipe
+  result: N14CookedFoodSaladKimchi
+  time: 5
+  reagents:
+    Vinegar: 5
+  solids:
+    FoodBowlBig: 1
+    N14FoodCarrot: 1
+    N14FoodCabbage: 1
+    N14FoodGarlic: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeFruitSalad
+  group: Salads # Forge-Change
+  name: fruit salad recipe
+  result: N14CookedFoodSaladFruit
+  time: 5
+  solids:
+    FoodBowlBig: 1
+    N14FoodOrange: 1
+    N14FoodApple: 1
+    N14FoodGrape: 1
+    N14FoodWatermelonSlice: 2
+
+- type: microwaveMealRecipe
+  id: N14RecipeJungleSalad
+  group: Salads # Forge-Change
+  name: jungle salad recipe
+  result: N14CookedFoodSaladJungle
+  time: 5
+  solids:
+    FoodBowlBig: 1
+    N14FoodBanana: 1
+    N14FoodApple: 1
+    N14FoodGrape: 1
+    N14FoodWatermelonSlice: 2
+
+# Kebabs
+#all of these lack N14 entities and don't work currently it seems
+
+#- type: microwaveMealRecipe
+#  id: N14RecipeMeatKebab
+#  name: meat kebab recipe
+#  result: N14CookedFoodMeatKebab
+#  time: 5
+#  solids:
+#    N14FoodMeatRadCutlet: 3
+#    FoodKebabSkewer: 1
+
+# - type: microwaveMealRecipe
+  # id: N14RecipeHawaiianKebab
+  # name: Hawaiian kebab recipe
+  # result: N14CookedFoodMeatHawaiianKebab
+  # time: 5
+  # solids:
+    # N14FloraProduceWildGlowpepper: 1 #N14 change
+    # N14FoodMeatRadCutlet: 1 #N14 change
+    # N14FoodPineappleSlice: 1
+    # FoodKebabSkewer: 1
+
+#- type: microwaveMealRecipe
+#  id: N14RecipeFiestaKebab
+#  name: fiesta kebab recipe
+#  result: N14CookedFoodMeatFiestaKebab
+#  time: 5
+#  solids:
+#    N14FloraProduceWildGlowpepper: 1 #N14 change
+#    N14FloraProduceWildMaize: 1 #N14 change
+#    N14FoodMeatRadCutlet: 1 #N14 change
+#    N14FloraProduceWildTato: 1 #N14 change
+#    FoodKebabSkewer: 1
+
+# - type: microwaveMealRecipe
+  # id: N14RecipeRatKebab
+  # name: rat kebab recipe
+  # result: N14CookedFoodMeatRatKebab
+  # time: 10
+  # solids:
+  #   FoodMeatRat: 1
+  #   FoodKebabSkewer: 1
+
+  #rat kebabs have to stay commented out for now, there's no N14 ratmeat and the skewers are upstream too. The recipes would overlap. -Hazel
+
+# - type: microwaveMealRecipe
+  # id: N14RecipeDoubleRatKebab
+  # name: double rat kebab recipe
+  # result: N14FoodMeatRatdoubleKebab
+  # time: 20
+  # solids:
+  #   FoodMeatRat: 2
+    # FoodKebabSkewer: 1
+
+# - type: microwaveMealRecipe
+  # id: N14RecipeSnakeKebab
+  # name: snake kebab recipe
+  # result: N14FoodMeatSnakeKebab
+  # time: 15
+  # reagents:
+    # Wine: 5
+  # solids:
+    # FoodMeatSnake: 1 #in theory this is a slam dunk fallout-replace
+    # FoodKebabSkewer: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeFoodMealSoftTaco
+  group: Mexican # Forge-Change
+  name: soft taco recipe
+  result: N14CookedFoodMealSoftTaco
+  time: 10
+  solids:
+    N14FoodDoughSlice: 1
+    N14FloraProduceWildTato: 1 #N14 change
+    N14FoodOnionRedSlice: 2 #N14 change
+    N14FoodCheeseSlice: 1
+    N14FoodMeatRadCutlet: 1 #N14 change
+
+#- type: microwaveMealRecipe
+#  id: N14RecipeFoodBakedChevreChaud
+#  name: chevre chaud recipe
+#  result: N14CookedFoodBakedChevreChaud
+#  time: 5
+#  solids:
+#    N14FoodChevreSlice: 1
+#    N14CookedFoodBreadBaguetteSlice: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeCannabisButter
+  group: Ingredients # Forge-Change
+  name: cannabis butter recipe
+  result: N14FoodCannabisButter
+  time: 15
+  solids:
+    N14FoodButter: 1
+    LeavesCannabis: 6
+
+- type: microwaveMealRecipe
+  id: N14RecipeCannabisBrownies
+  group: Desserts # Forge-Change
+  name: cannabis brownie recipe
+  result: N14CookedFoodBakedCannabisBrownieBatch
+  time: 25
+  reagents:
+    ExtractRazorgrainFlour: 15
+    Sugar: 30
+  solids:
+    N14FoodCannabisButter: 2
+    FoodSnackChocolateBar: 2
+    N14FoodEggChicken: 3 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeCornInButter
+  group: Vegetables # Forge-Change
+  name: corn in butter recipe
+  result: N14CookedFoodMealCornInButter
+  time: 10
+  solids:
+    N14FloraProduceWildMaize: 1 #N14 change
+    FoodPlate: 1
+    N14FoodButter: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeTacoShell
+  group: Ingredients # Forge-Change
+  name: taco shell recipe
+  result: N14CookedFoodTacoShell
+  time: 5
+  solids:
+    N14FoodDoughTortillaFlat: 1 # one third of a standard bread dough recipe
+
+- type: microwaveMealRecipe
+  id: N14RecipeTacoMeat
+  group: Mexican # Forge-Change
+  name: meat taco recipe
+  result: N14CookedFoodTacoMeat
+  time: 10
+  solids:
+    N14CookedFoodTacoShell: 1
+    N14FoodMeatRadCutlet: 1 #Need to check cutlets
+    N14FoodCheeseSlice: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeTacoChicken
+  group: Mexican # Forge-Change
+  name: chicken taco recipe
+  result: N14CookedFoodTacoChicken
+  time: 10
+  solids:
+    N14CookedFoodTacoShell: 1
+    N14FoodMeatRadchicken: 1 #N14 change
+    N14FoodCheeseSlice: 1
+
+# - type: microwaveMealRecipe
+  # id: N14RecipeTacoFish
+  # name: fish taco recipe
+  # result: N14CookedFoodTacoFish
+  # time: 10
+  # solids:
+    # N14CookedFoodTacoShell: 1
+    # N14FoodMeatFish: 1 #again, someday there could be fishing... maybe
+    # N14FoodOnionRedSlice: 2 #N14 change
+    # N14FloraProduceWildTato: 1 #N14 change
+    # N14FloraProduceWildCabbage: 1 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeTacoRat
+  group: Mexican # Forge-Change
+  name: rat taco recipe
+  result: N14CookedFoodTacoRat
+  time: 10
+  solids:
+    N14CookedFoodTacoShell: 1
+    N14FoodCheeseSlice: 1
+    FoodMeatRat: 1
+
+- type: microwaveMealRecipe
+  id: N14RecipeTacoMeatSupreme
+  group: Mexican # Forge-Change
+  name: meat taco supreme recipe
+  result: N14CookedFoodTacoMeatSupreme
+  time: 10
+  solids:
+    N14CookedFoodTacoShell: 1
+    N14FoodCheeseSlice: 1
+    N14FoodMeatRadCutlet: 1 #N14 change
+    N14FloraProduceWildTato: 1 #N14 change
+    N14FloraProduceWildCabbage: 1 #N14 change
+    N14FoodOnionRedSlice: 2 #N14 change
+
+- type: microwaveMealRecipe
+  id: N14RecipeTacoChickenSupreme
+  group: Mexican # Forge-Change
+  name: chicken taco supreme recipe #N14 change, I guess someone upstream was sleepy
+  result: N14CookedFoodTacoChickenSupreme
+  time: 10
+  solids:
+    N14CookedFoodTacoShell: 1
+    N14FoodCheeseSlice: 1
+    N14FoodMeatRadchicken: 1 #N14 change
+    N14FloraProduceWildTato: 1 #N14 change
+    N14FloraProduceWildCabbage: 1 #N14 change
+    N14FoodOnionRedSlice: 2 #N14 change I DID IT

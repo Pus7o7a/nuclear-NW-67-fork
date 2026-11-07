@@ -1,0 +1,59 @@
+- type: job
+  id: BoSMidSquire # It was renamed to Initiate, but don't change the ID!
+  setPreference: true
+  overrideConsoleVisibility: true
+  canBeAntag: false
+  name: job-name-bos-mid-squire
+  description: job-description-bos-mid-squire
+  playTimeTracker: BoSMidSquire
+  #Forge-Change-Start
+  ranks:
+    - rank: BoSMidSeniorSquire
+      requirements:
+        - !type:CharacterPlaytimeRequirement
+          tracker: BoSMidSquire
+          min: 72000 # 1200 minutes
+    - rank: BoSMidSquire
+  #Forge-Change-End
+  requirements:
+  # Forge-Change-Start
+  - !type:CharacterOverallTimeRequirement
+    min: 3600
+  - !type:CharacterLogicOrRequirement
+    requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+      - Human
+      - Ghoul
+  # Forge-Change-End
+  startingGear: BoSMidSquireGear
+  alwaysUseSpawner: true
+  icon: "JobIconBosMSquire" # Forge-Change
+  supervisors: job-supervisors-bos-mid-initiate
+  access:
+  - BoSMidwest
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - BrotherhoodMidwest
+
+- type: startingGear
+  id: BoSMidSquireGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitBOSGreen
+    back: N14ClothingBackpackMilitary # Forge-Change
+    shoes: N14ClothingBootsLeatherFilled
+    head: N14ClothingHeadHatArmyCap
+    outerClothing: N14ClothingOuterMBoSInitiateArmor
+    pocket1: BoSMidwestInitSet
+    id: N14IDBrotherhoodHolotagSquire
+    belt: ClothingBeltMilitary
+  storage: # Forge-Change
+    back:
+    - N14BoxPlasticFilledMilitary
+
+- type: playTimeTracker
+  id: BoSMidSquire

@@ -1,0 +1,52 @@
+- type: job
+  id: TownMayor
+  setPreference: true
+  overrideConsoleVisibility: false
+  canBeAntag: false
+  name: job-name-townmayor
+  description: job-description-townmayor
+  playTimeTracker: TownMayor
+  requirements:
+  # Forge-Change-Start
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+    - Ghoul
+  - !type:CharacterDepartmentTimeRequirement
+    department: Townsfolk
+    min: 36000 # 10 hours
+  # Forge-Change-End
+  startingGear: TownMayorGear
+  icon: "JobIconTownMayor" # Forge-Change
+  supervisors: job-supervisors-town-mayor # Forge-Change
+  alwaysUseSpawner: true # Forge-Change
+  access:
+  - RadioBroadcast
+  accessGroups:
+  - Townie
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - Townsfolk
+
+- type: startingGear
+  id: TownMayorGear
+  equipment:
+    jumpsuit: N14ClothingUniformJumpsuitCheckered
+    back: N14ClothingBackpackExplorer # Forge-Change
+    shoes: N14ClothingShoesBrown
+    id: N14IDBadgeTownMayor
+    pocket1: RadioHandheld
+    belt: N14WalletLottaCash
+  innerClothingSkirt: N14ClothingUniformJumpskirtFalloutBlack
+  satchel: N14ClothingBackpackSatchelMayorFilled
+  duffelbag: N14ClothingBackpackDuffelMayorFilled
+  storage: # Forge-Change
+    back:
+    - N14BoxPlasticFilledWastelander
+
+- type: playTimeTracker
+  id: TownMayor

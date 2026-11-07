@@ -1,0 +1,15 @@
+- type: entity
+  parent: ClothingShoesBase
+  id: N14ClothingShoesKaligi
+  name: kaligi
+  description: Spacious... Sandals?
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Shoes/Specific/romanshoes.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Shoes/Specific/romanshoes.rsi
+  - type: Butcherable
+    butcheringType: Knife
+    spawned:
+    - id: N14MaterialLeather1
+      amount: 2

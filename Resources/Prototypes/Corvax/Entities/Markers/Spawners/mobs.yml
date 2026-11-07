@@ -1,0 +1,445 @@
+# Brahdo
+- type: entity
+  name: Brahdo Spawner
+  id: N14SpawnMobBrahdo
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobBrahdo
+
+- type: entity
+  name: Brahdo Spawner
+  id: N14SpawnMobBrahdoLight
+  parent: MarkerBase
+  suffix: LeLight
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobBrahdoLight
+
+- type: entity
+  name: Brahdo Spawner
+  id: N14SpawnMobBrahdoArmor
+  parent: MarkerBase
+  suffix: Armor
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobBrahdoArmor
+
+- type: entity
+  name: Brahdo Spawner
+  id: N14SpawnMobBrahdoArmorNCR
+  parent: MarkerBase
+  suffix: NCR
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobBrahdoArmorNCR
+
+- type: entity
+  name: Brahdo Spawner
+  id: N14SpawnMobBrahdoLightLegion
+  parent: MarkerBase
+  suffix: Legion
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobBrahdoLightLegion
+
+- type: entity
+  name: Brahdo Spawner
+  id: N14SpawnMobBrahdoLightTribal
+  parent: MarkerBase
+  suffix: Tribal
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobBrahdoLighttribal
+
+# Swampers
+
+- type: entity
+  name: спавнер болотника
+  id: N14SpawnMobSwamper
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Corvax/Mobs/Animals/swamper.rsi
+        state: swamper
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobSwamper
+
+- type: entity
+  name: спавнер радболотника
+  id: N14SpawnMobRadSwamper
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Corvax/Mobs/Animals/radswamper.rsi
+        state: radswamper
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobRadSwamper
+
+# Jackal
+
+- type: entity
+  name: спавнер шакала
+  id: N14SpawnMobJackal
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Corvax/Mobs/Animals/jackal.rsi
+        state: jackal
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobJackal
+
+# Ice
+
+- type: entity
+  name: Deathclaw Ice Spawner
+  id: N14SpawnDeathclawicy
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Corvax/Mobs/Animals/icynail.rsi
+        state: deathclaw
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobDeathclawicy
+
+# Raiders
+
+- type: entity
+  name: спавнер берсерка дикого племени
+  id: N14SpawnMobNPCRaiderTribeBerserk
+  suffix: Рейдер
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - sprite: _Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+          state: raider_ranged
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - N14MobNPCRaiderTribeBerserk
+
+- type: entity
+  name: спавнер старейшины дикого племени
+  id: N14SpawnMobNPCRaiderTribeElder
+  suffix: Рейдер
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - sprite: _Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+          state: raider_ranged
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - N14MobNPCRaiderTribeElder
+
+- type: entity
+  name: спавнер стрелков дикого племени
+  id: N14SpawnMobNPCRaiderTribeSkir
+  suffix: Рейдер
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - sprite: _Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+          state: raider_ranged
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - N14MobNPCRaiderTribeSkir
+        - N14MobNPCRaiderTribeHunter
+
+- type: entity
+  name: спавнер диких бойцов ближнего боя
+  id: N14SpawnMobNPCRaiderTribeWarr
+  suffix: Рейдер
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - sprite: _Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+          state: raider_ranged
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - N14MobNPCRaiderTribeWarr
+        - N14MobNPCRaiderTribeSword
+
+- type: entity
+  name: спавнер рейдера в силовой броне
+  id: N14SpawnMobRaiderPowerArmorBoss
+  suffix: Рейдер, босс
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: _Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+        state: raiderboss
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobNPCRaiderPowerArmorBoss
+
+- type: entity
+  name: спавнер наёмника с тяжёлой винтовкой
+  id: N14SpawnMobMercenaryHeavySniper
+  suffix: Наемник, мини-босс
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: _Nuclear14/Mobs/RaidersSimpleMob/Raiders.rsi
+        state: raiderboss
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobNPCMercenaryHeavySniper
+
+- type: entity
+  name: спавнер рейдера мясника
+  id: N14SpawnMobRaiderButcher
+  suffix: Рейдер, мини-босс
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: _Nuclear14/Mobs/RaidersSimpleMob/RaiderPsycho.rsi
+        state: raider_melee
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobNPCRaiderButcher
+
+# Iguana
+
+- type: entity
+  name: спавнер игуаны
+  id: N14SpawnMobIguana
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: _Nuclear14/Mobs/Animals/iguana.rsi
+        state: iguana
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobIguana
+
+# Китай
+
+- type: entity
+  name: спавнер захватчиков ближнего боя
+  id: N14SpawnMobNPCRaiderChineseMelee
+  suffix: Рейдер, китай
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - N14MobChineseFighter1
+        - N14MobChineseFighter2
+        - N14MobChineseFighter3
+
+- type: entity
+  name: спавнер захватчика с пистолетом
+  id: N14SpawnMobNPCRaiderChinesePistol
+  suffix: Рейдер, китай
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - N14MobChinesePistol
+
+- type: entity
+  name: спавнер захватчика с винтовкой
+  id: N14SpawnMobNPCRaiderChineseSKS
+  suffix: Рейдер, китай
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - N14MobChineseRifleSKS
+
+- type: entity
+  name: спавнер захватчика боевика
+  id: N14SpawnMobNPCRaiderChineseShotgun
+  suffix: Рейдер, китай
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - N14MobChineseShotgun
+
+- type: entity
+  name: спавнер захватчика штурмовик
+  id: N14SpawnMobNPCRaiderAssaultRifle
+  suffix: Рейдер, китай
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - N14MobChineseAssaultRifle
+
+- type: entity
+  name: спавнер захватчика снайпера
+  id: N14SpawnMobNPCRaiderSniperRifle
+  suffix: Рейдер, китай
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - N14MobChineseSniperRifle
+
+- type: entity
+  name: спавнер захватчика профессионала
+  id: N14SpawnMobNPCRaiderSMGAdvanced
+  suffix: Рейдер, китай, мини-босс
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - N14MobChineseSMGAdvancedGear
+
+- type: entity
+  name: спавнер тяжёлого захватчика
+  id: N14SpawnMobChinesePowerArmor
+  suffix: Рейдер, китай, босс
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - N14MobChinesePowerArmor
+
+- type: entity
+  name: спавнер офицера захватчика
+  id: N14SpawnMobChineseOfficer
+  suffix: Рейдер, китай, босс
+  parent: MarkerBase
+  components:
+    - type: Sprite
+      layers:
+        - state: green
+        - state: ai
+    - type: ConditionalSpawner
+      prototypes:
+        - N14MobChineseOfficer
+
+# Bramin
+
+- type: entity
+  name: спавнер вьючного брамина
+  id: N14SpawnMobBrahminCrate
+  parent: MarkerBase
+  suffix: LeLight
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: _Nuclear14/Mobs/Animals/brahmin.rsi
+        state: brahmin-1
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14PackBrahminCrate
+
+- type: entity
+  name: спавнер пустынного скорпиона
+  id: N14SpawnMobDesertscorp
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Corvax/Mobs/Animals/desertradscorpion.rsi
+        state: radscorpion
+      - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+      - N14MobDesertRadscorpion

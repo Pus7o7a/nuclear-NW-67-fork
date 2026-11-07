@@ -1,0 +1,98 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: N14ClothingNeckMantleCaesar
+  name: сaesar cape
+  description: "Worthy only of him..."
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/caesarpelt.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Neck/caesarpelt.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: N14ClothingNeckMantleSheriff
+  name: sheriff cape
+  description: "The concealing garb of the regional sheriff."
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/sheriffmantle.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Neck/sheriffmantle.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: N14ClothingNeckNCRMPCoat
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/NCRMPСoatNect.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Neck/NCRMPСoatNect.rsi
+  - type: Storage
+    grid:
+    - 0,0,1,1
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.ToggleClothingUiKey.Key:
+        type: ToggleableClothingBoundUserInterface
+
+- type: entity
+  parent: ClothingNeckBase
+  id: N14ClothingNeckCapeLegionSagum
+  name: legionary sagum
+  description: "A square cloak woven by the slaves of the legion"
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/sagum.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Neck/sagum.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: N14ClothingNeckCapeLegion
+  name: legionary cape
+  description: "large legion cape with a bull banner"
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/capelegio.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Neck/capelegio.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: M14ClothingNeckLegionMantle
+  name: legion mantle
+  description: A bull flag adapted to be worn, a honor not given to every warrior.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/mantlelegionred.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Neck/mantlelegionred.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: M14ClothingNeckCloakWesternPoncho
+  name: thick decorated poncho
+  description: Dark brown with white patterns, thick enough to provide some protection.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/westernoldponcho.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Neck/westernoldponcho.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: N14ClothingNeckCapeStranger
+  name: stranger cape
+  description: A tattered cape once worn by a drifter from the wastes.
+  components:
+  - type: Sprite
+    sprite: Corvax/Clothing/Neck/strangercape.rsi
+  - type: Clothing
+    sprite: Corvax/Clothing/Neck/strangercape.rsi

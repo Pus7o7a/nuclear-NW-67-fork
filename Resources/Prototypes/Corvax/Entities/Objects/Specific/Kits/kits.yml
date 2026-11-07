@@ -1,0 +1,1427 @@
+# Legion kits
+
+- type: entity
+  name: centurion-bestiary kit
+  parent: KitBase
+  id: KitCenturionBestiary
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponThermospear
+      - id: N14WeaponPistol45Colt
+      - id: N14MagazinePistol45
+        amount: 2
+      - id: Bola
+        amount: 2
+      - id: N14BerserkerPowder
+        amount: 2
+      - id: N14HealingPoultice
+        amount: 2
+      - id: N14Hydra
+      - id: N14CleanGauze10
+      - id: N14MedkitCombatFilled
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: centurion-sagitaria kit
+  parent: KitBase
+  id: KitCenturionSagitaria
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLMGchinese
+      - id: Magazine762AmmoBelt
+        amount: 2
+      - id: N14ClothingHandsPowerFistCenturion
+      - id: N14HealingPoultice
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: venator-sagitaria kit
+  parent: KitBase
+  id: KitVenatorSagitaria
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponSniper50AntiMateriel
+      - id: N14Magazine50AMR
+        amount: 3
+      - id: MagazineBox50
+      - id: N14WeaponPistol45Colt
+      - id: N14MagazinePistol45
+        amount: 2
+      - id: ClothingEyesNightVisionGoggles
+      - id: N14HealingPoultice
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: venator-triaria kit
+  parent: KitBase
+  id: KitVenatorTriaria
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponBlowback
+      - id: MagazineBox12gauge
+        amount: 2
+      - id: N14WeaponPistol45Colt
+      - id: N14MagazinePistol45
+        amount: 2
+      - id: ClothingEyesNightVisionGoggles
+      - id: N14HealingPoultice
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: dean-gladiator kit
+  parent: KitBase
+  id: KitDeanGladiator
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponSniper45-70BrushGun
+      - id: SpeedLoader45-70Tube
+        amount: 2
+      - id: MagazineBox45-70
+      - id: N14WeaponPistol45Colt
+      - id: N14MagazinePistol45
+        amount: 2
+      - id: N14HealingPoultice
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+      - id: N14MacheteGladius
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: dean-sagitaria kit
+  parent: KitBase
+  id: KitDeanSagitaria
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLMGAutoRifle
+      - id: Magazine308Rifle
+        amount: 2
+      - id: MagazineBox308
+      - id: N14WeaponPistol45Colt
+      - id: N14MagazinePistol45
+        amount: 2
+      - id: N14HealingPoultice
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+      - id: N14MacheteGladius
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: dean-berserker kit
+  parent: KitBase
+  id: KitDeanBerserker
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14SuperSledgeHammer
+      - id: N14WeaponPistol45Colt
+      - id: N14MagazinePistol45
+        amount: 2
+      - id: Bola
+        amount: 2
+      - id: N14BerserkerPowder
+        amount: 2
+      - id: N14HealingPoultice
+        amount: 2
+      - id: N14Hydra
+      - id: N14CleanGauze10
+      - id: N14MedkitCombatFilled
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: dean-demoman kit
+  parent: KitBase
+  id: KitDeanDemoman
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponRifleGrenade
+      - id: 40mmGrenadeFrag
+        amount: 3
+      - id: N14WeaponPistol45Colt
+      - id: N14MagazinePistol45
+        amount: 2
+      - id: N14BerserkerPowder
+        amount: 1
+      - id: N14HealingPoultice
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14MacheteGladius
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: dean-heavy-sniper kit
+  parent: KitBase
+  id: KitDeanHeavySniper
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponSniper50Pipe
+      - id: MagazineBox50
+        amount: 1
+      - id: N14WeaponPistol45Colt
+      - id: N14MagazinePistol45
+        amount: 2
+      - id: N14HealingPoultice
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: veteran-firearm kit
+  parent: KitBase
+  id: KitVeteranFirearm
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14Gladius
+      - id: SmokeGrenade
+      - id: N14WeaponRifle762Chinese
+      - id: MagazineBox762
+      - id: Magazine762Rifle
+        amount: 3
+      - id: N14HealingPoultice
+      - id: N14Hydra
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: veteran-berserker kit
+  parent: KitBase
+  id: KitVeteranBerserker
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponShotgunAuto
+      - id: N14ClothingHandsPowerFist
+      - id: SmokeGrenade
+      - id: MagazineBox12gauge
+      - id: N14MagazineShotgun12
+        amount: 2
+      - id: N14HealingPoultice
+      - id: N14Hydra
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: veteran-suppressor kit
+  parent: KitBase
+  id: KitVeteranSuppressor
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponSMGP90
+      - id: N14ClothingHandsIndusrialPowerFist
+      - id: N14MagazineSMG9mmP90
+        amount: 3
+      - id: N14HealingPoultice
+      - id: N14Hydra
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: veteran-kebab kit
+  parent: KitBase
+  id: KitVeteranKebab
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponKebab
+      - id: N14LegionnaireShield
+      - id: Bola
+        amount: 2
+      - id: N14BerserkerPowder
+        amount: 2
+      - id: N14HealingPoultice
+        amount: 2
+      - id: N14Hydra
+      - id: N14MedkitFilled
+      - id: N14FuelTankHandyRusty
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: veteran-swordsman kit
+  parent: KitBase
+  id: KitVeteranSwordsman
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14BumperSword
+      - id: N14LegionnaireShield
+      - id: Bola
+        amount: 2
+      - id: N14BerserkerPowder
+        amount: 2
+      - id: N14DirtySuperStimpak
+      - id: N14HealingPoultice
+        amount: 2
+      - id: N14Hydra
+      - id: N14MedkitFilled
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: warrior-base kit
+  parent: KitBase
+  id: KitWarriorBase
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14LegionMachere
+      - id: N14LegionnaireBuckler
+      - id: N14WeaponShotgunLever
+      - id: MagazineBox20gauge
+      - id: N14HealingPoultice
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: warrior-slave-owner kit
+  parent: KitBase
+  id: KitWarriorSlaveOwner
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14Whip
+      - id: N14WeaponSniper44LeverShortCarbine
+      - id: MagazineBox44
+      - id: N14PoliceBaton
+      - id: BoxHandcuff
+      - id: SyndicateWhistle
+      - id: N14HealingPoultice
+      - id: N14HealingPowder
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+        amount: 1
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: warrior-healer kit
+  parent: KitBase
+  id: KitWarriorHealer
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14LegionMachere
+      - id: ClothingBeltMedical
+      - id: N14MortarpestleGrinder
+      - id: LargeBeaker
+      - id: N14WeaponShotgunShort
+      - id: MagazineBox12gauge
+      - id: N14HealingPoultice
+        amount: 2
+      - id: N14HealingPowder
+        amount: 2
+      - id: N14Hydra
+      - id: Bloodpack
+      - id: N14AloeSalve
+      - id: N14CleanGauze10
+        amount: 2
+      - id: N14DoctorBag
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: warrior-firearm kit
+  parent: KitBase
+  id: KitWarriorFirearm
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14LegionMachere
+      - id: N14WeaponSMG10mm
+      - id: MagazineBox10mm
+      - id: N14MagazineSMG10mm
+        amount: 2
+      - id: N14LegionnaireBuckler
+      - id: N14HealingPoultice
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: warrior-melee kit
+  parent: KitBase
+  id: KitWarriorMelee
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14TrenchClub
+      - id: N14LegionnaireShield
+      - id: Bola
+        amount: 2
+      - id: N14HealingPowder
+        amount: 2
+      - id: N14BerserkerPowder
+      - id: N14HealingPoultice
+      - id: N14Hydra
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: warrior-spear kit
+  parent: KitBase
+  id: KitWarriorSpear
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponRevolverWebley
+      - id: SpeedLoader44
+        amount: 2
+      - id: N14WastelandThunderspear
+        amount: 5
+      - id: ClothingBeltQuiverSpear
+      - id: N14HealingPoultice
+      - id: N14HealingPowder
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: recruit-base kit
+  parent: KitBase
+  id: KitRecruitBase
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14LegionMachere
+      - id: N14WeaponSMG9mm
+      - id: N14MagazineSMG9mm
+        amount: 2
+      - id: MagazineBox9mm
+      - id: N14LegionnaireBuckler
+      - id: N14HealingPowder
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: recruit-spear kit
+  parent: KitBase
+  id: KitRecruitSpear
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WastelandTribalSpear
+      - id: N14LegionnaireShield
+      - id: ClothingBeltQuiverSpear
+      - id: N14WastelandSpear
+        amount: 4
+      - id: N14HealingPowder
+        amount: 2
+      - id: N14BerserkerPowder
+      - id: N14HealingPoultice
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+        amount: 1
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: recruit-melee kit
+  parent: KitBase
+  id: KitRecruitMelee
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14LegionMachere
+      - id: N14WeaponShotgunBloodyStick
+      - id: MagazineBox12gauge
+      - id: N14LegionnaireBuckler
+      - id: N14HealingPowder
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14BoxCardboardMREBoxLegionFilled
+        amount: 1
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: recruit-healer kit
+  parent: KitBase
+  id: KitRecruitHealer
+  description: "A set of Legion equipment."
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Misc/kits.rsi
+    state: base
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14TribalKnife
+      - id: PlantBag
+      - id: N14FloraProduceWildCaveFungus
+        amount: 10
+      - id: N14FloraProduceWildCaveFungusRad
+        amount: 10
+      - id: N14MaterialRadscorpionTail
+        amount: 5
+      - id: N14NightstalkerBloodChemistryBottle
+        amount: 5
+      - id: N14HealingPowder
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14CookedFoodPizzaMushroom
+      - id: N14DrinkWine
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+# Washington BoS kits
+
+- type: entity
+  name: washingtonbos-base kit
+  parent: KitBase
+  id: KitBaseWashingtonBoS
+  description: "A set of Washington BoS equipment."
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserPistol
+      - id: N14PowerCellSmall
+        amount: 2
+      - id: N14WeaponPlasmaRifleAuto
+      - id: N14PlasmaCartridge
+        amount: 3
+      - id: N14Stimpak
+      - id: BoxMRE
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: washingtonbos-wattz kit
+  parent: KitBase
+  id: KitWattzWashingtonBoS
+  description: "A set of Washington BoS equipment."
+  components:
+  - type: Sprite
+    state: marksman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserPistol
+      - id: N14PowerCellSmall
+        amount: 2
+      - id: N14WeaponLaserRifleWattz2000
+      - id: N14PowerCellFocused
+        amount: 2
+      - id: N14Stimpak
+      - id: BoxMRE
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: washingtonbos-auto kit
+  parent: KitBase
+  id: KitAutoWashingtonBoS
+  description: "A set of Washington BoS equipment."
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserPistol
+      - id: N14PowerCellSmall
+        amount: 2
+      - id: N14WeaponLaserRifleRecharger
+      - id: N14Stimpak
+      - id: BoxMRE
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: washingtonbos-proto kit
+  parent: KitBase
+  id: KitProtoWashingtonBoS
+  description: "A set of Washington BoS equipment."
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserPistol
+      - id: N14PowerCellSmall
+        amount: 2
+      - id: N14WeaponLaserRiflePrototypeAER14
+      - id: N14PowerCellAdvanced
+        amount: 3
+      - id: N14Stimpak
+      - id: BoxMRE
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: washingtonbos-command-base kit
+  parent: KitBase
+  id: KitCommandBaseWashingtonBoS
+  description: "A set of Washington BoS equipment."
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserPistol
+      - id: N14PowerCellSmall
+        amount: 2
+      - id: N14WeaponLaserRifleAuto
+      - id: N14PowerCellHigh
+        amount: 3
+      - id: N14Stimpak
+      - id: BoxMRE
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: washingtonbos-command-multi kit
+  parent: KitBase
+  id: KitCommandMultiWashingtonBoS
+  description: "A set of Washington BoS equipment."
+  components:
+  - type: Sprite
+    state: marksman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserPistol
+      - id: N14PowerCellSmall
+        amount: 2
+      - id: N14PlasmaCartridge
+        amount: 3
+      - id: N14Stimpak
+      - id: BoxMRE
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: washingtonbos-command-caster kit
+  parent: KitBase
+  id: KitCommandCasterWashingtonBoS
+  description: "A set of Washington BoS equipment."
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserPistol
+      - id: N14PowerCellSmall
+        amount: 2
+      - id: N14WeaponPlasmaCaster
+      - id: N14PlasmaShell
+        amount: 3
+      - id: N14Stimpak
+      - id: BoxMRE
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: washingtonbos-command-wattz kit
+  parent: KitBase
+  id: KitCommandWattzWashingtonBoS
+  description: "A set of Washington BoS equipment."
+  components:
+  - type: Sprite
+    state: marksman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserPistol
+      - id: N14PowerCellSmall
+        amount: 2
+      - id: N14WeaponLaserRifleWattz3000
+      - id: N14PowerCellFocused
+        amount: 3
+      - id: N14Stimpak
+      - id: BoxMRE
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: washingtonbos-command-gatling kit
+  parent: KitBase
+  id: KitCommandGatlingWashingtonBoS
+  description: "A set of Washington BoS equipment."
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserPistol
+      - id: N14PowerCellSmall
+        amount: 2
+      - id: N14WeaponLaserGatling
+      - id: N14PowerCellFusion
+      - id: N14Stimpak
+      - id: BoxMRE
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: washingtonbos-scribe-engineer kit
+  parent: KitBase
+  id: KitScribeEngineerWashingtonBoS
+  description: "A set of Washington BoS equipment."
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14ClothingBeltUtilityFilled
+      - id: N14WeaponPlasmaPistol
+      - id: N14PlasmaCell
+        amount: 3
+      - id: N14Stimpak
+      - id: BoxMRE
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  name: washingtonbos-scribe-medic kit
+  parent: KitBase
+  id: KitScribeMedicWashingtonBoS
+  description: "A set of Washington BoS equipment."
+  components:
+  - type: Sprite
+    state: medic
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14MedkitBruteFilled
+      - id: N14CombatKnife
+      - id: N14ClothingBeltMedicalFilled
+      - id: N14WeaponLaserPistolRecharger
+      - id: ClothingHandsGlovesChemist
+      - id: N14Stimpak
+      - id: BoxMRE
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+# Ranger
+
+- type: entity
+  name: Рейнджерский набор пистолета-пулемёта
+  parent: KitBase
+  id: KitSMGRanger
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: ClothingBeltNCR
+      - id: N14WeaponSMG9mm
+      - id: N14MagazineSMG9mm
+        amount: 4
+      - id: MagazineBox9mm
+      - id: N14Stimpak
+        amount: 2
+      - id: N14BoxCardboardMREBoxKFilled
+      - id: N14CombatKnife
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+#All of the Broother Western kits
+- type: entity
+  name: elderss laser kit
+  parent: KitBase
+  id: KitBrootherWest_Elderlas
+  description: Standard Laser kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserRifleYk42b
+      - id: N14WeaponLaserMagnetoPistol
+      - id: N14PowerCellMagnetoSmall
+        amount: 2
+      - id: N14PowerCellFocusedYk42b
+        amount: 3
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+      - id: N14PlasmaGrenade
+
+- type: entity
+  name: elderss Rifle kit
+  parent: KitBase
+  id: KitBrootherWest_Elderrifle
+  description: Standard Rifle kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponRifleAk112pn
+      - id: N14WeaponPistol45Colt
+      - id: N14MagazinePistol45
+        amount: 3
+      - id: MagazineDrum545Rifle
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+      - id: MagazineBox545
+      - id: GrenadeShrapnel
+
+- type: entity
+  name: Paladin laser kit
+  parent: KitBase
+  id: KitBrootherWest_Paladinlas
+  description: Standard Laser kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserRifleAuto
+      - id: N14WeaponLaserPistol
+      - id: N14PowerCellSmall
+        amount: 2
+      - id: N14PowerCellHigh
+        amount: 3
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+
+- type: entity
+  name: Paladin Rifle kit
+  parent: KitBase
+  id: KitBrootherWest_Paladinrifle
+  description: Standard Rifle kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponRifleAk112pn
+      - id: N14WeaponPistol45Colt
+      - id: N14MagazinePistol45
+        amount: 3
+      - id: MagazineDrum545Rifle
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+      - id: MagazineBox545
+
+- type: entity
+  name: Paladin PlasmaRifle kit
+  parent: KitBase
+  id: KitBrootherWest_Paladinplasma
+  description: Standard Rifle kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponPlasmaRifle
+      - id: N14WeaponLaserMagnetoPistol
+      - id: N14PowerCellMagnetoSmall
+        amount: 2
+      - id: N14PlasmaCartridge
+        amount: 3
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+      - id: CigaretteWeldingFuel
+
+- type: entity
+  name: knight Rifle kit
+  parent: KitBase
+  id: KitBrootherWest_Knightrifle
+  description: Standard Rifle kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponRifleAk112
+      - id: N14WeaponPistol45Colt
+      - id: N14MagazinePistol45
+        amount: 2
+      - id: Magazine545Rifle
+        amount: 3
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+      - id: MagazineBox545
+      - id: N14ClothingHeadHatBrotherCapralHelmet
+      - id: ClothingMaskGasBrootherWestern
+      - id: N14ClothingEyesGlassesMachinegun
+
+- type: entity
+  name: knight Laser kit
+  parent: KitBase
+  id: KitBrootherWest_Knightlaser
+  description: Standard Rifle kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserRifle
+      - id: N14WeaponLaserPistol
+      - id: N14PowerCellSmall
+        amount: 2
+      - id: N14PowerCellHigh
+        amount: 3
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+      - id: N14ClothingHeadHatBeretknighBoS
+      - id: N14ClothingEyesGlassesMachinegun
+      - id: ClothingMaskGasBrootherWestern
+
+- type: entity
+  name: knight Plasma kit
+  parent: KitBase
+  id: KitBrootherWest_Knightplasma
+  description: Standard Rifle kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponPlasmaRifleCrude
+      - id: N14WeaponPistol12mm
+      - id: N14MagazinePistol12mm
+        amount: 2
+      - id: N14PlasmaCartridge
+        amount: 3
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+      - id: N14NukaNade
+      - id: N14ClothingHeadHatCapkhighbluBoS
+      - id: N14ClothingEyesGlassesMachinegun
+      - id: ClothingMaskGasBrootherWestern
+
+- type: entity
+  name: squire Rifle kit
+  parent: KitBase
+  id: KitBrootherWest_Squirerifle
+  description: Standard Rifle kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponRifleAk112
+      - id: Magazine545Rifle
+        amount: 3
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+      - id: MagazineBox545
+      - id: N14ClothingHeadHatBrotherHelmet
+      - id: N14ClothingEyesGlassesMachinegun
+      - id: ClothingMaskGasBrootherWestern
+
+- type: entity
+  name: squire Laser kit
+  parent: KitBase
+  id: KitBrootherWest_Squirelaser
+  description: Standard Rifle kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserRifleCrude
+      - id: N14PowerCellHigh
+        amount: 3
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+      - id: N14ClothingEyesGlassesMachinegun
+
+- type: entity
+  name: squire Plasma kit
+  parent: KitBase
+  id: KitBrootherWest_Squireplasma
+  description: Standard Rifle kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponPlasmaPistol
+      - id: N14PlasmaCell
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+      - id: N14NukaNade
+        amount: 1
+      - id: ClothingMaskGasBrootherWestern
+
+- type: entity
+  name: Scribe rifle kit
+  parent: KitBase
+  id: KitBrootherWest_Scriberifle
+  description: Standard Rifle kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponSMG10mm
+      - id: N14MagazineSMG10mm
+        amount: 2
+      - id: N14CleanGauze10
+      - id: N14Stimpak
+      - id: N14ClothingBeltBosLeatherunl
+      - id: N14Gunpowder10
+      - id: N14IngotLead20
+
+- type: entity
+  name: Scribe laser kit
+  parent: KitBase
+  id: KitBrootherWest_Scribelaser
+  description: Standard laser kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserMagnetoPistol
+      - id: N14PowerCellMagnetoSmall
+        amount: 3
+      - id: N14HandheldHealthAnalyzer
+      - id: N14Stimpak
+      - id: N14MedkitFilled
+      - id: N14ClothingBeltMedicalFilled
+
+- type: entity
+  name: Scribe Plasma kit
+  parent: KitBase
+  id: KitBrootherWest_Scribeplasma
+  description: Standard Plasma kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponPlasmaPistol
+      - id: N14PlasmaCell
+        amount: 2
+      - id: N14ClothingOuterRadSuit
+      - id: N14Stimpak
+      - id: N14ClothingMaskHazmatHelmet
+      - id: N14ClothingBeltUtilityFilled
+      - id: SheetSteel
+      - id: SheetGlass
+
+##MARK: Inquisitor Midwest Kits
+- type: entity
+  name: Inquisitor Inspector Kit
+  parent: KitBase
+  id: KitInquisitorInspector
+  description: Standard Inspector kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponRevolver45-70Hunter
+      - id: N14CeremonialSword
+      - id: ClothingBeltRevolver
+      - id: N14Stimpak
+        amount: 2
+      - id: N14MedkitCombatFilled
+      - id: SpeedLoader45-70
+        amount: 2
+      - id: MagazineBox45-70
+      - id: N14BoxCardboardMREBoxKFilled
+      - id: N14CleanGauze10
+
+- type: entity
+  name: Inquisitor Crusader Kit
+  parent: KitBase
+  id: KitInquisitorCrusader
+  description: Standard Crusader kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponRifle556Carbine
+      - id: N14ClothingBeltBoSWebbing
+      - id: N14Stimpak
+        amount: 2
+      - id: LongMagazine556Rifle
+        amount: 3
+      - id: MagazineBox556
+      - id: N14BoxCardboardMREBoxKFilled
+      - id: N14CleanGauze10
+
+- type: entity
+  name: Inquisitor Plasma Kit
+  parent: KitBase
+  id: KitInquisitorPlasma
+  description: Standard Plasma kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponPlasmaRifleAuto
+      - id: N14ClothingBeltBoSWebbing
+      - id: N14Stimpak
+        amount: 2
+      - id: N14PlasmaCartridge
+        amount: 3
+      - id: N14SuperStimpak
+      - id: N14BoxCardboardMREBoxKFilled
+      - id: N14CleanGauze10
+      - id: N14Ointment10
+
+- type: entity
+  name: Military Police Kit
+  parent: KitBase
+  id: KitNCRMPMilitaryPolice
+  description: Standard Military Police Kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponShotgunRiot
+      - id: N14Stimpak
+        amount: 2
+      - id: N14MagazineShotgun20
+        amount: 2
+      - id: MagazineBox20gauge
+      - id: N14BoxCardboardMREBoxKFilled
+      - id: N14CleanGauze10
+      - id: N14PoliceBaton
+      - id: Handcuffs
+        amount: 2
+
+
+- type: entity
+  name: NCRMP investigator kit
+  parent: KitBase
+  id: KitNCRMPinvestigator
+  description: Standard investigator kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponRifle308Battle
+      - id: N14Stimpak
+        amount: 2
+      - id: ClipMagazine308Rifle
+        amount: 2
+      - id: MagazineBox308
+      - id: N14BoxCardboardMREBoxKFilled
+      - id: N14CleanGauze10
+      - id: N14PoliceBaton
+      - id: Handcuffs
+        amount: 2
+
+
+- type: entity
+  name: NCRMP bailiff Kit
+  parent: KitBase
+  id: KitNCRMPbailiff
+  description: Standard bailiff kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponSMG9mm
+      - id: N14Stimpak
+        amount: 2
+      - id: N14PoliceBaton
+      - id: N14MagazineSMG9mm
+        amount: 2
+      - id: MagazineBox9mm
+      - id: N14BoxCardboardMREBoxKFilled
+      - id: N14CleanGauze10
+      - id: Handcuffs
+        amount: 2
+
+- type: entity
+  name: WBoS Lord Sniper Kit
+  parent: KitBase
+  id: KitWBoSLordSniper
+  description: Sniper Lord kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLaserRifleWattz3000
+      - id: N14Stimpak
+        amount: 1
+      - id: N14PowerCellFocused
+        amount: 4
+      - id: N14BoxCardboardMREBoxKFilled
+      - id: N14MedkitCombatFilled
+      - id: Handcuffs
+        amount: 2
+
+- type: entity
+  name: WBoS Lord Stormtrooper Kit
+  parent: KitBase
+  id: KitWBoSLordStorm
+  description: Stormtrooper Lord kit
+  components:
+  - type: Sprite
+    state: rifleman
+  - type: Item
+    size: Huge
+  - type: SpawnItemsOnUse
+    items:
+      - id: N14WeaponLMGAutoRifle
+      - id: N14Stimpak
+        amount: 1
+      - id: Magazine308Rifle
+        amount: 4
+      - id: N14BoxCardboardMREBoxKFilled
+      - id: N14MedkitCombatFilled
+      - id: Handcuffs
+        amount: 2

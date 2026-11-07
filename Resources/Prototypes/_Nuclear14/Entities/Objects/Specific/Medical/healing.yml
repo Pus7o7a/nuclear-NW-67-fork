@@ -1,0 +1,269 @@
+- type: entity
+  parent: BaseItem
+  id: N14BaseHealingItem
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Specific/Medical/ms13_medical.rsi
+  - type: Item
+    size: Small
+    sprite: Objects/Specific/Medical/medical.rsi
+    heldPrefix: regenerative-mesh
+  - type: StaticPrice
+    price: 0
+
+- type: entity
+  name: roll of gauze
+  id: N14DirtyGauze10
+  description: Some dirty gauze to wrap around bloody wounds, might not be the best for your long-term health.
+  parent: N14BaseHealingItem
+  suffix: Stack
+  components:
+  - type: Tag
+    tags:
+    - N14DirtyGauze
+    - Gauze
+  - type: Appearance
+  - type: Sprite #Forge-change
+    scale: 0.7, 0.7
+    sprite: _Nuclear14/Objects/Specific/Medical/ms13_medical.rsi
+    layers:
+    - state: gauze_diy1
+      map: ["base"]
+  - type: Stack
+    stackType: N14DirtyGauze10
+    count: 10
+    baseLayer: base
+    layerStates:
+    - gauze_diy1
+    - gauze_diy2
+    - gauze_diy3
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Slash: -7
+        Piercing: -7
+        Poison: 1
+    bloodlossModifier: -7
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: StackPrice
+    price: 2 # Forge-Change
+  - type: Butcherable
+    butcheringType: Knife
+    butcherDelay: 1
+    spawned:
+    - id: MaterialCloth1
+      amount: 2
+
+- type: entity
+  id: N14DirtyGauze1
+  parent: N14DirtyGauze10
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: N14DirtyGauze10
+    count: 1
+  - type: Construction
+    graph: N14DirtyGauze1
+    node: n14dgauze
+
+- type: entity
+  name: roll of gauze
+  id: N14CleanGauze10
+  description: Some sterile gauze to wrap around bloody wounds.
+  parent: N14BaseHealingItem
+  suffix: Stack
+  components:
+  - type: Tag
+    tags:
+    - N14CleanGauze
+    - Gauze
+  - type: Appearance
+  - type: Sprite #Forge-change
+    scale: 0.7, 0.7
+    sprite: _Corvax/Objects/Specific/Medical/medical.rsi
+    layers:
+      - state: clean_gauze1
+        map: ["base"]
+  - type: Stack
+    stackType: N14CleanGauze10
+    count: 10
+    baseLayer: base
+    layerStates:
+    - clean_gauze1
+    - clean_gauze2
+    - clean_gauze3
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Slash: -10
+        Piercing: -10
+    bloodlossModifier: -10
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: StackPrice
+    price: 2 # Forge-Change
+  - type: Butcherable
+    butcheringType: Knife
+    spawned:
+    - id: MaterialCloth1
+      amount: 2
+
+- type: entity
+  id: N14CleanGauze1
+  parent: N14CleanGauze10
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: N14CleanGauze10
+    count: 1
+
+- type: entity
+  name: ointment
+  id: N14Ointment10
+  description: Used to treat those nasty burns. Less effective on caustic burns.
+  parent: N14BaseHealingItem
+  suffix: Stack
+  components:
+  - type: Tag
+    tags:
+    - Ointment
+  - type: Appearance
+  - type: Sprite
+    scale: 0.7, 0.7
+    sprite: _Nuclear14/Objects/Specific/Medical/ms13_medical.rsi
+    layers:
+    - state: tube1
+      map: ["base"]
+  - type: Stack
+    stackType: N14Ointment10
+    count: 10
+    baseLayer: base
+    layerStates:
+    - tube1
+    - tube2
+    - tube3
+    - tube4
+  - type: Healing #Forge-change
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        #Blunt: -5
+        Heat: -10
+        Cold: -10
+        Shock: -10
+        Caustic: -5
+    healingBeginSound:
+      path: "/Audio/Items/Medical/ointment_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/ointment_end.ogg"
+  - type: StackPrice
+    price: 2 # Forge-Change
+
+- type: entity
+  id: N14Ointment1
+  parent: N14Ointment10
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: N14Ointment10
+    count: 1
+
+# Forge-change-place
+- type: entity
+  parent: BaseHealingItem
+  categories: [ HideSpawnMenu ]
+  id: N14Bandage #! Corvax-Change
+  name: bandage
+  description: A long strip of cloth which can stop bleeding. Mostly sterile.
+  suffix: full
+  components:
+  - type: Tag
+    tags:
+    - N14Bandage
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Specific/Medical/drugs.rsi
+    state: bandage
+  - type: Construction
+    graph: Bandage
+    node: bandage
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Slash: -10 # Was 5
+        Piercing: -15 # Was 10, Buffed due to limb damage changes
+    bloodlossModifier: -10
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
+  - type: Stack
+    stackType: N14Bandage
+    count: 15 #Was 10, Buffed due to limb damage changes
+  - type: StackPrice
+    price: 2 # Forge-Change
+
+- type: entity
+  parent: N14Bandage
+  categories: [ HideSpawnMenu ]
+  id: N14Bandage1
+  suffix: Single
+  components:
+  - type: Stack
+    count: 1
+
+- type: entity
+  name: aloe salve
+  description: Used to treat those nasty burns. Less effective on caustic burns.
+  parent: Ointment
+  id: N14AloeSalve
+  suffix: Full
+  components:
+  - type: Appearance
+  - type: Stack
+    stackType: N14AloeSalve
+    count: 10
+    baseLayer: base
+    layerStates:
+    - aloe1
+    - aloe2
+    - aloe3
+  - type: Sprite
+    sprite: _Nuclear14/Objects/Specific/Medical/ms13_medical_new.rsi
+    scale: 0.8, 0.8
+    layers:
+    - state: aloe3
+      map: ["base"]
+  - type: Healing #Forge-add
+    damageContainers:
+      - Biological
+    damage:
+      types:
+        Heat: -7
+        Cold: -7
+        Shock: -7
+
+- type: entity
+  id: N14AloeSalve1
+  parent: N14AloeSalve
+  suffix: Single
+  components:
+  - type: Stack
+    stackType: N14AloeSalve
+    count: 1
+  - type: Sprite
+    state: aloe1
+  - type: Produce
+    seedId: N14WildAloe

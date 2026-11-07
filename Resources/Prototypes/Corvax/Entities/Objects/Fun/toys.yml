@@ -1,0 +1,141 @@
+- type: entity
+  parent: BaseItem
+  id: N14VitoPlushie
+  name: legioner plushie
+  description: A soft plushie of Vito Septimus from "Your favorite healer" series. Comes with a stimpak+ and a kind smile.
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Fun/toylegion.rsi
+    state: favorite_healer
+  - type: Tag
+    tags:
+      - Payload
+      - ClothMade
+  - type: EmitSoundOnUse
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnActivate
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnCollide
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnLand
+    sound:
+      collection: ToyFall
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: ToySqueak
+  - type: UseDelay
+    delay: 1.0
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      collection: ToySqueak
+    damage:
+      types:
+        Blunt: 0
+  - type: DamageOtherOnHit
+  - type: PhysicalComposition
+    materialComposition:
+      Cloth: 100
+  - type: StaticPrice
+    price: 5
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      collection: ToySqueak
+    delay: 2
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+
+- type: entity
+  parent: BaseItem
+  id: N14VinsPlushie
+  name: venator plushie
+  description: A plush toy of Vince's Legion Venator. Could this mean another sprite for the Legion?
+  components:
+  - type: Sprite
+    sprite: Corvax/Objects/Fun/toylegion.rsi
+    state: favorite_venator
+  - type: Tag
+    tags:
+      - Payload
+      - ClothMade
+  - type: EmitSoundOnUse
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnActivate
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnCollide
+    sound:
+      collection: ToySqueak
+  - type: EmitSoundOnLand
+    sound:
+      collection: ToyFall
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: ToySqueak
+  - type: UseDelay
+    delay: 1.0
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      collection: ToySqueak
+    damage:
+      types:
+        Blunt: 0
+  - type: DamageOtherOnHit
+  - type: PhysicalComposition
+    materialComposition:
+      Cloth: 100
+  - type: StaticPrice
+    price: 5
+  - type: Food
+    requiresSpecialDigestion: true
+    useSound:
+      collection: ToySqueak
+    delay: 2
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10
+
+- type: entity
+  parent: PlushieArachne
+  id: N14ZoiDarbiPlushie
+  name: плюшевый медик
+  description: Вы только посмотрите на плюшевую игрушку "Зои Дарби", из коллекции "Твой любимый врач" в улучшенном разрешении! Наполяет вас невероятным зарядом доброты и позитива.
+  components:
+  - type: Sprite
+    scale: 0.5, 0.5
+    sprite: Corvax/Objects/Fun/toyncr.rsi
+    state: mommy_healer
+  - type: Tag
+    tags:
+      - Payload
+      - ClothMade
+  - type: UseDelay
+    delay: 1.0
+  - type: DamageOtherOnHit
+  - type: PhysicalComposition
+    materialComposition:
+      Cloth: 100
+  - type: StaticPrice
+    price: 5
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 10

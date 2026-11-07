@@ -1,0 +1,260 @@
+- type: entity
+  parent: SimpleMobBase
+  id: N14MobBrahdo
+  name: brahdo
+  description: "Neigh? That thing has too many legs... Think it bites? Might ride it. Might eat it."
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: base
+      sprite: _Corvax/Mobs/Animals/brahdo.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: true
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.75
+        density: 50
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: base
+      Dead:
+        Base: base-dead
+  - type: Stamina
+    critThreshold: 200
+  - type: Strap
+    whitelist:
+      components:
+      - HumanoidAppearance
+    buckleSound:
+      path: /Audio/_NC/Effects/lift-saddle.ogg
+      params:
+        volume: 20 # It's normal
+    unbuckleSound:
+      path: /Audio/_NC/Effects/dismount-saddle.ogg
+      params:
+        volume: 20 # It's normal
+  - type: Mountable
+  - type: Tag
+    tags:
+    - FootstepSound
+    - Brahdo
+  - type: Butcherable
+    spawned:
+    - id: N14FoodMeatRadRaw
+      amount: 4
+    - id: ForgeAnimalGenericHide # Forge-Change-Start
+      amount: 1
+    - id: ForgeAnimalBone2
+      amount: 1
+    - id: ForgeAnimalSinew
+      amount: 2 # Forge-Change-End
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: WastelandAnimal
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4.5
+    baseSprintSpeed : 4.5
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: Horsestep
+  - type: TimedSpawner
+    prototypes:
+      - N14Dung
+    chance: 0.4
+    intervalSeconds: 300
+    minimumEntitiesSpawned: 1
+    maximumEntitiesSpawned: 1
+    ignoreSpawnBlock: true # Forge-Change
+  - type: Reproductive
+    breedChance: 0.005 # Low
+    birthPopup: reproductive-birth-popup
+    makeOffspringInfant: false
+    partnerWhitelist:
+      tags:
+      - Brahdo
+    offspring:
+    - id: N14MobBrahdo
+      maxAmount: 1
+  - type: ReproductivePartner
+  - type: HTN
+    rootTask:
+      task: RuminantCompound
+  - type: Body
+    prototype: AnimalRuminant
+  - type: MobPrice
+    price: 300
+
+- type: entity
+  parent: N14MobBrahdo
+  id: N14MobBrahdoLight
+  name: brahdo
+  description: "Neigh? That thing has too many legs... Think it bites? Might ride it. Might eat it."
+  suffix: Light
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: light
+      sprite: _Corvax/Mobs/Animals/brahdo.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: light
+      Dead:
+        Base: light-dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 5.5
+    baseSprintSpeed : 5.5
+
+- type: entity
+  parent: N14MobBrahdo
+  id: N14MobBrahdoArmor
+  name: brahdo
+  description: "Neigh? That thing has too many legs... Think it bites? Might ride it. Might eat it."
+  suffix: Armor
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: armor
+      sprite: _Corvax/Mobs/Animals/brahdo.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: armor
+      Dead:
+        Base: armor-dead
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 4
+    baseSprintSpeed : 4
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: WastelandArmoredAnimal
+
+- type: entity
+  parent: N14MobBrahdoArmor
+  id: N14MobBrahdoArmorNCR
+  name: brahdo
+  description: "Neigh? That thing has too many legs... Think it bites? Might ride it. Might eat it."
+  suffix: NCR
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: ncr
+      sprite: _Corvax/Mobs/Animals/brahdo.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: ncr
+      Dead:
+        Base: ncr-dead
+
+- type: entity
+  parent: N14MobBrahdoLight
+  id: N14MobBrahdoLightLegion
+  name: brahdo
+  description: "Neigh? That thing has too many legs... Think it bites? Might ride it. Might eat it."
+  suffix: Legion
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: legion
+      sprite: _Corvax/Mobs/Animals/brahdo.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: legion
+      Dead:
+        Base: legion-dead
+
+- type: entity
+  parent: N14MobBrahdoLight
+  id: N14MobBrahdoLighttribal
+  name: brahdo
+  description: "ehhoh cowboy! Jump on the brado and let's go chase the Brahmins"
+  suffix: tribal
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: tribal
+      sprite: Corvax/Mobs/Animals/tribaldrahdo.rsi
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: tribal
+      Dead:
+        Base: tribal-dead
+
+- type: entity
+  parent: N14MobBrahmin
+  id: N14PackBrahminCrate
+  name: pack brahmin
+  description: A brahmin fitted with a crate strapped to its back. It can carry your supplies — and walk with you.
+  components:
+  - type: N14PackBrahminCrate
+  - type: HTN
+    rootTask:
+      task: N14PackCrateCompound
+    blackboard:
+      FollowRange: !type:Single
+        1.5
+      FollowCloseRange: !type:Single
+        1.0
+  - type: EntityStorage
+    capacity: 30
+  - type: EntityStorageVisuals
+    stateDoorOpen: open
+    stateDoorClosed: closed
+  - type: ContainerContainer
+    containers:
+      entity_storage: !type:Container
+        ents: []
+  - type: Appearance
+  - type: Sprite
+    drawdepth: BelowFloor
+    scale: 1.25, 1.25
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: brahmin-2
+      sprite: _Nuclear14/Mobs/Animals/brahmin.rsi
+    - map: ["enum.StorageVisualLayers.Base"]
+      state: base
+      sprite: Corvax/Structures/Storage/footlockerforbrahmin.rsi
+    - map: ["enum.StorageVisualLayers.Door"]
+      state: closed
+      sprite: Corvax/Structures/Storage/footlockerforbrahmin.rsi
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.0
+    baseSprintSpeed: 5.0
+
+# Corvax-Change-Start: Desert Radscorpion
+- type: entity
+  parent: N14MobRadscorpion
+  id: N14MobDesertRadscorpion
+  name: desert radscorpion
+  description: It's a giant desert radscorpion! Stingy sting.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: radscorpion
+      sprite: Corvax/Mobs/Animals/desertradscorpion.rsi
+# Corvax-Change-End

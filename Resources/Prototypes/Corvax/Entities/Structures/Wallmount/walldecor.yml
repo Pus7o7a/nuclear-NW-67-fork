@@ -1,0 +1,63 @@
+- type: entity
+  parent: N14SignBase
+  id: NCFlagWallBazar
+  name: flag bazar
+  suffix: bazar
+  description: You notice something in common with this bird...
+  components:
+  - type: Sprite
+    sprite: Corvax/Structures/Wallmount/flag.rsi
+    state: flag_bazar
+
+- type: entity
+  parent: NCFlagWallBazar
+  id: NCFlagMexico
+  name: флаг мексики
+  suffix: mexico
+  description: Avocados from Mexico!
+  components:
+  - type: Sprite
+    state: flag_mex
+
+- type: entity
+  parent: NCFlagWallBazar
+  id: NCFlagWallTown
+  name: флаг сепара
+  suffix: town
+  description: брамин на этом флаге выглядит не сильно живым...
+  components:
+  - type: Sprite
+    state: flag_town
+
+- type: entity
+  parent: N14SignBase
+  id: NCFlagCanada
+  name: flag
+  description: A Canada flag.
+  suffix: Canada
+  components:
+  - type: Sprite
+    sprite: Corvax/Structures/Wallmount/horizontal_flags.rsi
+    state: flag_canada
+    scale: 0.7,0.8
+
+- type: entity
+  parent: NCFlagCanada
+  id: NCFlagAlaska
+  name: flag
+  description: A flag of Alaska.
+  suffix: Alaska
+  components:
+  - type: Sprite
+    state: flag_alaska
+
+- type: entity
+  parent: N14SignBase
+  id: N14WallFlagWoodland
+  name: Флаг Вудленда.
+  description: Две головы и четыре рога. Радиация в снегах Аляски.
+  suffix: Woodland
+  components:
+  - type: Sprite
+    sprite: Corvax/Structures/Wallmount/wallflags_64x64.rsi
+    state: wallflag_woodland

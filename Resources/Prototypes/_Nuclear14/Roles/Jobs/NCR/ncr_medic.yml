@@ -1,0 +1,64 @@
+- type: job
+  id: NCRMedic
+  setPreference: true
+  overrideConsoleVisibility: true
+  canBeAntag: false
+  name: job-name-ncr-medic
+  description: job-description-ncr-medic
+  playTimeTracker: NCRDoctor
+  #Forge-Change-Start
+  ranks:
+    - rank: NCRSergeant
+      requirements:
+        - !type:CharacterPlaytimeRequirement
+          tracker: NCRDoctor
+          min: 144000 # 2400 minutes
+    - rank: NCRCorporal
+  #Forge-Change-End
+  requirements:
+  # Forge-Change-Start
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Human
+    - Ghoul
+  - !type:CharacterDepartmentTimeRequirement
+    department: NCR
+    min: 10800 # 3 hours Corvax-Change
+  # Forge-Change-End
+  startingGear: NCRMedicGear
+  icon: "JobIconNcrMedic" # Forge-Change
+  supervisors: job-supervisors-ncr
+  alwaysUseSpawner: true
+  access:
+  - NCR
+  - NCRMedic
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: NpcFactionMember
+        factions:
+          - Wastelander
+          - NCR
+      - type: CPRTraining
+
+- type: startingGear
+  id: NCRMedicGear
+  equipment:
+    jumpsuit: N14ClothingUniformNCR # Forge-Change
+    outerClothing: N14ClothingOuterNCRVest # Forge-Change
+    belt: N14ClothingBeltMedicalFilled # Forge-Change
+    back: N14ClothingBackpackNCR # Forge-Change
+    shoes: N14ClothingBootsLeatherFilled
+    gloves: N14ClothingHandsGlovesNitrile # Forge-Change
+    mask: ClothingMaskSterile # Forge-Change
+    head: N14ClothingHeadHatNCRHelmetMetalMedic # Forge-Change
+    id: N14IDNCRDogtagDoctor
+    pocket2: NCRmedicloadoutkits
+  innerClothingSkirt: N14ClothingUniformNCR # Forge-Change
+  satchel: N14ClothingBackpackSatchelNCRFilled
+  storage: # Forge-Change
+    back:
+    - N14BoxPlasticFilledMilitaryNCR
+
+- type: playTimeTracker
+  id: NCRDoctor

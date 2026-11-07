@@ -1,0 +1,156 @@
+#MARK: Племенные
+- type: entity
+  name: Дикий племенной воин
+  parent: N14BaseMobRaider
+  id: N14MobNPCRaiderTribeWarr
+  suffix: Рейдер
+  description: Большой и крепкий воин. Он убьёт каждого человека, что окажется не из его племени.
+  components: # No gun or ammo components because this is a melee variant.
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        125: Dead
+    - type: Loadout
+      prototypes:
+        - TribalWarriorNPC
+
+- type: entity
+  name: Дикий племенной мечник
+  parent: N14BaseMobRaider
+  id: N14MobNPCRaiderTribeSword
+  suffix: Рейдер
+  description: Большой и крепкий воин. Он убьёт каждого человека, что окажется не из его племени.
+  components: # No gun or ammo components because this is a melee variant.
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        125: Dead
+    - type: Loadout
+      prototypes:
+        - TribalWarriorSwordGear
+
+#MARK: Рейдеры
+- type: entity
+  name: рейдер мясник
+  parent: N14BaseMobRaider
+  id: N14MobNPCRaiderButcher
+  suffix: Рейдер, мини-босс
+  description: Большой, жирный ублюдок вооружённый пилой.
+  components: # No gun or ammo components because this is a melee variant.
+    - type: MovementSpeedModifier
+      baseWalkSpeed: 6                        
+      baseSprintSpeed: 6  
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        150: Dead
+    - type: Loadout
+      prototypes:
+        - RaiderButcherNPC
+
+- type: entity
+  name: психопат
+  parent: N14BaseMobRaider
+  id: N14MobRaiderPsycho1
+  suffix: Рейдер
+  description: Он здесь чтобы тебя убить.
+  components:
+    - type: Loadout
+      prototypes:
+      - PsychoRaiderGear1
+
+- type: entity
+  name: психопат
+  parent: N14BaseMobRaider
+  id: N14MobRaiderPsycho2
+  suffix: Рейдер
+  description: Он здесь чтобы тебя убить.
+  components:
+    - type: Loadout
+      prototypes:
+      - PsychoRaiderGear2
+
+- type: entity
+  name: психопат
+  parent: N14BaseMobRaider
+  id: N14MobRaiderPsycho3
+  suffix: Рейдер
+  description: Он здесь чтобы тебя убить.
+  components:
+    - type: Loadout
+      prototypes:
+      - PsychoRaiderGear3 
+
+#MARK: Китайцы
+
+- type: entity
+  name: захватчик
+  parent: N14BaseMobRaiderGhoul
+  id: N14MobChineseFighter1
+  suffix: Рейдер, китай
+  description: 
+  components: 
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        150: Dead
+    - type: Loadout
+      prototypes:
+        - ChineseFighterGear1
+
+- type: entity
+  name: захватчик
+  parent: N14BaseMobRaiderGhoul
+  id: N14MobChineseFighter2
+  suffix: Рейдер, китай
+  description: 
+  components:  
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        150: Dead
+    - type: Loadout
+      prototypes:
+        - ChineseFighterGear2
+
+- type: entity
+  name: захватчик
+  parent: N14BaseMobRaiderGhoul
+  id: N14MobChineseFighter3
+  suffix: Рейдер, китай
+  description: 
+  components: 
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        150: Dead
+    - type: Loadout
+      prototypes:
+        - ChineseFighterGear3
+        
+- type: entity
+  name: захватчик офицер
+  parent: N14BaseMobRaiderGhoulGlowing
+  id: N14MobChineseOfficer
+  suffix: Рейдер, китай, босс
+  description: 
+  components: 
+    - type: MovementSpeedModifier # Forge-Change
+      baseWalkSpeed: 6
+      baseSprintSpeed: 7
+    - type: PointLight
+      radius: 2.5
+      energy: 3
+      color: "#4CBB17FF"
+    - type: RadiationSource # Forge-Change: strong radiation with a reachable range (was 1.5/6 = 0.25m)
+      intensity: 5
+      slope: 2
+    - type: RadiationReceiver
+    - type: RadiationHealing
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        300: Dead
+    - type: Loadout
+      prototypes:
+        - ChineseOfficerGearMob

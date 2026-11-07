@@ -1,0 +1,141 @@
+#MARK: Племенные рубахи.
+- type: loadout
+  id: N14LoadoutClothingUniformJumpsuittribalpantsm
+  category: Uniform
+  cost: 2
+  exclusive: true
+  items:
+    - N14ClothingUniformJumpsuittribalpantsm
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      inverted: true
+      jobs:
+      - BoSMidSerf
+      - CaesarLegionSlave
+      - NCRPisoner
+    - !type:CharacterDepartmentRequirement
+        departments:
+          - Wastelander
+          - Tribe
+- type: loadout
+  id: N14LoadoutNClothingUniformJumpsuittribalpantsnecklace
+  category: Uniform
+  cost: 2
+  exclusive: true
+  items:
+    - N14ClothingUniformJumpsuittribalpantsnecklace
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      inverted: true
+      jobs:
+      - BoSMidSerf
+      - CaesarLegionSlave
+      - NCRPisoner
+    - !type:CharacterDepartmentRequirement
+        departments:
+          - Wastelander
+          - Tribe
+
+- type: loadout
+  id: N14LoadoutNClothingUniformJumpsuittribalpantsf
+  category: Uniform
+  cost: 2
+  exclusive: true
+  items:
+    - N14ClothingUniformJumpsuittribalpantsf
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      inverted: true
+      jobs:
+      - BoSMidSerf
+      - CaesarLegionSlave
+      - NCRPisoner
+    - !type:CharacterDepartmentRequirement
+        departments:
+          - Wastelander
+          - Tribe
+
+- type: loadout
+  id: N14LoadoutClothingUniformJumpsuitdrylanderTribal
+  category: Uniform
+  cost: 2
+  exclusive: true
+  items:
+    - N14ClothingUniformJumpsuitdrylanderTribal
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      inverted: true
+      jobs:
+      - BoSMidSerf
+      - CaesarLegionSlave
+      - NCRPisoner
+    - !type:CharacterDepartmentRequirement
+        departments:
+          - Wastelander
+          - Tribe
+
+- type: loadout
+  id: N14LoadoutUniformJumpsuitTownGuardLight
+  category: Uniform
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: N14LoadoutUniform
+    - !type:CharacterJobRequirement
+      jobs:
+      - TownDeputy
+      - TownSheriff
+  items:
+    - N14ClothingUniformJumpsuitTownGuardLight
+
+- type: loadout
+  id: N14LoadoutUniformJumpsuitTownGuard
+  category: Uniform
+  cost: 0
+  exclusive: true
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: N14LoadoutUniform
+    - !type:CharacterJobRequirement
+      jobs:
+      - TownDeputy
+      - TownSheriff
+  items:
+    - N14ClothingUniformJumpsuitTownGuard
+
+- type: loadout
+  id: M14ClothingUniformKhansUniformShorts
+  category: Uniform
+  cost: 2
+  exclusive: true
+  items:
+    - M14ClothingUniformKhansUniformShorts
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      inverted: true
+      jobs:
+      - BoSMidSerf
+      - CaesarLegionSlave
+      - NCRPisoner
+    - !type:CharacterDepartmentRequirement
+        departments:
+          - Wastelander
+
+- type: loadout
+  id: M14ClothingUniformKhansUniform
+  category: Uniform
+  cost: 2
+  exclusive: true
+  items:
+    - M14ClothingUniformKhansUniform
+  requirements:
+    - !type:CharacterJobRequirement # Forge-Change
+      inverted: true
+      jobs:
+      - BoSMidSerf
+      - CaesarLegionSlave
+      - NCRPisoner
+    - !type:CharacterDepartmentRequirement
+        departments:
+          - Wastelander
